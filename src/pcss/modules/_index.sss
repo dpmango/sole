@@ -2,14 +2,27 @@
 .video
   height: 800px
   margin-bottom: 20px
+  @media(width <= 860px)
+    height: auto
 
 .videoMainpage
   height: 800px
   margin-top: -50px
   position: relative
+  @media(width <= 860px)
+    height: auto
   img
     max-width: 100%
     max-height: 800px
+  &__video
+    margin-top: 70px
+    display: none
+    position: relative
+    max-width: 1280px
+    overflow: hidden
+    video
+      margin-top: -30px
+
   .icoWrap
     width: 67px
     height: 67px
@@ -28,6 +41,7 @@
 // Products
 .productsMainpage
   margin-top: 50px
+  margin-bottom: 100px
   font-size: 0
   &__card
     display: block
@@ -41,12 +55,12 @@
     &--muted
       background: linear-gradient(45deg, #3D6AC3, #203370)
       img
-        opacity: .9
+        opacity: 1
     &--rightText
       .productsMainpage__card__name
         text-align: right
         left: auto
-        right: 50px
+        right: 9%
     &--red
       background: $colorRed url('../images/mainpageProduct-redBg.png') no-repeat bottom center
       .btn
@@ -59,10 +73,165 @@
       line-height: 23px
       max-width: 150px
       position: absolute
-      left: 50px
-      top: 70px
+      left: 9%
+      top: 13%
       z-index: 2
     img
       max-width: 100%
       max-height: 100%
       z-index: 1
+
+
+// Tech slider
+.textSection
+  margin-left: 5%
+  margin-right: 5%
+  margin-bottom: 130px
+  .heading
+    margin-bottom: 30px
+  &__slide
+    display: flex
+    margin-top: 20px
+    align-items: center
+  &__content
+    flex: 1 1 50%
+    padding-left: 12%
+    padding-right: 15px
+  &__image
+    flex: 1 1 50%
+    padding-left: 15px
+    padding-right: 10%
+    img
+      max-width: 100%
+  &__title
+    font-family: 'CoreSansA25'
+    font-size: 51px
+    line-height: 60px
+    letter-spacing: -2px
+    margin-bottom: 25px
+    @media($wide)
+      font-size: 45px
+      line-height: 55px
+  &__description
+    font-family: 'CoreSansA25'
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: -.75px
+  &__cta
+    display: inline-block
+    a
+      display: inline-block
+      color: $colorBlue
+      font-family: 'CoreSansA45'
+      font-size: 16px
+      margin-top: 20px
+    &::after
+      display: inline-block
+      content: ' '
+      background: svg-load('../../images/svg/ico-more-link--blue.svg') no-repeat center
+      background-size: cover
+      width: 4px
+      height: 8px
+      margin-left: 10px
+      vertical-align: middle
+  .owl-prev, .owl-next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background: svg-load('../../images/svg/owl-nav.svg') no-repeat center
+    width: 11px
+    height: 20px
+    font-size: 0
+  .owl-next
+    right: 0
+    transform: rotate(180deg) translateY(-50%)
+  .owl-prev
+    left: 0
+
+  .owl-dots
+    position: absolute
+    bottom: -40px
+    left: 12%
+    .owl-dot
+      display: inline-block
+      height: 2px
+      width: 20px
+      margin-right: 10px
+      background: #CBCDD0
+      &.active
+        background: $colorRed
+
+
+// promo
+.promoMainpage
+  background: linear-gradient(45deg, #3D6AC3, #203370)
+  position: relative
+  .heading
+    margin-top: 80px
+    margin-bottom: 40px
+  .btn
+    margin-top: 35px
+    margin-bottom: 100px
+  &__content
+    flex: 1 1 45%
+    padding-left: 7%
+    background: color(white a(90%))
+  &__image
+    flex: 0 1 55%
+    overflow: hidden
+    position: relative
+    img
+      position: absolute
+      top: 0
+      right: 0
+  &__title
+    font-family: 'CoreSansA25'
+    font-size: 46px
+    line-height: 50px
+    letter-spacing: -1.75px
+    margin-bottom: 25px
+    max-width: 400px
+  &__description
+    font-family: 'CoreSansA25'
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: -.75px
+    max-width: 400px
+
+
+// SHOP
+.shopGoods
+  margin-bottom: 110px
+  &__card
+    flex: 1 1 25%
+    text-align: center
+    border-right: 1px solid color(#8E8F9B a(10%))
+    &:last-child
+      border-right: none
+    img
+      max-width: 100%
+    &__rating
+      margin-top: 5px
+
+    &__price
+      margin-top: 10px
+      span
+        font-size: 29px
+        line-height: 30px
+        letter-spacing: -2px
+    &__name
+      color: $colorWhiteMute
+      font-size: 17px
+      margin-top: 5px
+    &__brand
+      margin-top: 10px
+      font-size: 13px
+      font-family: 'CoreSansA55'
+      letter-spacing: -.85px
+    &__cta
+      margin-top: 15px
+      position: relative
+    &__compare
+      position: absolute
+      top: 10px
+      right: 60px

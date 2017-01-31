@@ -1,5 +1,28 @@
 $(document).ready(function(){
 
+  // menuFixed
+  $('#menuDropOpen').on('click', function(){
+    $('.menuDrop').addClass('is-active');
+  });
+  $('#menuDropClose').on('click', function(){
+    $('.menuDrop').removeClass('is-active');
+  });
+
+  // Play Video
+  $('#startVideo').on('click', function(){
+    $(this).closest('.row').find('img').hide();
+    $(this).closest('.row').find('.videoMainpage__video').show();
+  });
+
+  $("video").click(function() {
+    //console.log(this);
+    if (this.paused) {
+      this.play();
+    } else {
+      this.pause();
+    }
+  });
+  
  	// Prevent # errors
 	$('[href="#"]').click(function (e) {
 		e.preventDefault();
@@ -14,9 +37,11 @@ $(document).ready(function(){
 	});
 
   // owl
-  $('#owlFirst').owlCarousel({
+  $('#owlTechMainpage').owlCarousel({
     loop: true,
     nav: true,
+    dots: true,
+    responsiveRefreshRate: 10,
     margin: 0,
     responsive: {
       0:{

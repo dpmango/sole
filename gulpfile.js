@@ -48,7 +48,7 @@ gulp.task('build', function (callback) {
     'clean:dist',
     'pug',
     'postcss',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images', 'fonts', 'video'],
     'cssnano',
     callback
   )
@@ -148,6 +148,11 @@ gulp.task('images', function(){
     })))
   .pipe(gulp.dest('dist/images'))
 });
+
+gulp.task('video', function() {
+  return gulp.src('./src/video/**/*')
+  .pipe(gulp.dest('dist/video'))
+})
 
 gulp.task('fonts', function() {
   return gulp.src('./src/fonts/**/*')

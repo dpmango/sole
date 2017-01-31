@@ -15,8 +15,11 @@ $hd-from: width >= 1680px
 $fontColor: #181B1E
 $black: #000
 $colorWhiteMute: #838B90
-$colorGreen: #4ab68f
 $colorRed: #F53B49
+$colorBlue: #0071D0
+
+
+$colorGreen: #4ab68f
 $colorYellow: #fda737
 $colorOrange: #f46d36
 $darkColor: #101226
@@ -59,6 +62,14 @@ body, html
 .heading
   &--fluid
     margin-left: 16%
+  &--center
+    text-align: center
+  &--noBorder
+    .ico
+      margin-right: 10px
+    .heading__name
+      &::before
+        display: none
   &__name
     font-family: 'CoreSansA45'
     font-size: 25px

@@ -7,11 +7,15 @@ html
 
     // VIDEO::START
     section.video
-      .row.jcc
+      .row.jcc.wrap
         .videoMainpage
           .icoWrap
-            i.ico.ico-play
+            i.ico.ico-play#startVideo
           img(src="images/hero-video.png")
+          .videoMainpage__video
+            video(autoplay="autoplay" poster='video/sole_07.jpg', style='width:100%', title='sole_07')
+              source(src='video/sole_07.m4v', type='video/mp4')
+              source(src='video/sole_07.webm', type='video/webm')
 
     // HEADING
     .heading.heading--fluid
@@ -39,17 +43,161 @@ html
         a(href="#").productsMainpage__card.products.productsMainpage__card--red
           .btn.btn--white.btn--outline Скачать каталог
 
+    // HEADING
+    .heading.heading--fluid
+      .heading__name
+        span Технологии
 
-    // OWL::START
-    //section.owl
-      .container
-        .row
-          .col-sm-12
-            .owl-carousel#owlFirst
-              img(src="http://placehold.it/1200x300")
-              img(src="http://placehold.it/1200x300")
-              img(src="http://placehold.it/1200x300")
+    //TECHNOLOGIES SLIDER
+    section.textSection
+      .row
+        .owl-carousel#owlTechMainpage
+          .textSection__slide
+            .textSection__content
+              .textSection__title Полный контроль над тренировкой
+              .textSection__description
+                p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+              .textSection__cta
+                a(href="#") Узнайте больше
+            .textSection__image
+              img(src="images/technologies.png")
+          // next slide
+          .textSection__slide
+            .textSection__content
+              .textSection__title Полный контроль над тренировкой
+              .textSection__description
+                p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+              .textSection__cta
+                a(href="#") Узнайте больше
+            .textSection__image
+              img(src="images/technologies.png")
+          // next slide
+          .textSection__slide
+            .textSection__content
+              .textSection__title Полный контроль над тренировкой
+              .textSection__description
+                p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+              .textSection__cta
+                a(href="#") Узнайте больше
+            .textSection__image
+              img(src="images/technologies.png")
 
+    // PROMO::START
+    section.promoMainpage
+      .row
+        .promoMainpage__content
+          .heading
+            .heading__name
+              span Технологии
+          .promoMainpage__title Ваша цель ближе, чем вы думаете.
+          .promoMainpage__description Тренажеры компании отвечают высоким стандартам качества и функциональности.
+          a(href="#").btn.btn-red Подробнее
+        .promoMainpage__image
+          img(src="images/promoMainpage.png")
+
+    // AWARDS
+    section.textSection.mt100
+      .row
+        .textSection__slide
+          .textSection__content
+            .heading
+              .heading__name
+                span Наши награды
+            .textSection__title Полный контроль над тренировкой
+            .textSection__description
+              p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+            .textSection__cta
+              a(href="#") Узнайте больше
+          .textSection__image
+            img(src="images/awwards.png")
+
+    //SHOP::START
+    section.shopGoods
+      .heading.heading--noBorder.heading--center
+        .heading__name
+          i.ico.ico-cart.ico-cart--red
+          span Интернет магазин
+      .row.jcsb.mt90
+        // card
+        .shopGoods__card
+          a(href="#")
+            img(src="images/productImage-1.png")
+          .shopGoods__card__rating
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star.ico-star--blank
+            span (6)
+          .shopGoods__card__price
+            span 20 499
+            i.ico.ico-rub
+          .shopGoods__card__name Велотренажер E90
+          .shopGoods__card__brand SOLE
+          .shopGoods__card__cta
+            a(href="#").btn.btn-red В корзину
+            a(href="#").shopGoods__card__compare
+              i.ico.ico-compare
+        // card
+        .shopGoods__card
+          a(href="#")
+            img(src="images/productImage-2.png")
+          .shopGoods__card__rating
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star.ico-star--blank
+            span (6)
+          .shopGoods__card__price
+            span 20 499
+            i.ico.ico-rub
+          .shopGoods__card__name Велотренажер E90
+          .shopGoods__card__brand SOLE
+          .shopGoods__card__cta
+            a(href="#").btn.btn-red В корзину
+            a(href="#").shopGoods__card__compare
+              i.ico.ico-compare
+        // card
+        .shopGoods__card
+          a(href="#")
+            img(src="images/productImage-3.png")
+          .shopGoods__card__rating
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star.ico-star--blank
+            span (6)
+          .shopGoods__card__price
+            span 20 499
+            i.ico.ico-rub
+          .shopGoods__card__name Велотренажер E90
+          .shopGoods__card__brand SOLE
+          .shopGoods__card__cta
+            a(href="#").btn.btn-red В корзину
+            a(href="#").shopGoods__card__compare
+              i.ico.ico-compare
+        // card
+        .shopGoods__card
+          a(href="#")
+            img(src="images/productImage-4.png")
+          .shopGoods__card__rating
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star
+            i.ico.ico-star.ico-star--blank
+            span (6)
+          .shopGoods__card__price
+            span 20 499
+            i.ico.ico-rub
+          .shopGoods__card__name Велотренажер E90
+          .shopGoods__card__brand SOLE
+          .shopGoods__card__cta
+            a(href="#").btn.btn-red В корзину
+            a(href="#").shopGoods__card__compare
+              i.ico.ico-compare
     // MAGNIFIC::START
     // section.magnific
       .container

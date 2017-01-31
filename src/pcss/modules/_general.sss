@@ -12,29 +12,150 @@
     width: 75px
     height: 82px
     background: $black
-    .icoWrap
-
+    transition: background .3s ease-in-out
+    &:hover
+      background: $fontColor
     .ico
       width: 18px
       height: 14px
 
+  &__logo
+    width: 75px
+    height: 82px
+    border-bottom: 1px solid color(#979797 a(20%))
+    transition: background .3s ease-in-out
+    &:hover
+      background: $black
+    &:last-child
+      border-bottom: none
+    .icoWrap
+      flex-direction: column
+      .ico
+        background-size: contain
+
+.ico-logo-bowflex
+  background-image: url('../../images/Bowflex_logo.png')
+  width: 22px
+  height: 10px
+
+.ico-logo-bowflex-name
+  background-image: url('../../images/Bowflex_logo_name.png')
+  width: 58px
+  height: 9px
+
+.ico-logo-schwinn
+  background-image: url('../../images/Schwinn_logo.png')
+  width: 53px
+  height: 7px
+
+.menuDrop
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 11
+  width: 375px
+  color: white
+  background: $fontColor
+  transform: translate3d(-375px, 0, 0)
+  transition: transform .3s ease-out
+  &.is-active
+    transform: translate3d(0, 0, 0)
+  #menuDropClose
+    transition: opacity .4s ease
+    &:hover
+      opacity: .6
+  &__top
+    padding: 30px 25px 25px 30px
+    padding-bottom: 30px
+    display: flex
+    justify-content: space-between
+    background: $black
+    .ico-logo
+      width: 124px
+      height: 24px
+  &__cart
+    font-family: 'BebasNeueBold'
+    padding-left: 30px
+    padding-top: 35px
+    padding-right: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__wrap
+      position: relative
+      display: inline-block
+    &__counter
+      position: absolute
+      top: -7px
+      right: -7px
+      background: $colorRed
+      width: 12px
+      height: 12px
+      color: white
+      font-size: 8px
+      border-radius: 50%
+      padding-left: 4.5px
+      line-height: 14px
+    span
+      display: inline-block
+      margin-left: 17px
+      letter-spacing: 4.5px
+
+  &__navi
+    padding-left: 30px
+    padding-top: 50px
+    ul
+      font-family: 'CoreSansA25'
+      font-size: 17px
+      li
+        display: block
+        margin-bottom: 30px
+
+  &__socials
+    padding-top: 50px
+    padding-left: 30px
+    padding-right: 25px
+    position: relative
+    .ico
+      margin-right: 20px
+    .ico-long-arrow-down
+      position: absolute
+      top: 0
+      right: 0
+
+  &__logos
+    background: $colorRed
+    display: flex
+    margin-top: 50px
+    padding: 40px 30px 30px 30px
+    justify-content: space-between
+    flex-wrap: wrap
+    a
+      flex: 1 1 50%
+      margin: 15px 0
+      .menuDrop__logos__boflex
+        max-width: 132px
+      .menuDrop__logos__schwinn
+        max-width: 96px
 
 .header
   padding-top: 25px
   margin-left: 75px
-  margin-right: 70px
+  margin-right: 4.5%
   position: relative
   z-index: 9
   &__logo
-    width: 130px
-    height: 25px
+    width: 123px
+    height: 24px
     margin-left: 35px
-    flex: 0 0 130px
+    flex: 0 0 123px
   &__navi
     font-family: 'BebasNeueBold'
     font-size: 15px
     margin-left: 50px
     flex: 0 1 auto
+    @media(width <= 830px)
+      display: none
     ul
       display: flex
       height: 25px
@@ -43,6 +164,10 @@
         padding-right: 25px
         flex: 1 1 auto
         letter-spacing: 1px
+        a
+          transition: color .3s ease-in-out
+          &:hover
+            color: $colorRed
   &__cart
     position: relative
     vertical-align: bottom
@@ -64,6 +189,9 @@
     letter-spacing: 0.45px
     margin-left: auto
     flex-basis: 130px
+    transition: color .3s ease-in-out
+    &:hover
+      color: $colorRed
     .icoWrap
       width: 14px
       height: 14px
@@ -87,9 +215,11 @@
     height: 24px
   &__about
     color: $colorWhiteMute
+    margin-top: 20px
     font-size: 12px
     letter-spacing: -.65px
   &__copy
+    margin-top: 25px
     font-size: 13px
     letter-spacing: -.7px
   &__menu

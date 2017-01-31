@@ -15,10 +15,32 @@
     <script src="components/html5shiv/dist/html5shiv.js"></script><![endif]-->
   </head>
   <body>
-    <!-- HEADER::START-->
+    <!-- FIXED NAV::START-->
     <div class="menuFixed">
-      <div class="menuFixed__hamb"><a class="icoWrap" href="#"><i class="ico ico-hamburger"></i></a></div>
+      <div class="menuFixed__hamb"><a class="icoWrap" href="#" id="menuDropOpen"><i class="ico ico-hamburger"></i></a></div>
+      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-bowflex"></i><i class="ico ico-logo-bowflex-name"></i></a></div>
+      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-schwinn"></i></a></div>
+      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-bowflex"></i><i class="ico ico-logo-bowflex-name"></i></a></div>
+      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-schwinn"></i></a></div>
     </div>
+    <div class="menuDrop">
+      <div class="menuDrop__top"><a href="#"><i class="ico ico-logo ico-logo--white"></i></a><a href="#" id="menuDropClose"><i class="ico ico-close"></i></a></div>
+      <div class="menuDrop__cart"><a href="#">
+          <div class="menuDrop__cart__wrap">
+            <div class="menuDrop__cart__counter">0</div><i class="ico ico-cart ico-cart--white"></i>
+          </div><span>КОРЗИНА</span></a><i class="ico ico-long-arrow-left"></i></div>
+      <div class="menuDrop__navi">
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Продукция</a></li>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="menuDrop__socials"><a href="#"><i class="ico ico-social-vk"></i></a><a href="#"><i class="ico ico-social-fb"></i></a><a href="#"><i class="ico ico-social-insta"></i></a><i class="ico ico-long-arrow-down"></i></div>
+      <div class="menuDrop__logos"><a href="#"><img class="menuDrop__logos__boflex" src="images/Bowflex_logo.png"></a><a href="#"><img class="menuDrop__logos__schwinn" src="images/Schwinn-logo.png"></a><a href="#"><img class="menuDrop__logos__schwinn" src="images/Schwinn-logo.png"></a><a href="#"><img class="menuDrop__logos__boflex" src="images/Bowflex_logo.png"></a><a href="#"><img class="menuDrop__logos__boflex" src="images/Bowflex_logo.png"></a><a href="#"><img class="menuDrop__logos__schwinn" src="images/Schwinn-logo.png"></a></div>
+    </div>
+    <!-- HEADER::START-->
     <header class="header">
       <div class="row">
         <div class="header__logo"><a class="icoWrap" href="#"><i class="ico ico-logo"></i></a></div>
@@ -33,17 +55,21 @@
                   <div class="header__cart__counter">0</div><i class="ico ico-cart"></i>
                 </div></a></li>
           </ul>
-        </div>
-        <div class="header__phone">
-          <div class="icoWrap"><i class="ico ico-phone"></i></div><span>8 (800) 960-22-11</span>
-        </div>
+        </div><a class="header__phone" href="tel:">
+          <div class="icoWrap"><i class="ico ico-phone"></i></div><span>8 (800) 960-22-11</span></a>
       </div>
     </header>
     <!-- VIDEO::START-->
     <section class="video">
-      <div class="row jcc">
+      <div class="row jcc wrap">
         <div class="videoMainpage">
-          <div class="icoWrap"><i class="ico ico-play"></i></div><img src="images/hero-video.png">
+          <div class="icoWrap"><i class="ico ico-play" id="startVideo"></i></div><img src="images/hero-video.png">
+          <div class="videoMainpage__video">
+            <video autoplay="autoplay" poster="video/sole_07.jpg" style="width:100%;" title="sole_07">
+              <source src="video/sole_07.m4v" type="video/mp4">
+              <source src="video/sole_07.webm" type="video/webm">
+            </video>
+          </div>
         </div>
       </div>
     </section>
@@ -61,17 +87,120 @@
           <div class="productsMainpage__card__name">Вертикальные велотренажеры</div><img src="images/mainpageProduct-5.png"></a><a class="productsMainpage__card products productsMainpage__card--red" href="#">
           <div class="btn btn--white btn--outline">Скачать каталог</div></a></div>
     </section>
-    <!-- OWL::START-->
-    <!--section.owl
-    .container
-      .row
-        .col-sm-12
-          .owl-carousel#owlFirst
-            img(src="http://placehold.it/1200x300")
-            img(src="http://placehold.it/1200x300")
-            img(src="http://placehold.it/1200x300")
-    
-    -->
+    <!-- HEADING-->
+    <div class="heading heading--fluid">
+      <div class="heading__name"><span>Технологии</span></div>
+    </div>
+    <!--TECHNOLOGIES SLIDER-->
+    <section class="textSection">
+      <div class="row">
+        <div class="owl-carousel" id="owlTechMainpage">
+          <div class="textSection__slide">
+            <div class="textSection__content">
+              <div class="textSection__title">Полный контроль над тренировкой</div>
+              <div class="textSection__description">
+                <p>Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.</p>
+              </div>
+              <div class="textSection__cta"><a href="#">Узнайте больше</a></div>
+            </div>
+            <div class="textSection__image"><img src="images/technologies.png"></div>
+          </div>
+          <!-- next slide-->
+          <div class="textSection__slide">
+            <div class="textSection__content">
+              <div class="textSection__title">Полный контроль над тренировкой</div>
+              <div class="textSection__description">
+                <p>Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.</p>
+              </div>
+              <div class="textSection__cta"><a href="#">Узнайте больше</a></div>
+            </div>
+            <div class="textSection__image"><img src="images/technologies.png"></div>
+          </div>
+          <!-- next slide-->
+          <div class="textSection__slide">
+            <div class="textSection__content">
+              <div class="textSection__title">Полный контроль над тренировкой</div>
+              <div class="textSection__description">
+                <p>Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.</p>
+              </div>
+              <div class="textSection__cta"><a href="#">Узнайте больше</a></div>
+            </div>
+            <div class="textSection__image"><img src="images/technologies.png"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROMO::START-->
+    <section class="promoMainpage">
+      <div class="row">
+        <div class="promoMainpage__content">
+          <div class="heading">
+            <div class="heading__name"><span>Технологии</span></div>
+          </div>
+          <div class="promoMainpage__title">Ваша цель ближе, чем вы думаете.</div>
+          <div class="promoMainpage__description">Тренажеры компании отвечают высоким стандартам качества и функциональности.</div><a class="btn btn-red" href="#">Подробнее</a>
+        </div>
+        <div class="promoMainpage__image"><img src="images/promoMainpage.png"></div>
+      </div>
+    </section>
+    <!-- AWARDS-->
+    <section class="textSection mt100">
+      <div class="row">
+        <div class="textSection__slide">
+          <div class="textSection__content">
+            <div class="heading">
+              <div class="heading__name"><span>Наши награды</span></div>
+            </div>
+            <div class="textSection__title">Полный контроль над тренировкой</div>
+            <div class="textSection__description">
+              <p>Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.</p>
+            </div>
+            <div class="textSection__cta"><a href="#">Узнайте больше</a></div>
+          </div>
+          <div class="textSection__image"><img src="images/awwards.png"></div>
+        </div>
+      </div>
+    </section>
+    <!--SHOP::START-->
+    <section class="shopGoods">
+      <div class="heading heading--noBorder heading--center">
+        <div class="heading__name"><i class="ico ico-cart ico-cart--red"></i><span>Интернет магазин</span></div>
+      </div>
+      <div class="row jcsb mt90">
+        <!-- card-->
+        <div class="shopGoods__card"><a href="#"><img src="images/productImage-1.png"></a>
+          <div class="shopGoods__card__rating"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(6)</span></div>
+          <div class="shopGoods__card__price"><span>20 499</span><i class="ico ico-rub"></i></div>
+          <div class="shopGoods__card__name">Велотренажер E90</div>
+          <div class="shopGoods__card__brand">SOLE</div>
+          <div class="shopGoods__card__cta"><a class="btn btn-red" href="#">В корзину</a><a class="shopGoods__card__compare" href="#"><i class="ico ico-compare"></i></a></div>
+        </div>
+        <!-- card-->
+        <div class="shopGoods__card"><a href="#"><img src="images/productImage-2.png"></a>
+          <div class="shopGoods__card__rating"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(6)</span></div>
+          <div class="shopGoods__card__price"><span>20 499</span><i class="ico ico-rub"></i></div>
+          <div class="shopGoods__card__name">Велотренажер E90</div>
+          <div class="shopGoods__card__brand">SOLE</div>
+          <div class="shopGoods__card__cta"><a class="btn btn-red" href="#">В корзину</a><a class="shopGoods__card__compare" href="#"><i class="ico ico-compare"></i></a></div>
+        </div>
+        <!-- card-->
+        <div class="shopGoods__card"><a href="#"><img src="images/productImage-3.png"></a>
+          <div class="shopGoods__card__rating"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(6)</span></div>
+          <div class="shopGoods__card__price"><span>20 499</span><i class="ico ico-rub"></i></div>
+          <div class="shopGoods__card__name">Велотренажер E90</div>
+          <div class="shopGoods__card__brand">SOLE</div>
+          <div class="shopGoods__card__cta"><a class="btn btn-red" href="#">В корзину</a><a class="shopGoods__card__compare" href="#"><i class="ico ico-compare"></i></a></div>
+        </div>
+        <!-- card-->
+        <div class="shopGoods__card"><a href="#"><img src="images/productImage-4.png"></a>
+          <div class="shopGoods__card__rating"><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star"></i><i class="ico ico-star ico-star--blank"></i><span>(6)</span></div>
+          <div class="shopGoods__card__price"><span>20 499</span><i class="ico ico-rub"></i></div>
+          <div class="shopGoods__card__name">Велотренажер E90</div>
+          <div class="shopGoods__card__brand">SOLE</div>
+          <div class="shopGoods__card__cta"><a class="btn btn-red" href="#">В корзину</a><a class="shopGoods__card__compare" href="#"><i class="ico ico-compare"></i></a></div>
+        </div>
+      </div>
+    </section>
     <!-- MAGNIFIC::START-->
     <!-- section.magnific
     .container
