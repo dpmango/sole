@@ -1,0 +1,85 @@
+// NEWS
+.news
+  &__card
+    padding-top: 60px
+    padding-bottom: 50px
+    border-bottom: 1px dashed #C7CBCC
+    &__image
+      height: 370px
+      border-radius: 12px
+      overflow: hidden
+      display: flex
+      align-items: center
+      text-align: center
+      justify-content: center
+      background: #F1F4FA
+      .news__card__parallaxImg
+        width: 100%
+        height: 100%
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-position: center
+        max-width: 100%
+
+    &__content
+      margin-top: 40px
+      p
+        margin-top: 5px
+        font-size: 16px
+        font-family: 'Helvetica Neue'
+        font-weight: 300
+        line-height: 27px
+    &__title
+      font-family: 'CoreSansA45'
+      letter-spacing: -.85px
+      font-size: 22px
+    &__datetime
+      font-size: 13px
+      font-family: 'CoreSansA45'
+      color: #566269
+      padding-top: 15px
+      padding-bottom: 15px
+    .btn--rounded
+      margin-left: 20px
+
+    &__quote
+      font-family: 'Helvetica Neue'
+      font-style: italic
+      font-size: 16px
+      font-weight: 300
+      line-height: 27px
+      position: relative
+      &::before
+        position: absolute
+        top: 20px
+        left: 0
+        content: '“'
+        font-size: 90px
+        line-height: 40px
+        color: #D2D5D6
+        font-family: 'Helvetica Neue'
+      p
+        display: inline-block
+        padding-left: 50px
+
+
+// Single news
+.newsContent
+  margin-top: 35px
+  padding-bottom: 65px
+
+.newsSidebar
+  display: block
+  border: 1px solid #E5EBEE
+  border-radius: 12px
+  padding: 15px 20px
+  margin-top: 35px
+  p
+    line-height: 23px
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+      color: $colorBlue
+    .ico
+      margin-left: 12px

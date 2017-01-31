@@ -302,9 +302,20 @@
 
 
 // GENERIC
+h1
+  display: inline-block
+  font-family: 'CoreSansA45'
+  font-size: 25px
+  letter-spacing: -0.95px
+
 .heading
   display: flex
   justify-content: space-between
+  &.wrap
+    flex-wrap: wrap
+    .heading__name
+      display: block
+      flex: 1 1 100%
   &--fluid
     margin-left: 16%
   &--center
@@ -319,6 +330,9 @@
     font-family: 'CoreSansA45'
     font-size: 25px
     letter-spacing: -0.95px
+    h2
+      font-size: 20px
+      
     &::before
       display: inline-block
       content: ' '
@@ -330,6 +344,14 @@
     span
       display: inline-block
       vertical-align: middle
+  &__datetime
+    font-size: 13px
+    font-family: 'CoreSansA45'
+    color: #566269
+    padding-top: 0px
+    padding-bottom: 5px
+    margin-left: 38px
+
 
   &__pagination
     a

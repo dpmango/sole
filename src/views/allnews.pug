@@ -1,0 +1,59 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // PRODUCTS::START
+    .container
+      .breadcrumbs
+        a(href="#") Главная
+        i.ico.ico-crumb-separator
+        span Новости
+
+      .heading.mt50
+        .heading__name
+          span Новости
+
+      .news
+        .news__card
+          .news__card__image.news__card__bgFixed
+            .news__card__parallaxImg(style="background-image: url('images/newsHero-1.png')")
+          .news__card__content
+            .news__card__title Чемпионат Мира по фитнесу 2016 в Белостоке
+            .news__card__datetime 13:51, 21 января 2016
+            p Соревнования проходили в эти выходные 12-13 ноября в Белостоке (Польша). Были представлены следующие категории: женский и мужской фитнес, бодифитнес, женский и мужской “физик”, а также элитный кубок менс физик. Чемпионат получился действительно мировым, ведь были участники даже из таких далеких стран как Бразилия, Китай, Южная Африка, Канада, Япония, Австралия, Аргентина…
+            a(href="#").btn.btn-muted.btn--outline Читать дальше
+            a(href="#").btn.btn-muted.btn--outline.btn--rounded
+              i.ico.ico-share
+
+        //next card
+        .news__card
+          .news__card__image.news__card__bgFixed
+            .news__card__parallaxImg(style="background-image: url('images/newsHero-2.png')")
+          .news__card__content
+            .news__card__title Фотоотчет с семинара Дениса Гусева
+            .news__card__datetime 13:51, 21 января 2016
+            p Соревнования проходили в эти выходные 12-13 ноября в Белостоке (Польша). Были представлены следующие категории: женский и мужской фитнес, бодифитнес, женский и мужской “физик”, а также элитный кубок менс физик. Чемпионат получился действительно мировым, ведь были участники даже из таких далеких стран как Бразилия, Китай, Южная Африка, Канада, Япония, Австралия, Аргентина…
+            a(href="#").btn.btn-muted.btn--outline Читать дальше
+            a(href="#").btn.btn-muted.btn--outline.btn--rounded
+              i.ico.ico-share
+
+        //next card
+        .news__card
+          .news__card__image
+            i.ico.ico-no-img
+          .news__card__content
+            .news__card__title Фотоотчет с семинара Дениса Гусева
+            .news__card__datetime 13:51, 21 января 2016
+            p Соревнования проходили в эти выходные 12-13 ноября в Белостоке (Польша). Были представлены следующие категории: женский и мужской фитнес, бодифитнес, женский и мужской “физик”, а также элитный кубок менс физик. Чемпионат получился действительно мировым, ведь были участники даже из таких далеких стран как Бразилия, Китай, Южная Африка, Канада, Япония, Австралия, Аргентина…
+            a(href="#").btn.btn-muted.btn--outline Читать дальше
+            a(href="#").btn.btn-muted.btn--outline.btn--rounded
+              i.ico.ico-share
+
+
+        .text-center.mt60.mb100
+          a(href="#").btn.btn--outline Еще новости
+
+    include shared/footer.pug
