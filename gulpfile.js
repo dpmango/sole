@@ -93,18 +93,6 @@ gulp.task('sass', function() {
       }));
 });
 
-gulp.task('bootstrap', function() {
-  return gulp.src('./src/sass/bootstrap.+(scss|sass)')
-      .pipe( sourcemaps.init() )
-      .pipe( sass({ includePaths : ['./src/sass'] }) )
-      .pipe( postcss(processors) )
-      .pipe( sourcemaps.write('.') )
-      .pipe( gulp.dest('./src/css') )
-      .pipe(browserSync.reload({
-        stream: true
-      }));
-});
-
 gulp.task('pug', function buildHTML() {
   return gulp.src('./src/views/*.pug')
       .pipe(pug({
