@@ -1,6 +1,4 @@
 # Sole Fitness HTML/CSS Layout
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](http://githib.com/dpmango/sole)
-
 Based on gulp starter package to use with PostCss/sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
 
 ## DEMO link
