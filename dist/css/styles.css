@@ -1091,6 +1091,22 @@ body, html {
         margin-left: 15px;
     }
 }
+.col65 {
+    -webkit-flex: 1 1 65%;
+        -ms-flex: 1 1 65%;
+            flex: 1 1 65%;
+    margin-right: 10px;
+    width: 65%;
+    -webkit-box-flex: 1;
+}
+.col35 {
+    -webkit-flex: 1 1 35%;
+        -ms-flex: 1 1 35%;
+            flex: 1 1 35%;
+    margin-left: 10px;
+    width: 35%;
+    -webkit-box-flex: 1;
+}
 /* HELPERS */
 /* Margins */
 .mt5 {
@@ -1156,7 +1172,7 @@ body, html {
 .mb90 {
     margin-bottom: 90px;
 }
-.mt100 {
+.mb100 {
     margin-bottom: 100px;
 }
 /* Paddings */
@@ -1195,6 +1211,9 @@ body, html {
 }
 .pt100 {
     padding-top: 100px;
+}
+.pl15 {
+    padding-left: 15px;
 }
 /* TEXT */
 .text-center {
@@ -1324,6 +1343,21 @@ body, html {
     height: 7px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='8px' height='7px' viewBox='0 0 8 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Earrow%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Sole_products_subcategory' transform='translate(-1297.000000, -897.000000)'%3E %3Cg id='Group-7' transform='translate(255.000000, 878.000000)'%3E %3Cg id='arrow' transform='translate(1042.000000, 19.000000)'%3E %3Cpath d='M3.13554164,3.27937065 L0.5,3.27937065' id='Line' stroke='%23A3A4A5' stroke-linecap='square'/%3E %3Cpolygon id='Path-2' fill='%23A3A4A5' transform='translate(5.506303, 3.400786) rotate(-180.000000) translate(-5.506303, -3.400786) ' points='3 3.23098108 8.01260588 0 8.01260588 6.80157283'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
 }
+.ico-share {
+    width: 15px;
+    height: 13px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='15px' height='13px' viewBox='0 0 15 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='News' transform='translate(-450.000000, -958.000000)' fill='%23333333'%3E %3Cg id='share' transform='translate(438.000000, 945.000000)'%3E %3Cpath d='M12.2256898,26 L12.0227467,24.0519025 C12.0086947,23.9176526 11.7038748,20.7358494 13.8308588,18.3852702 C15.1666079,16.9090572 17.1409117,16.1099889 19.7043179,16.0073587 L19.7291791,13 L27,18.2574515 L19.7210722,23.6298594 L19.7210722,20.4920023 C19.6170335,20.4877149 19.4973214,20.4847673 19.3640978,20.4847673 C15.1879561,20.4847673 13.5787337,22.809086 12.9912527,24.1947273 L12.2256898,26 Z' id='Shape'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+.ico-no-img {
+    width: 63px;
+    height: 63px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='63px' height='63px' viewBox='0 0 63 63' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='News' transform='translate(-750.000000, -2066.000000)' fill='%23DDE2EB'%3E %3Cg id='Group' transform='translate(750.000000, 2066.000000)'%3E %3Cpath d='M16.6545918,20.7388129 C14.3910827,20.7388129 12.5497266,18.896873 12.5497266,16.6339869 C12.5497266,14.3704994 14.3910827,12.5291608 16.6545918,12.5291608 C18.9181009,12.5291608 20.759457,14.3704994 20.759457,16.6339869 C20.759457,18.896873 18.9181009,20.7388129 16.6545918,20.7388129 L16.6545918,20.7388129 Z M24.3676012,16.6339869 C24.3676012,12.3812283 20.907391,8.92105112 16.6545918,8.92105112 C12.4017926,8.92105112 8.94158244,12.3812283 8.94158244,16.6339869 C8.94158244,20.8867454 12.4017926,24.3469226 16.6545918,24.3469226 C20.907391,24.3469226 24.3676012,20.8867454 24.3676012,16.6339869 L24.3676012,16.6339869 Z M59.3918559,57.0971326 C59.3918559,58.3623764 58.3629335,59.3918903 57.0976776,59.3918903 L14.7807623,59.3918903 C13.5155064,59.3918903 12.4859827,58.3623764 12.4859827,57.0971326 L12.4859827,54.1216448 L48.2192377,54.1216448 C51.4791959,54.1216448 54.1221615,51.4793059 54.1221615,48.2193788 L54.1221615,12.4864648 L57.0976776,12.4864648 C58.3629335,12.4864648 59.3918559,13.5159788 59.3918559,14.7812226 L59.3918559,57.0971326 Z M5.90292374,50.5135352 C4.84994699,50.5135352 3.97016123,49.7973254 3.70075314,48.8297506 L21.7769537,34.0713795 C22.6411042,33.3768183 23.7229461,33.0647169 24.8246328,33.1958115 C25.9257181,33.3257035 26.9065319,33.8801497 27.5854643,34.7575216 L29.0593912,36.6607995 C30.3607285,38.3415772 32.3217548,39.4191993 34.4385327,39.617044 C36.5529051,39.8100779 38.6817101,39.1173208 40.2807194,37.6969283 L50.5140173,28.4914379 L50.5140173,48.2193788 C50.5140173,49.4846226 49.4844936,50.5135352 48.2192377,50.5135352 L5.90292374,50.5135352 Z M3.60814412,5.90286739 C3.60814412,4.63762359 4.63766786,3.60810968 5.90292374,3.60810968 L48.2192377,3.60810968 C49.4844936,3.60810968 50.5140173,4.63762359 50.5140173,5.90286739 L50.5140173,23.637929 L37.8758913,35.0070825 C37.0183557,35.768995 35.9196758,36.1328128 34.7728874,36.0239682 C33.6309098,35.9175289 32.6152172,35.3588733 31.9128318,34.452035 L30.4383036,32.5481558 C29.1616219,30.8992497 27.3184617,29.856506 25.2479883,29.6123573 C23.1769136,29.3688099 21.1419203,29.9527223 19.505627,31.2672769 L3.60814412,44.2468501 L3.60814412,5.90286739 Z M57.0976776,8.87835517 L54.1221615,8.87835517 L54.1221615,5.90286739 C54.1221615,2.64294032 51.4791959,0 48.2192377,0 L5.90292374,0 C2.64236419,0 0,2.64294032 0,5.90286739 L0,48.2193788 C0,51.4793059 2.64236419,54.1216448 5.90292374,54.1216448 L8.87783855,54.1216448 L8.87783855,57.0971326 C8.87783855,60.3570597 11.5208041,63 14.7807623,63 L57.0976776,63 C60.3576358,63 63,60.3570597 63,57.0971326 L63,14.7812226 C63,11.5212955 60.3576358,8.87835517 57.0976776,8.87835517 L57.0976776,8.87835517 Z' id='Shape'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+.ico-next {
+    width: 12px;
+    height: 7px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='12px' height='7px' viewBox='0 0 12 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Earrow%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='News-open' transform='translate(-1047.000000, -581.000000)'%3E %3Cg id='Group-3' transform='translate(930.000000, 386.000000)'%3E %3Cg id='arrow' transform='translate(117.000000, 195.000000)'%3E %3Cpath d='M7.13554164,3.27937065 L0.5,3.27937065' id='Line' stroke='%23181B1E' stroke-linecap='square'/%3E %3Cpolygon id='Path-2' fill='%23181B1E' transform='translate(9.506303, 3.400786) rotate(-180.000000) translate(-9.506303, -3.400786) ' points='7 3.23098108 12.0126059 8.8817842e-16 12.0126059 6.80157283'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
 /* buttons */
 .btn {
     display: inline-block;
@@ -1354,6 +1388,7 @@ body, html {
 .btn--outline {
     border-width: 1px;
     border-style: solid;
+    background: transparent;
 }
 .btn--outline:hover {}
 .btn-red {
@@ -1364,6 +1399,10 @@ body, html {
 .btn-red:hover {
     background: rgba(245, 59, 73, 0.7);
 }
+.btn-muted {
+    border-color: #DDDDDD;
+    border-radius: 50px;
+}
 .btn-black {
     background: #000;
     color: white;
@@ -1371,6 +1410,13 @@ body, html {
 .btn-gray {
     background: #EDF0F6;
     color: #181B1E;
+}
+.btn--rounded {
+    padding-right: 0;
+    padding-left: 0;
+    width: 38px;
+    height: 38px;
+    text-align: center;
 }
 .btn--noBr {
     border-radius: 0;
@@ -1910,6 +1956,12 @@ body, html {
     vertical-align: middle;
 }
 /* GENERIC */
+h1 {
+    display: inline-block;
+    letter-spacing: -0.95px;
+    font-size: 25px;
+    font-family: 'CoreSansA45';
+}
 .heading {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1919,6 +1971,18 @@ body, html {
             justify-content: space-between;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
+}
+.heading.wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.heading.wrap .heading__name {
+    display: block;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-flex: 1;
 }
 .heading--fluid {
     margin-left: 16%;
@@ -1938,6 +2002,9 @@ body, html {
     font-size: 25px;
     font-family: 'CoreSansA45';
 }
+.heading__name h2 {
+    font-size: 20px;
+}
 .heading__name span {
     display: inline-block;
     vertical-align: middle;
@@ -1950,6 +2017,14 @@ body, html {
     background: #181B1E;
     content: ' ';
     vertical-align: middle;
+}
+.heading__datetime {
+    margin-left: 38px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    color: #566269;
+    font-size: 13px;
+    font-family: 'CoreSansA45';
 }
 .heading__pagination a {
     display: inline-block;
@@ -2677,4 +2752,110 @@ body, html {
 }
 .ico-stock--no {
     background: #F53B49;
+}
+/* NEWS */
+.news {}
+.news__card {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed #C7CBCC;
+}
+.news__card .btn--rounded {
+    margin-left: 20px;
+}
+.news__card__image {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    overflow: hidden;
+    height: 370px;
+    border-radius: 12px;
+    background: #F1F4FA;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+}
+.news__card__image .news__card__parallaxImg {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.news__card__content {
+    margin-top: 40px;
+}
+.news__card__content p {
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+    line-height: 27px;
+}
+.news__card__title {
+    letter-spacing: -.85px;
+    font-size: 22px;
+    font-family: 'CoreSansA45';
+}
+.news__card__datetime {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #566269;
+    font-size: 13px;
+    font-family: 'CoreSansA45';
+}
+.news__card__quote {
+    position: relative;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+    line-height: 27px;
+}
+.news__card__quote p {
+    display: inline-block;
+    padding-left: 50px;
+}
+.news__card__quote::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: #D2D5D6;
+    content: '“';
+    font-size: 90px;
+    font-family: 'Helvetica Neue';
+    line-height: 40px;
+}
+/* Single news */
+.newsContent {
+    margin-top: 35px;
+    padding-bottom: 65px;
+}
+.newsSidebar {
+    display: block;
+    margin-top: 35px;
+    padding: 15px 20px;
+    border: 1px solid #E5EBEE;
+    border-radius: 12px;
+}
+.newsSidebar p {
+    line-height: 23px;
+}
+.newsSidebar a {
+    text-decoration: underline;
+}
+.newsSidebar a .ico {
+    margin-left: 12px;
+}
+.newsSidebar a:hover {
+    color: #0071D0;
+    text-decoration: none;
 }
