@@ -1,5 +1,11 @@
-# Gulp Starter Pack
-Gulp starter package to use with PostCss or sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
+# Sole Fitness HTML/CSS Layout
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](http://githib.com/dpmango/sole)
+
+Based on gulp starter package to use with PostCss/sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
+
+## DEMO link
+http://dpmango.github.io/sole/dist
+
 
 ## Getting stated
 __Development:__
@@ -25,6 +31,7 @@ __Production__
 - `clean:dist` - clean dist folder to prevent conflicts before build
 
 ## Installed plugins
+- Normalize.css 5
 - jQuery 3.1.1
 - owl.carousel 2.2.0
 - Magnific Popup 1.1.0

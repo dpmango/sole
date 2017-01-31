@@ -1,0 +1,68 @@
+// Video
+.video
+  height: 800px
+  margin-bottom: 20px
+
+.videoMainpage
+  height: 800px
+  margin-top: -50px
+  position: relative
+  img
+    max-width: 100%
+    max-height: 800px
+  .icoWrap
+    width: 67px
+    height: 67px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    transition: all .4s ease-in-out
+    &:hover
+      opacity: .7
+      transform: translate(-50%,-50%)
+
+  .ico
+    cursor: pointer
+
+// Products
+.productsMainpage
+  margin-top: 50px
+  font-size: 0
+  &__card
+    display: block
+    flex: 1 1 33.3%
+    overflow: hidden
+    position: relative
+    @media($desktop)
+      flex-basis: 50%
+    @media($mobile)
+      flex-basis: 100%
+    &--muted
+      background: linear-gradient(45deg, #3D6AC3, #203370)
+      img
+        opacity: .9
+    &--rightText
+      .productsMainpage__card__name
+        text-align: right
+        left: auto
+        right: 50px
+    &--red
+      background: $colorRed url('../images/mainpageProduct-redBg.png') no-repeat bottom center
+      .btn
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__name
+      font-size: 16px
+      line-height: 23px
+      max-width: 150px
+      position: absolute
+      left: 50px
+      top: 70px
+      z-index: 2
+    img
+      max-width: 100%
+      max-height: 100%
+      z-index: 1

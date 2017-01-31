@@ -1,14 +1,29 @@
 // buttons
 .btn
+  font-family: 'BebasNeueBold'
+  font-size: 16px
+  line-height: 1em
+  display: inline-block
+  padding: 12px 30px 10px 30px
+  transition: all .4s ease
   &:focus, &:active
     outline: none
 
 // generic modifiers
-.btn--rounded
-  border-radius: 50%
+.btn-block
+  display: block
 
+.btn--white
+  color: white
+  border-color: color(white a(70%))
+  &.btn--outline
+    &:hover
+      background: white
+      border-color: white
+      color: $colorRed
 .btn--outline
-  border: 1px solid transparent
+  border-width: 1px
+  border-style: solid
   &:hover
 
 .btn--abosulte-ico

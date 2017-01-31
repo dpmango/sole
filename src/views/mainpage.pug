@@ -5,11 +5,43 @@ html
   body
     include shared/header.pug
 
-    // SECTION::START
-    section.section
+    // VIDEO::START
+    section.video
+      .row.jcc
+        .videoMainpage
+          .icoWrap
+            i.ico.ico-play
+          img(src="images/hero-video.png")
+
+    // HEADING
+    .heading.heading--fluid
+      .heading__name
+        span Продукция
+
+    // PRODUCTIONS
+    section.productsMainpage
+      .row.wrap
+        a(href="#").productsMainpage__card.productsMainpage__card--muted
+          .productsMainpage__card__name Эллиптические тренажеры
+          img(src="images/mainpageProduct-1.png")
+        a(href="#").productsMainpage__card
+          .productsMainpage__card__name Беговые дорожки
+          img(src="images/mainpageProduct-2.png")
+        a(href="#").productsMainpage__card.productsMainpage__card--muted
+          .productsMainpage__card__name Сайклинг
+          img(src="images/mainpageProduct-3.png")
+        a(href="#").productsMainpage__card.productsMainpage__card--rightText
+          .productsMainpage__card__name Горизонтальные велотренажеры
+          img(src="images/mainpageProduct-4.png")
+        a(href="#").productsMainpage__card.productsMainpage__card--muted.productsMainpage__card--rightText
+          .productsMainpage__card__name Вертикальные велотренажеры
+          img(src="images/mainpageProduct-5.png")
+        a(href="#").productsMainpage__card.products.productsMainpage__card--red
+          .btn.btn--white.btn--outline Скачать каталог
+
 
     // OWL::START
-    section.owl
+    //section.owl
       .container
         .row
           .col-sm-12
@@ -19,7 +51,7 @@ html
               img(src="http://placehold.it/1200x300")
 
     // MAGNIFIC::START
-    section.magnific
+    // section.magnific
       .container
         .row
           .col-sm-12

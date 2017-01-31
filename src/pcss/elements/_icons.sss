@@ -3,9 +3,54 @@
   display: inline-block
   font-style: normal
   content: ' '
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  height: 100%
+  width: 100%
+
+.icoWrap
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
 
 // mixin
 @define-mixin myIcon $name
   background: url('../images/$(name).svg') no-repeat center
   width: 1em
   height: 1em
+
+.ico-logo
+  background-image: svg-load('../../images/logo.svg')
+.ico-logo--white
+  background-image: svg-load('../../images/logo-white.svg')
+
+
+.ico-hamburger
+  background-image: svg-load('../../images/ico-menu.svg')
+.ico-cart
+  background-image: svg-load('../../images/ico-cart.svg')
+  width: 15px
+  height: 14px
+  vertical-align: -2px
+.ico-phone
+  background-image: svg-load('../../images/ico-phone.svg')
+
+.ico-play
+  background-image: svg-load('../../images/ico-play.svg')
+
+.ico-social-vk
+  background-image: svg-load('../../images/ico-social-vk.svg')
+  width: 18px
+  height: 11px
+.ico-social-fb
+  background-image: svg-load('../../images/ico-social-fb.svg')
+  height: 13px
+  width: 13px
+.ico-social-insta
+  background-image: svg-load('../../images/ico-social-insta.svg')
+  width: 14px
+  height: 14px

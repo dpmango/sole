@@ -1,10 +1,30 @@
 // HEADER::START
-- var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+.menuFixed
+  .menuFixed__hamb
+    a(href="#").icoWrap
+      i.ico.ico-hamburger
 
 header.header
-  .section
-    .row
-      .col-sm-12
-        ul
-          each item in list
-            li= item
+  .row
+    .header__logo
+      a(href="#").icoWrap
+        i.ico.ico-logo
+    .header__navi
+      ul
+        li
+          a(href='#') О нас
+        li
+          a(href="#") Продукция
+        li
+          a(href="#") Поддержка
+        li
+          a(href="#") Контакты
+        li
+          a(href="#")
+            .header__cart
+              .header__cart__counter 0
+              i.ico.ico-cart
+    .header__phone
+      .icoWrap
+        i.ico.ico-phone
+      span 8 (800) 960-22-11

@@ -1,0 +1,113 @@
+// HEADER
+.menuFixed
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background: $fontColor
+  &__hamb
+    width: 75px
+    height: 82px
+    background: $black
+    .icoWrap
+
+    .ico
+      width: 18px
+      height: 14px
+
+
+.header
+  padding-top: 25px
+  margin-left: 75px
+  margin-right: 70px
+  position: relative
+  z-index: 9
+  &__logo
+    width: 130px
+    height: 25px
+    margin-left: 35px
+    flex: 0 0 130px
+  &__navi
+    font-family: 'BebasNeueBold'
+    font-size: 15px
+    margin-left: 50px
+    flex: 0 1 auto
+    ul
+      display: flex
+      height: 25px
+      align-items: center
+      li
+        padding-right: 25px
+        flex: 1 1 auto
+        letter-spacing: 1px
+  &__cart
+    position: relative
+    vertical-align: bottom
+    &__counter
+      position: absolute
+      top: -7px
+      right: -7px
+      background: $colorRed
+      width: 12px
+      height: 12px
+      color: white
+      font-size: 8px
+      border-radius: 50%
+      padding-left: 4.5px
+      line-height: 14px
+  &__phone
+    font-family: 'BebasNeueBold'
+    font-size: 17px
+    letter-spacing: 0.45px
+    margin-left: auto
+    flex-basis: 130px
+    .icoWrap
+      width: 14px
+      height: 14px
+      margin-right: 8px
+      display: inline-block
+
+
+// Footer
+.footer
+  background: $fontColor
+  padding: 75px 9.5% 100px 9.5%
+  color: white
+  &__col
+    flex: 1 1 15%
+    padding-left: 10px
+    padding-right: 10px
+    &--wide
+      flex: 0 1 20%
+  &__logo
+    width: 123px
+    height: 24px
+  &__about
+    color: $colorWhiteMute
+    font-size: 12px
+    letter-spacing: -.65px
+  &__copy
+    font-size: 13px
+    letter-spacing: -.7px
+  &__menu
+    &__head
+      font-size: 15px
+      font-family: 'BebasNeueBold'
+      margin-bottom: 25px
+      letter-spacing: 3px
+    &__links
+      font-size: 14px
+      font-family: 'CoreSansA45'
+      letter-spacing: -.75px
+      a
+        display: block
+        line-height: 30px
+  &__socials
+    a
+      display: inline-block
+      .ico
+        vertical-align: middle
+        margin-right: 20px
