@@ -141,9 +141,14 @@
 .header
   padding-top: 25px
   margin-left: 75px
-  margin-right: 4.5%
+  padding-right: 4.5%
   position: relative
   z-index: 9
+  &--black
+    background: $black
+    padding-top: 30px
+    padding-bottom: 28px
+    color: white
   &__logo
     width: 123px
     height: 24px
@@ -241,3 +246,42 @@
       .ico
         vertical-align: middle
         margin-right: 20px
+
+
+// GENERIC
+.heading
+  &--fluid
+    margin-left: 16%
+  &--center
+    text-align: center
+  &--noBorder
+    .ico
+      margin-right: 10px
+    .heading__name
+      &::before
+        display: none
+  &__name
+    font-family: 'CoreSansA45'
+    font-size: 25px
+    letter-spacing: -0.95px
+    &::before
+      display: inline-block
+      content: ' '
+      height: 30px
+      width: 2px
+      background: $fontColor
+      margin-right: 28px
+      vertical-align: middle
+    span
+      display: inline-block
+      vertical-align: middle
+
+.breadcrumbs
+  margin-top: 35px
+  font-family: 'CoreSansA45'
+  font-size: 12px
+  a
+    text-decoration: underline
+    color: $fontColor
+  span
+    color: #A3A4A5

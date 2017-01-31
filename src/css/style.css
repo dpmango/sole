@@ -85,37 +85,17 @@ body, html {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 }
-.heading {}
-.heading--fluid {
-    margin-left: 16%;
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1050px;
 }
-.heading--center {
-    text-align: center;
-}
-.heading--noBorder .ico {
-    margin-right: 10px;
-}
-.heading--noBorder .heading__name {}
-.heading--noBorder .heading__name::before {
-    display: none;
-}
-.heading__name {
-    letter-spacing: -0.95px;
-    font-size: 25px;
-    font-family: 'CoreSansA45';
-}
-.heading__name span {
-    display: inline-block;
-    vertical-align: middle;
-}
-.heading__name::before {
-    display: inline-block;
-    margin-right: 28px;
-    width: 2px;
-    height: 30px;
-    background: #181B1E;
-    content: ' ';
-    vertical-align: middle;
+@media(max-width: 1250px) {
+    .container {
+        margin-right: 100px;
+        margin-left: 100px;
+        max-width: 100%;
+    }
 }
 /* HELPERS */
 /* Margins */
@@ -299,6 +279,13 @@ body, html {
     width: 7px;
     height: 58px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='7px' height='59px' viewBox='0 0 7 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup 2%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='menu' transform='translate(-346.000000, -434.000000)'%3E %3Cg id='Group-2' transform='translate(349.500000, 464.000000) scale(-1, -1) rotate(-270.000000) translate(-349.500000, -464.000000) translate(320.500000, 460.500000)'%3E %3Cpath d='M57.8607189,3.37710771 L4.8512858,3.37710771' id='Line' stroke='%23414245' stroke-linecap='square'/%3E %3Cpolygon id='Path-2' fill='%23414245' points='0 3.23098108 5.01260588 -5.68434189e-14 5.01260588 6.80157283'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+.ico-crumb-separator {
+    margin-right: 17px;
+    margin-left: 17px;
+    width: 13px;
+    height: 7px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='12px' height='7px' viewBox='0 0 12 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Earrow%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Sole_products' transform='translate(-322.000000, -125.000000)'%3E %3Cg id='arrow' transform='translate(322.000000, 125.000000)'%3E %3Cpath d='M7.13554164,3.27937065 L0.5,3.27937065' id='Line' stroke='%23A3A4A5' stroke-linecap='square'/%3E %3Cpolygon id='Path-2' fill='%23A3A4A5' transform='translate(9.506303, 3.400786) rotate(-180.000000) translate(-9.506303, -3.400786) ' points='7 3.23098108 12.0126059 8.8817842e-16 12.0126059 6.80157283'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
 }
 /* buttons */
 .btn {
@@ -637,9 +624,15 @@ body, html {
 .header {
     position: relative;
     z-index: 9;
-    margin-right: 4.5%;
     margin-left: 75px;
     padding-top: 25px;
+    padding-right: 4.5%;
+}
+.header--black {
+    padding-top: 30px;
+    padding-bottom: 28px;
+    background: #000;
+    color: white;
 }
 .header__logo {
     -webkit-flex: 0 0 123px;
@@ -784,6 +777,51 @@ body, html {
 .footer__socials a .ico {
     margin-right: 20px;
     vertical-align: middle;
+}
+/* GENERIC */
+.heading {}
+.heading--fluid {
+    margin-left: 16%;
+}
+.heading--center {
+    text-align: center;
+}
+.heading--noBorder .ico {
+    margin-right: 10px;
+}
+.heading--noBorder .heading__name {}
+.heading--noBorder .heading__name::before {
+    display: none;
+}
+.heading__name {
+    letter-spacing: -0.95px;
+    font-size: 25px;
+    font-family: 'CoreSansA45';
+}
+.heading__name span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.heading__name::before {
+    display: inline-block;
+    margin-right: 28px;
+    width: 2px;
+    height: 30px;
+    background: #181B1E;
+    content: ' ';
+    vertical-align: middle;
+}
+.breadcrumbs {
+    margin-top: 35px;
+    font-size: 12px;
+    font-family: 'CoreSansA45';
+}
+.breadcrumbs a {
+    color: #181B1E;
+    text-decoration: underline;
+}
+.breadcrumbs span {
+    color: #A3A4A5;
 }
 /* Header mobile */
 .header-mobile__wrapper
@@ -1231,4 +1269,64 @@ body, html {
     position: absolute;
     top: 10px;
     right: 60px;
+}
+.productsCatalog {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.productsCatalog:last-child {
+    margin-bottom: 140px;
+}
+.productsCatalog--right .productsCatalog__content {
+    margin-right: 4%;
+    margin-left: 0;
+}
+.productsCatalog__image {
+    -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    width: 50%;
+    background: -webkit-linear-gradient(45deg, #3D6AC3, #203370);
+    background: linear-gradient(45deg, #3D6AC3, #203370);
+    font-size: 0;
+    -webkit-box-flex: 0;
+}
+.productsCatalog__image img {
+    max-width: 100%;
+}
+.productsCatalog__content {
+    -webkit-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    margin-left: 4%;
+    -webkit-box-flex: 1;
+}
+.productsCatalog__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+    font-size: 51px;
+    font-family: 'CoreSansA25';
+    line-height: 60px;
+}
+@media(max-width: 1200px) {
+    .productsCatalog__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+}
+.productsCatalog__description {
+    margin-bottom: 30px;
+    letter-spacing: -.75px;
+    font-size: 20px;
+    font-family: 'CoreSansA25';
+    line-height: 27px;
 }

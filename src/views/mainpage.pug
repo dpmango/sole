@@ -3,7 +3,100 @@ html
   include shared/head.pug
 
   body
-    include shared/header.pug
+    // FIXED NAV::START
+    .menuFixed
+      .menuFixed__hamb
+        a(href="#").icoWrap#menuDropOpen
+          i.ico.ico-hamburger
+      .menuFixed__logo
+        a(href="#").icoWrap
+          i.ico.ico-logo-bowflex
+          i.ico.ico-logo-bowflex-name
+      .menuFixed__logo
+        a(href="#").icoWrap
+          i.ico.ico-logo-schwinn
+      .menuFixed__logo
+        a(href="#").icoWrap
+          i.ico.ico-logo-bowflex
+          i.ico.ico-logo-bowflex-name
+      .menuFixed__logo
+        a(href="#").icoWrap
+          i.ico.ico-logo-schwinn
+
+    .menuDrop
+      .menuDrop__top
+        a(href="#")
+          i.ico.ico-logo.ico-logo--white
+        a(href="#")#menuDropClose
+          i.ico.ico-close
+      .menuDrop__cart
+        a(href="#")
+          .menuDrop__cart__wrap
+            .menuDrop__cart__counter 0
+            i.ico.ico-cart.ico-cart--white
+          span КОРЗИНА
+        i.ico.ico-long-arrow-left
+      .menuDrop__navi
+        ul
+          li
+            a(href='#') О нас
+          li
+            a(href="#") Продукция
+          li
+            a(href="#") Поддержка
+          li
+            a(href="#") Контакты
+
+      .menuDrop__socials
+        a(href="#")
+          i.ico.ico-social-vk
+        a(href="#")
+          i.ico.ico-social-fb
+        a(href="#")
+          i.ico.ico-social-insta
+
+        i.ico.ico-long-arrow-down
+
+      .menuDrop__logos
+        a(href="#")
+          img(src="images/Bowflex_logo.png").menuDrop__logos__boflex
+        a(href="#")
+          img(src="images/Schwinn-logo.png").menuDrop__logos__schwinn
+        a(href="#")
+          img(src="images/Schwinn-logo.png").menuDrop__logos__schwinn
+        a(href="#")
+          img(src="images/Bowflex_logo.png").menuDrop__logos__boflex
+        a(href="#")
+          img(src="images/Bowflex_logo.png").menuDrop__logos__boflex
+        a(href="#")
+          img(src="images/Schwinn-logo.png").menuDrop__logos__schwinn
+
+    // HEADER::START
+    header.header
+      .row
+        .header__logo
+          a(href="#").icoWrap
+            i.ico.ico-logo
+        .header__navi
+          ul
+            li
+              a(href='#') О нас
+            li
+              a(href="#") Продукция
+            li
+              a(href="#") Поддержка
+            li
+              a(href="#") Контакты
+            li
+              a(href="#")
+                .header__cart
+                  .header__cart__counter 0
+                  i.ico.ico-cart
+        a(href="tel:").header__phone
+          .icoWrap
+            i.ico.ico-phone
+          span 8 (800) 960-22-11
+
 
     // VIDEO::START
     section.video

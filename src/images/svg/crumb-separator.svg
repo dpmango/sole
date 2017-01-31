@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sole_products" transform="translate(-322.000000, -125.000000)">
+            <g id="arrow" transform="translate(322.000000, 125.000000)">
+                <path d="M7.13554164,3.27937065 L0.5,3.27937065" id="Line" stroke="#A3A4A5" stroke-linecap="square"></path>
+                <polygon id="Path-2" fill="#A3A4A5" transform="translate(9.506303, 3.400786) rotate(-180.000000) translate(-9.506303, -3.400786) " points="7 3.23098108 12.0126059 8.8817842e-16 12.0126059 6.80157283"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

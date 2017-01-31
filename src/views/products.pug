@@ -1,0 +1,75 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // PRODUCTS::START
+    .container
+      .breadcrumbs
+        a(href="#") Главная
+        i.ico.ico-crumb-separator
+        span Продукция
+
+      .heading.mt50
+        .heading__name
+          span Продукция
+
+      // row
+      .productsCatalog
+        .productsCatalog__image
+          img(src="images/mainpageProduct-1.png")
+        .productsCatalog__content
+          .heading
+            .heading__name Эллиптические тренажеры
+          .productsCatalog__title Полный контроль над тренировкой
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+          a(href="#").btn.btn-red Смотреть все
+
+      // row
+      .productsCatalog.productsCatalog--right
+        .productsCatalog__content
+          .heading
+            .heading__name Беговые дорожки
+          .productsCatalog__title Малая часть большого счастья.
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+          a(href="#").btn.btn-red Смотреть все
+        .productsCatalog__image
+          img(src="images/productCatalog-2.png")
+
+      // row
+      .productsCatalog
+        .productsCatalog__image
+          img(src="images/productCatalog-3.png")
+        .productsCatalog__content
+          .heading
+            .heading__name Горизонтальные велотренажеры
+          .productsCatalog__title Гаджеты. Тема раскрыта.
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+          a(href="#").btn.btn-red Смотреть все
+
+      // row
+      .productsCatalog.productsCatalog--right
+        .productsCatalog__content
+          .productsCatalog__content
+            .heading
+              .heading__name Сайклинг
+            .productsCatalog__title Идеальное место, чтобы умножать скорость на время.
+            .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности.
+          a(href="#").btn.btn-red Смотреть все
+        .productsCatalog__image
+          img(src="images/productCatalog-4.png")
+
+      // row
+      .productsCatalog
+        .productsCatalog__image
+          img(src="images/productCatalog-5.png")
+        .productsCatalog__content
+          .heading
+            .heading__name Вертикальные велотренажеры
+          .productsCatalog__title Полный контроль над тренировкой
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+          a(href="#").btn.btn-red Смотреть все
+
+    include shared/footer.pug

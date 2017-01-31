@@ -2,8 +2,9 @@
 Based on gulp starter package to use with PostCss/sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
 
 ## DEMO link
-http://dpmango.github.io/sole/dist
+http://dpmango.github.io/sole
 
+(git subtree push --prefix dist origin gh-pages)
 
 ## Getting stated
 __Development:__
