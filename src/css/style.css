@@ -1544,17 +1544,17 @@ body, html {
 .ico-logo-bowflex {
     width: 22px;
     height: 10px;
-    background-image: url('../../images/Bowflex_logo.png');
+    background-image: url('../images/Bowflex_logo.png');
 }
 .ico-logo-bowflex-name {
     width: 58px;
     height: 9px;
-    background-image: url('../../images/Bowflex_logo_name.png');
+    background-image: url('../images/Bowflex_logo_name.png');
 }
 .ico-logo-schwinn {
     width: 53px;
     height: 7px;
-    background-image: url('../../images/Schwinn_logo.png');
+    background-image: url('../images/Schwinn_logo.png');
 }
 .menuDrop {
     position: absolute;
