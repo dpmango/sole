@@ -4,8 +4,6 @@ Based on gulp starter package to use with PostCss/sass, pug, autoprefixer, compi
 ## DEMO link
 http://dpmango.github.io/sole
 
-(git subtree push --prefix dist origin gh-pages)
-
 ## Getting stated
 __Development:__
 - Install node.js and npm
@@ -36,3 +34,8 @@ __Production__
 - Magnific Popup 1.1.0
 - Masked input
 - CSS Hamburgers
+
+
+### Push command (gh-pages fix)
+
+git add . && git commit -m "subcategroies markup" && git push origin master && git subtree push --prefix dist origin gh-pages
