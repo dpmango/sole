@@ -34,6 +34,11 @@ $(document).ready(function(){
     }
   });
 
+  // FAQ
+  $('.faqList__title, .ico-faq-toggle').on('click', function(){
+    $(this).parent().toggleClass('is-active');
+  });
+
  	// Prevent # errors
 	$('[href="#"]').click(function (e) {
 		e.preventDefault();

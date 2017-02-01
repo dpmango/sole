@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contacts" transform="translate(-712.000000, -375.000000)" fill="#F53B49">
+            <path d="M716.5,388 C716.5,388 721,381.953816 721,379.47973 C721,377.005643 718.985281,375 716.5,375 C714.014719,375 712,377.005643 712,379.47973 C712,381.953816 716.5,388 716.5,388 Z M716.512273,381.5 C717.648724,381.5 718.57,380.58854 718.57,379.464197 C718.57,378.339854 717.648724,377.428394 716.512273,377.428394 C715.375821,377.428394 714.454545,378.339854 714.454545,379.464197 C714.454545,380.58854 715.375821,381.5 716.512273,381.5 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

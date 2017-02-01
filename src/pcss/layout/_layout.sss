@@ -44,7 +44,8 @@ body, html
   font-size: 14px
   max-width: 100%
   overflow-x: hidden
-
+  &.lightBg
+    background: radial-gradient(#F8FAFD, #F0F3F9)
 .row
   display: flex
   align-items: stretch
@@ -53,6 +54,8 @@ body, html
   &.jcc
     justify-content: center
   &.wrap
+    flex-wrap: wrap
+  @media($mobile)
     flex-wrap: wrap
 
 .container
@@ -63,6 +66,8 @@ body, html
     max-width: 100%
     margin-left: 100px
     margin-right: 100px
+  @media($desktop)
+    margin-right: 30px
   @media($tablet)
     margin-left: 15px
     margin-right: 15px
@@ -71,7 +76,30 @@ body, html
   width: 65%
   flex: 1 1 65%
   margin-right: 10px
+  @media($mobile)
+    width: 100%
+    flex: 1 1 100%
 .col35
   width: 35%
   margin-left: 10px
   flex: 1 1 35%
+  @media($mobile)
+    width: 100%
+    flex: 1 1 100%
+  img
+    max-width: 100%
+
+.col40
+  flex: 1 1 40%
+  width: 40%
+  @media($mobile)
+    width: 100%
+    flex: 1 1 100%
+.col30
+  flex: 1 1 30%
+  width: 30%
+  margin-left: 25px
+  @media($mobile)
+    width: 100%
+    flex: 1 1 100%
+    margin-left: 0

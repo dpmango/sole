@@ -1,0 +1,90 @@
+
+// GENERIC
+h1
+  display: inline-block
+  font-family: 'CoreSansA45'
+  font-size: 25px
+  letter-spacing: -0.95px
+
+.heading
+  display: flex
+  justify-content: space-between
+  &.wrap
+    flex-wrap: wrap
+    .heading__name
+      display: block
+      flex: 1 1 100%
+  &--fluid
+    margin-left: 16%
+  &--center
+    text-align: center
+  &--noBorder
+    .ico
+      margin-right: 10px
+    .heading__name
+      &::before
+        display: none
+  &__name
+    font-family: 'CoreSansA45'
+    font-size: 25px
+    letter-spacing: -0.95px
+    h2
+      font-size: 20px
+    h3
+      display: inline-block
+      font-size: 13px
+    &::before
+      display: inline-block
+      content: ' '
+      height: 30px
+      width: 2px
+      background: $fontColor
+      margin-right: 28px
+      vertical-align: middle
+    span
+      display: inline-block
+      vertical-align: middle
+    // refactor
+    &:has(> h3)::before
+      height: 20px
+      margin-right: 20px
+  &__datetime
+    font-size: 13px
+    font-family: 'CoreSansA45'
+    color: #566269
+    padding-top: 0px
+    padding-bottom: 5px
+    margin-left: 38px
+
+
+  &__pagination
+    a
+      display: inline-block
+      font-size: 15px
+      line-height: 1
+      font-family: 'BebasNeueBold'
+      margin-right: 5px
+      transition: all .2s ease
+      &.active
+        padding: 3px
+        color: $colorRed
+        border: 1px solid $colorRed
+      &:hover
+        color: $colorRed
+      .ico
+        vertical-align: middle
+    span
+      margin-left: 7px
+      margin-right: 7px
+
+.breadcrumbs
+  margin-top: 35px
+  font-family: 'CoreSansA45'
+  font-size: 12px
+  position: relative
+  z-index: 3
+  a
+    text-decoration: underline
+    color: $fontColor
+  span
+    color: #A3A4A5

@@ -1,0 +1,76 @@
+doctype html
+html
+  include shared/head.pug
+
+  body.lightBg
+    include shared/header.pug
+
+    // CONTACTS::START
+    .container
+      .breadcrumbs
+        a(href="#") Главная
+        i.ico.ico-crumb-separator
+        span Контакты
+
+      .heading.wrap.mt50
+        .heading__name
+          h1
+            span Контакты
+      // contacts
+      .row.mb50
+        .col40.row
+          .contactBlock
+            .contactBlock__title ООО “Вэлл Фитнесс”
+            .row.jcsb
+              .contactBlock__left Адрес
+              .contactBlock__right Москва, ул. Болотниковская 114, <span> д. 13, стр 1 (здание Спортмастер)</span>
+            .row.jcsb
+              .contactBlock__left Телефон
+              .contactBlock__right.contactBlock__right--phone <a href="tel:">8 (800) 960-22-11</a> <a href="tel:">8 (800) 465-26-36</a>
+            .row.jcsb
+              .contactBlock__left Email
+              .contactBlock__right <a href="mailto:info@solefitness.su" class="cRed">info@solefitness.su</a> <a href="mailto:hi@solefitness.su">hi@solefitness.su</a>
+            .row.jcsb
+              .contactBlock__left Режим работы
+              .contactBlock__right <b>Пн-Пт <br> 09:30-18:00 </b>
+
+            p Заказы по почте принимаются 24 часа 7 дней в неделю
+
+        // adresses
+        .col30.row
+          .contactBlock
+            .contactBlock__title Адреса:
+            .contactBlock__address
+              i.ico.ico-address
+              .contactBlock__address__head Юридический адрес:
+              p Москва, ул. Болотниковская 114, <span> д. 13, стр 1 (здание Спортмастер)</span>
+            .contactBlock__address
+              i.ico.ico-address
+              .contactBlock__address__head Фактический адрес:
+              p Москва, ул. Болотниковская 114, <span> д. 13, стр 1 (здание Спортмастер)</span>
+            .contactBlock__address
+              i.ico.ico-address
+              .contactBlock__address__head Почтовый адрес:
+              p Москва, ул. Болотниковская 114, <span> д. 13, стр 1 (здание Спортмастер)</span>
+
+        .col30.row
+          .contactBlock
+            .contactBlock__title Реквизиты:
+            p ОАО Альфа Банк Москва
+            .contactBlock__payDetails
+              ul
+                li ИНН: <span>34986898</span>
+                li КПП: <span>34986898</span>
+                li р/с: <span>349873049898</span>
+                li К/С: <span>34987304877098</span>
+                li БИК: <span>34987304986877098</span>
+
+            a(href="#").btn.btn-block.btn--outline.btn-gray Скачать реквизиты
+
+      .heading.mt50
+        .heading__name
+          h3
+            span Наши представительства:
+
+
+    include shared/footer.pug

@@ -1,0 +1,106 @@
+
+// CONTACT
+.contactBlock
+  margin-top: 40px
+  background: white
+  border: 1px solid color(#DCDCE4 a(54%))
+  border-radius: 5px
+  box-shadow: 0 12px 12px color(#CBD3E3 a(40%))
+  padding: 25px 35px 10px 35px
+  flex: 1
+  &__title
+    font-family: 'CoreSansA55'
+    letter-spacing: -.6px
+    font-size: 15px
+    border-bottom: 1px dashed #CACBD9
+    padding-bottom: 15px
+  .row.jcsb
+    align-items: center
+    &:last-child
+      .contactBlock__right
+        border-bottom: none
+  &__left
+    font-family: 'CoreSansA55'
+    letter-spacing: -.5px
+    font-size: 13px
+    flex: 1 0 75px
+  &__right
+    flex: 1 1 calc(100% - 75px)
+    font-family: 'CoreSansA45'
+    letter-spacing: -.5px
+    font-size: 13px
+    line-height: 17px
+    border-bottom: 1px dashed #CACBD9
+    padding-top: 15px
+    padding-bottom: 15px
+    span
+      display: block
+      color: #A3A4A5
+    a
+      border-right: 1px solid #CACBD9
+      padding-right: 10px
+      &:last-child
+        border-right: none
+        padding-left: 10px
+    b, bold
+      font-family: 'CoreSansA55'
+    &--phone
+      font-family: 'BebasNeueBold'
+      letter-spacing: .5px
+      font-size: 17px
+  p
+    font-family: 'CoreSansA45'
+    letter-spacing: -.5px
+    font-size: 13px
+    span
+      display: block
+      color: #A3A4A5
+
+  &__address
+    position: relative
+    font-family: 'CoreSansA45'
+    letter-spacing: -.5px
+    font-size: 13px
+    line-height: 17px
+    border-bottom: 1px dashed #CACBD9
+    padding-top: 15px
+    padding-bottom: 15px
+    &:last-child
+      border-bottom: none
+    &__head
+      font-family: 'CoreSansA55'
+      line-height: 22px
+    p
+      padding: 0
+      margin: 0
+    .ico
+      position: absolute
+      top: 20px
+      left: -20px
+
+  &__payDetails
+    ul
+      margin-top: 20px
+      margin-bottom: 30px
+      li
+        position: relative
+        font-family: 'BebasNeueBold'
+        font-size: 15px
+        padding-left: 17px
+        margin-bottom: 10px
+        &::before
+          display: inline-block
+          position: absolute
+          content: ' '
+          top: 5px
+          left: 0
+          border-radius: 50%
+          background: color($fontColor a(30%))
+          width: 3px
+          height: 3px
+        span
+          display: inline-block
+          padding-left: 10px
+          font-size: 13px
+          font-family: 'CoreSansA45'
+          color: #A3A4A5
