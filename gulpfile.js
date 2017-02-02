@@ -58,6 +58,7 @@ gulp.task('build', function (callback) {
     'postcss',
     ['useref', 'images', 'fonts', 'video'],
     'cssnano',
+    'critical',
     callback
   )
 })
