@@ -115,9 +115,334 @@ html
           a(href="#") инструкции
 
     // TABS CONTENT
-    .shopTabs__content
+    section.shopTabs__content
+      .container
+        b КРАТКИЕ ХАРАКТЕРИСТИКИ
+        .row
+          ul
+            li 15.6” Digital TFT LCD
+            li дисплей показывает: время, дистанцию, калории
+            li программы: 6 предустановленных, 3 целевые
+            li развлечения: ТВ, интернет, iOs & Android
+            li предварительная обработка полотна
+            li вентилятор, аудио выход, USB
+          ul
+            li 15.6” Digital TFT LCD
+            li дисплей показывает: время, дистанцию, калории
+            li программы: 6 предустановленных, 3 целевые
+            li развлечения: ТВ, интернет, iOs & Android
 
+        a(href="#") Показать все
+        hr
 
+        h3 О продукте
+        p Беговая дорожка ТТ8 предназначена как для использования в домашних условиях, так и в условиях небольших спортзалов. Воплощает в себе оптимальные характеристики моделей профессионального уровня. TT8 сконструирована на усиленной раме из прочного материала, что позволяет тренироваться пользователям с массой тела до 182 кг.
+        p Модель оснащена мощным двигателем 4 л.с. с повышенным крутящим моментом, одной из самых эффективных систем амортизации Cushion Flex Whisper Deck и широким беговым полотном, создающим дополнительную безопасность и комфорт.
 
+    section.shopTestimonials
+      .container
+        h3 Отзывы
+        .shopTestimonials__card
+          .shopTestimonials__cardLeft
+            .shopTestimonials__card__avatar E
+          .shopTestimonials__cardRight
+            .shopTestimonials__card__author Евгений Ротенберг
+            .shopTestimonials__card__datetime 13:51, 21 января 2016
+            .shopTestimonials__card__rating
+              span 5
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+            .shopTestimonials__card__name Отзыв
+            .shopTestimonials__card__review Отличная кардионагрузка и укрепление сердечно-сосудистой системы — используя данный тренажер вы стабилизируете кровяное давление, уменьшите риск заболеваний сердца и сосудов, снизите уровень холестерина. Укрепление мышц нижней части тела – ягодиц, ног, бедер. Регулярные тренировки помогут достичь высокого тонуса в мышцах и их подтянутого внешнего вида.
+            a.shopTestimonials__card__more(href="#") Показать все
+
+    //TECHNOLOGIES SLIDER
+    section.shopSlider
+      .container
+        .heading
+          .heading__name
+            span Приемущества
+        .row
+          .owl-carousel.centrify-dots#owlTechMainpage
+            .textSection__slide
+              .textSection__content
+                .textSection__title Полный контроль над тренировкой
+                .textSection__description
+                  p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+                .textSection__cta
+                  a(href="#") Узнайте больше
+              .textSection__image
+                img(src="images/technologies.png")
+            // next slide
+            .textSection__slide
+              .textSection__content
+                .textSection__title Полный контроль над тренировкой
+                .textSection__description
+                  p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+                .textSection__cta
+                  a(href="#") Узнайте больше
+              .textSection__image
+                img(src="images/technologies.png")
+            // next slide
+            .textSection__slide
+              .textSection__content
+                .textSection__title Полный контроль над тренировкой
+                .textSection__description
+                  p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+                .textSection__cta
+                  a(href="#") Узнайте больше
+              .textSection__image
+                img(src="images/technologies.png")
+
+    // FEATURED GOODS
+    .container
+      .heading.mt50
+        .heading__name
+          span С этим товаром покупают
+
+      .row.wrap
+        // card
+        .productMini
+          a(href="#").productMini__image
+            .productMini__sticker.productMini__sticker--promo
+              span Акция
+            img(src="images/productMini-1.png")
+          .productMini__details
+            .productMini__title SOLE TT8
+            .productMini__category Беговая дорожка
+            .productMini__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+            .productMini__availability
+              i.ico.ico-stock.ico-stock--yes
+              span В наличии
+          .productMini__prices
+            .productMini__priceOld
+              span 45 999
+              i.ico.ico-rub
+            .productMini__priceNew
+              span 31 999
+              i.ico.ico-rub
+            a(href="#").btn.btn-block.btn-black В корзину
+            a(href="#").productMini__compare.productMini__compare--selected В сравнении
+        // card
+        .productMini
+          a(href="#").productMini__image
+            .productMini__sticker.productMini__sticker--hot
+            img(src="images/productMini-2.png")
+          .productMini__details
+            .productMini__title SOLE TT8
+            .productMini__category Беговая дорожка
+            .productMini__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+            .productMini__availability
+              i.ico.ico-stock.ico-stock--pending
+              span Товар ожидается 20 февраля
+          .productMini__prices
+            .productMini__priceOld
+              span 45 999
+              i.ico.ico-rub
+            .productMini__priceNew
+              span 31 999
+              i.ico.ico-rub
+            a(href="#").btn.btn-block.btn-gray Предзаказ
+            a(href="#").productMini__compare
+              i.ico.ico-compare
+              span Сравнить
+        // card
+        .productMini
+          a(href="#").productMini__image
+            img(src="images/productMini-3.png")
+          .productMini__details
+            .productMini__title SOLE TT8
+            .productMini__category Беговая дорожка
+            .productMini__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+            .productMini__availability
+              i.ico.ico-stock.ico-stock--no
+              span Нет в наличии
+          .productMini__prices
+            .productMini__priceOld
+              span 45 999
+              i.ico.ico-rub
+            .productMini__priceNew
+              span 31 999
+              i.ico.ico-rub
+            a(href="#").btn.btn-block.btn-gray Предзаказ
+            a(href="#").productMini__compare
+              i.ico.ico-compare
+              span Сравнить
+        // card
+        .productMini
+          a(href="#").productMini__image
+            .productMini__sticker.productMini__sticker--promo
+              span Акция
+            img(src="images/productMini-4.png")
+          .productMini__details
+            .productMini__title SOLE TT8
+            .productMini__category Беговая дорожка
+            .productMini__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+            .productMini__availability
+              i.ico.ico-stock.ico-stock--yes
+              span В наличии
+          .productMini__prices
+            .productMini__priceOld
+              span 45 999
+              i.ico.ico-rub
+            .productMini__priceNew
+              span 31 999
+              i.ico.ico-rub
+            a(href="#").btn.btn-block.btn-red.btn--noBr В корзину
+            a(href="#").productMini__compare
+              i.ico.ico-compare
+              span Сравнить
+
+    // SIMILAR GOODS
+    .whiteBg
+      .container
+        .heading.mt50
+          .heading__name
+            span Аналогичные товары
+
+        .row.wrap
+          // card
+          .productMini
+            a(href="#").productMini__image
+              .productMini__sticker.productMini__sticker--promo
+                span Акция
+              img(src="images/productMini-1.png")
+            .productMini__details
+              .productMini__title SOLE TT8
+              .productMini__category Беговая дорожка
+              .productMini__rating
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+              .productMini__availability
+                i.ico.ico-stock.ico-stock--yes
+                span В наличии
+            .productMini__prices
+              .productMini__priceOld
+                span 45 999
+                i.ico.ico-rub
+              .productMini__priceNew
+                span 31 999
+                i.ico.ico-rub
+              a(href="#").btn.btn-block.btn-black В корзину
+              a(href="#").productMini__compare.productMini__compare--selected В сравнении
+          // card
+          .productMini
+            a(href="#").productMini__image
+              .productMini__sticker.productMini__sticker--hot
+              img(src="images/productMini-2.png")
+            .productMini__details
+              .productMini__title SOLE TT8
+              .productMini__category Беговая дорожка
+              .productMini__rating
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+              .productMini__availability
+                i.ico.ico-stock.ico-stock--pending
+                span Товар ожидается 20 февраля
+            .productMini__prices
+              .productMini__priceOld
+                span 45 999
+                i.ico.ico-rub
+              .productMini__priceNew
+                span 31 999
+                i.ico.ico-rub
+              a(href="#").btn.btn-block.btn-gray Предзаказ
+              a(href="#").productMini__compare
+                i.ico.ico-compare
+                span Сравнить
+          // card
+          .productMini
+            a(href="#").productMini__image
+              img(src="images/productMini-3.png")
+            .productMini__details
+              .productMini__title SOLE TT8
+              .productMini__category Беговая дорожка
+              .productMini__rating
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+              .productMini__availability
+                i.ico.ico-stock.ico-stock--no
+                span Нет в наличии
+            .productMini__prices
+              .productMini__priceOld
+                span 45 999
+                i.ico.ico-rub
+              .productMini__priceNew
+                span 31 999
+                i.ico.ico-rub
+              a(href="#").btn.btn-block.btn-gray Предзаказ
+              a(href="#").productMini__compare
+                i.ico.ico-compare
+                span Сравнить
+          // card
+          .productMini
+            a(href="#").productMini__image
+              .productMini__sticker.productMini__sticker--promo
+                span Акция
+              img(src="images/productMini-4.png")
+            .productMini__details
+              .productMini__title SOLE TT8
+              .productMini__category Беговая дорожка
+              .productMini__rating
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star
+                i.ico.ico-star.ico-star--blank
+              .productMini__availability
+                i.ico.ico-stock.ico-stock--yes
+                span В наличии
+            .productMini__prices
+              .productMini__priceOld
+                span 45 999
+                i.ico.ico-rub
+              .productMini__priceNew
+                span 31 999
+                i.ico.ico-rub
+              a(href="#").btn.btn-block.btn-red.btn--noBr В корзину
+              a(href="#").productMini__compare
+                i.ico.ico-compare
+                span Сравнить
+
+    .shopAwards
+      .container.text-center
+        .shopAwards__title Наши награды
+        img(src="images/awwards.png")
+        .shopAwards__text
+          p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+        .textSection__cta
+          a(href="#") Показать все
 
     include shared/footer.pug

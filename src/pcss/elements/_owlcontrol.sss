@@ -1,0 +1,38 @@
+.owl-carousel
+  .owl-prev, .owl-next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background: svg-load('../../images/svg/owl-nav.svg') no-repeat center
+    width: 11px
+    height: 20px
+    font-size: 0
+  .owl-next
+    right: 0
+    transform: rotate(180deg) translateY(-50%)
+  .owl-prev
+    left: 0
+
+  .owl-dots
+    position: absolute
+    bottom: -40px
+    left: 12%
+    .owl-dot
+      display: inline-block
+      height: 2px
+      width: 20px
+      margin-right: 10px
+      background: #CBCDD0
+      &.active
+        background: $colorRed
+
+  &.centrify-dots
+    .owl-next
+      right: -50px
+    .owl-prev
+      left: -50px
+    .owl-dots
+      position: absolute
+      bottom: -40px
+      left: 50%
+      transform: translateX(-50%)

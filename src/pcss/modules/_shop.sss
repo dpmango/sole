@@ -118,7 +118,7 @@ a.shopCta
           margin-right: 5px
         &:nth-child(3)
           font-size: 11px
-          color: #566269
+          color: $colorMute
       .ico-info-tooltip
         margin-left: 4px
         vertical-align: top
@@ -130,7 +130,7 @@ a.shopCta
     margin-bottom: 3px
 
   &__helpDesc
-    color: #566269
+    color: $colorMute
     font-size: 11px
   .btn
     margin-top: 10px
@@ -152,7 +152,7 @@ a.shopCta
     &Right
       flex: 1
       text-align: right
-      color: #566269
+      color: $colorMute
 
   &__mainPrice
     font-size: 35px
@@ -182,11 +182,11 @@ a.shopCta
     padding-top: 15px
     border-top: 1px dotted #CACBD9
     text-align: center
-    color: #566269
+    color: $colorMute
     font-family: 'CoreSansA55'
     font-size: 11px
     .ico-compare
-      background-image: svg-load('../../images/svg/ico-compare.svg', fill=#566269)
+      background-image: svg-load('../../images/svg/ico-compare.svg', fill=$colorMute)
       margin-right: 10px
       vertical-align: -3px
     a
@@ -245,3 +245,176 @@ a.shopCta
     background: white
     padding-top: 50px
     padding-bottom: 70px
+    font-family: 'CoreSansA45'
+    padding-right: 6%
+    @media($desktop)
+      padding-right: 0
+    .row ul
+      flex: 1 1 50%
+    ul
+      margin-top: 30px
+      margin-bottom: 20px
+      li
+        display: block
+        padding-left: 15px
+        position: relative
+        color: $colorMute
+        font-size: 13px
+        margin-bottom: 7px
+        &::before
+          position: absolute
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          display: inline-block
+          size: 5px
+          border-radius: 50%
+          background: $fontColor
+          content: ' '
+
+    hr
+      margin: 40px 0
+      height: 1px
+      background: transparent
+      border: none
+      border-top: 1px dotted #CACBD9
+
+    a
+      display: inline-block
+      font-family: 'CoreSansA45'
+      font-size: 12px
+      margin-top: 5px
+      &:after
+        display: inline-block
+        content: ' '
+        background: svg-load('../../images/svg/link-arrow-right.svg') no-repeat center
+        width: 13px
+        height: 7px
+        margin-left: 10px
+        vertical-align: middle
+    h3
+      font-size: 18px
+      letter-spacing: -.65px
+      margin-bottom: 25px
+      &::before
+        display: inline-block
+        content: ' '
+        height: 20px
+        width: 2px
+        background: $fontColor
+        margin-right: 20px
+        vertical-align: -3px
+    p
+      color: $colorMute
+      line-height: 22px
+
+
+.shopTestimonials
+  margin-top: 30px
+  margin-bottom: 40px
+  h3
+    font-size: 18px
+    letter-spacing: -.65px
+    margin-bottom: 25px
+    &::before
+      display: inline-block
+      content: ' '
+      height: 20px
+      width: 2px
+      background: $fontColor
+      margin-right: 20px
+      vertical-align: -3px
+
+  &__card
+    display: flex
+    padding-right: 6%
+    @media($desktop)
+      padding-right: 0
+    &Left
+      flex: 0 0 55px
+      margin-right: 25px
+    &Right
+      flex: 1 1 auto
+    &__avatar
+      border: 2px solid $colorRed
+      border-radius: 50%
+      text-align: center
+      vertical-align: middle
+      size: 55px
+      font-family: 'CoreSansA55'
+      font-size: 18px
+      line-height: 55px
+    &__author
+      display: inline-block
+      font-family: 'CoreSansA55'
+      font-size: 18px
+      letter-spacing: -.7px
+      margin-right: 10px
+    &__datetime
+      display: inline-block
+      font-family: 'CoreSansA45'
+      font-size: 12px
+      color: $colorMute
+    &__rating
+      margin-top: 12px
+      span
+        font-family: 'CoreSansA55'
+        font-size: 18px
+        margin-right: 7px
+    &__name
+      margin-top: 20px
+      font-family: 'CoreSansA55'
+      font-size: 13px
+
+    &__review
+      font-family: 'Helvetica Neue', sans-serif
+      font-weight: 300
+      line-height: 23px
+      margin-top: 8px
+    &__more
+      display: inline-block
+      font-family: 'CoreSansA45'
+      font-size: 12px
+      margin-top: 5px
+      margin-top: 20px
+      &:after
+        display: inline-block
+        content: ' '
+        background: svg-load('../../images/svg/link-arrow-right-red.svg') no-repeat center
+        width: 13px
+        height: 7px
+        margin-left: 10px
+        vertical-align: middle
+
+.shopSlider
+  background: white
+  padding-top: 70px
+  padding-bottom: 70px
+  .textSection__content
+    padding-left: 0
+  .textSection__image
+    padding-right: 0
+
+
+.shopAwards
+  background: white
+  padding-bottom: 100px
+  padding-top: 50px
+  &__title
+    font-family: 'CoreSansA45'
+    font-size: 25px
+    letter-spacing: -.9px
+    margin-bottom: 30px
+  &__text
+
+  img
+    max-width: 100%
+  p
+    display: inline-block
+    font-family: 'CoreSansA25'
+    font-size: 17px
+    line-height: 27px
+    letter-spacing: -.65px
+    max-width: 500px
+    margin-top: 25px
+    margin-bottom: 25px
