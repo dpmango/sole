@@ -1,0 +1,136 @@
+doctype html
+html
+  include shared/head.pug
+
+  body.lightBg
+    include shared/header.pug
+
+    // CART::START
+    .container
+      .breadcrumbs
+        a(href="#") Главная
+        i.ico.ico-crumb-separator
+        span Корзина
+
+      .heading.wrap.mt50
+        .heading__name
+          h1
+            span Оформление заказа
+
+      // Steps
+      .cartSteps
+        .cartSteps__step.active
+          span Оформление
+        .cartSteps__step
+          span адрес доставки
+        .cartSteps__step
+          span доставка|оплата
+        .cartSteps__step
+          span завершение
+
+      // cart contents
+      .cart
+        .cart__head
+          span фото
+          span продукция
+          span цена за штуку
+          span кол-во
+          span цена
+          span действия
+        .cart__item
+          .cart__itemCol
+            .cart__item__image
+              img(src="images/cartPic-1.png")
+          .cart__itemCol
+            .cart__item__name Беговая дорожка Sole <span>Модель: TT8</span>
+          .cart__itemCol.cart__itemCol--center
+            .cart__item__priceOne 12 000,00 руб
+          .cart__itemCol.cart__itemCol--center
+            .cart__item__number
+              .ui-number
+                i.ico.ico-inputNum-less
+                input(type="text" value="2" placeholder="2")
+                i.ico.ico-inputNum-more
+          .cart__itemCol.cart__itemCol--center
+            .cart__item__priceTotal
+              span 20 499,00
+              i.ico.ico-rub
+          .cart__itemCol.cart__itemCol--center
+            i.ico.ico-action-delete
+        // cart item
+        .cart__item
+          .cart__itemCol
+            .cart__item__image
+              img(src="images/cartPic-2.png")
+          .cart__itemCol
+            .cart__item__name Беговая дорожка Sole <span>Модель: TT8</span>
+          .cart__itemCol.cart__itemCol--center
+            .cart__item__priceOne 12 000,00 руб
+          .cart__itemCol.cart__itemCol--center
+            .cart__item__number
+              .ui-number
+                i.ico.ico-inputNum-less
+                input(type="text" value="2" placeholder="2")
+                i.ico.ico-inputNum-more
+          .cart__itemCol.cart__itemCol--center
+            .cart__item__priceTotal
+              span 20 499,00
+              i.ico.ico-rub
+          .cart__itemCol.cart__itemCol--center
+            i.ico.ico-action-delete
+        .cart__itemActions
+          .cart__itemActions__total
+            span итого (руб):
+            .cart__itemActions__totalPrice
+              span 20 499,00
+              i.ico.ico-rub
+          a(href="#").btn.btn--outline.btn-gray.btn-muted Пересчитать
+
+      .cartActions
+        a(href="#").btn.btn-red.btn--noBr Купить в 1 клик
+        a(href="#").btn.btn-red.btn--noBr.btn--outline
+          span Далее
+          i.ico.ico-right-arrow
+
+      // Acessories
+      .text-center.mt90
+        span.bigger Возможно Вас заинтересуют аксессуары:
+
+      .shopAcessories
+        .shopAcessories__card
+          .shopAcessories__card__image.shopAcessories__card__image--fixedLeft
+            img(src="images/shopAcessories-1.png")
+          .shopAcessories__card__name Коврик для беговой дорожки Sole
+          .shopAcessories__card__price
+            span 20 499,00
+            i.ico.ico-rub
+          a(href="#").btn.btn-red В корзину
+        //item
+        .shopAcessories__card
+          .shopAcessories__card__image
+            img(src="images/shopAcessories-2.png")
+          .shopAcessories__card__name Ключ безопасности для беговой дорожки
+          .shopAcessories__card__price
+            span 499,00
+            i.ico.ico-rub
+          a(href="#").btn.btn-red В корзину
+        //item
+        .shopAcessories__card
+          .shopAcessories__card__image
+            img(src="images/shopAcessories-3.png")
+          .shopAcessories__card__name Коврик для беговой дорожки Sole
+          .shopAcessories__card__price
+            span 5 499,00
+            i.ico.ico-rub
+          a(href="#").btn.btn-red В корзину
+        //item
+        .shopAcessories__card
+          .shopAcessories__card__image
+            img(src="images/shopAcessories-4.png")
+          .shopAcessories__card__name Силиконовая смазка для беговых дорожек
+          .shopAcessories__card__price
+            span 31 499,00
+            i.ico.ico-rub
+          a(href="#").btn.btn-red В корзину
+
+    include shared/footer.pug

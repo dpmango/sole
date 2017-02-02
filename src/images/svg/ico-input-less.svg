@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cart" transform="translate(-934.000000, -522.000000)" fill="#F53B49">
+            <g id="Group-4" transform="translate(849.000000, 512.000000)">
+                <polygon id="Shape" transform="translate(89.031456, 16.195254) scale(-1, 1) translate(-89.031456, -16.195254) " points="92.381014 11.9037397 91.1136138 10.5976268 85.6818986 16.1952535 91.1136138 21.7928803 92.381014 20.4867674 88.216699 16.1952535"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

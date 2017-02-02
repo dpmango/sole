@@ -1038,6 +1038,10 @@ ul {
 ul li {
     display: inline-block;
 }
+input, textarea {}
+input:focus, textarea:focus {
+    outline: none;
+}
 body, html {
     overflow-x: hidden;
     max-width: 100%;
@@ -1303,6 +1307,9 @@ body.lightBg, html.lightBg {
 .text-center {
     text-align: center;
 }
+.text-right {
+    text-align: right;
+}
 .cRed {
     color: #F53B49;
 }
@@ -1448,6 +1455,40 @@ h1 {
 }
 .banner .btn {
     margin: 15vw 0;
+}
+span.bigger {
+    letter-spacing: -.45px;
+    font-size: 17px;
+    font-family: 'CoreSansA45';
+}
+/* UI */
+.ui-number {
+    position: relative;
+    display: inline-block;
+}
+.ui-number .ico {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-size: auto;
+    -webkit-transition: opacity .3s ease ;
+    transition: opacity .3s ease ;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.ui-number .ico:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    opacity: .6;
+}
+.ui-number .ico-inputNum-less {
+    left: 2px;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+}
+.ui-number .ico-inputNum-more {
+    right: 2px;
 }
 /* ICONS */
 .ico {
@@ -1638,6 +1679,30 @@ h1 {
     height: 13px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='7px' height='13px' viewBox='0 0 7 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Earrow%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Item' transform='translate(-311.000000, -655.000000)'%3E %3Cg id='arrow' transform='translate(314.500000, 662.500000) rotate(-270.000000) translate(-314.500000, -662.500000) translate(308.000000, 659.000000)'%3E %3Cpath d='M7.04075979,3.38937831 L0.405218151,3.38937831' id='Line' stroke='%23000000' stroke-linecap='square'/%3E %3Cpolygon id='Path-2' fill='%23000000' transform='translate(9.506303, 3.400786) rotate(-180.000000) translate(-9.506303, -3.400786) ' points='7 3.23098108 12.0126059 0 12.0126059 6.80157283'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
 }
+.ico-right-arrow {
+    width: 13px;
+    height: 7px;
+    background: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='13px' height='7px' viewBox='0 0 13 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup 26%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill-rule='evenodd'%3E %3Cg id='Item' transform='translate(-343.000000, -1106.000000)'%3E %3Cg id='Group-23' transform='translate(254.000000, 1098.000000)'%3E %3Cg id='Group-26' transform='translate(90.000000, 8.000000)'%3E %3Cpath d='M7,3 L0.364458363,3' id='Line-Copy' stroke='%23181B1E' stroke-linecap='square'/%3E %3Cpolygon id='Path-2-Copy' fill='%23181B1E' transform='translate(9.506303, 3.400786) rotate(-180.000000) translate(-9.506303, -3.400786) ' points='7 3.23098108 12.0126059 0 12.0126059 6.80157283'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E") no-repeat center;
+}
+.ico-action-delete {
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='21px' height='21px' viewBox='0 0 21 21' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup 5%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Cart' transform='translate(-1204.000000, -517.000000)'%3E %3Cg id='Group-5' transform='translate(1205.000000, 518.000000)'%3E %3Cg id='Group-Copy-2' transform='translate(5.541667, 5.541667)' fill='%23B9BEC3'%3E %3Crect id='Rectangle-8' transform='translate(4.087005, 3.992005) rotate(-45.000000) translate(-4.087005, -3.992005) ' x='-0.494106026' y='3.49200508' width='9.16222254' height='0.904761905' rx='0.452380952'/%3E %3Crect id='Rectangle-8' transform='translate(4.019662, 3.992005) rotate(-315.000000) translate(-4.019662, -3.992005) ' x='-0.561449529' y='3.49200508' width='9.16222254' height='0.904761905' rx='0.452380952'/%3E %3C/g%3E %3Ccircle id='Oval-11' stroke='%23B9BEC3' stroke-width='0.790000021' cx='9.5' cy='9.5' r='9.5'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+    cursor: pointer;
+}
+.ico-inputNum {}
+.ico-inputNum-less {
+    width: 7px;
+    height: 11px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='8px' height='12px' viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Cart' transform='translate(-934.000000, -522.000000)' fill='%23F53B49'%3E %3Cg id='Group-4' transform='translate(849.000000, 512.000000)'%3E %3Cpolygon id='Shape' transform='translate(89.031456, 16.195254) scale(-1, 1) translate(-89.031456, -16.195254) ' points='92.381014 11.9037397 91.1136138 10.5976268 85.6818986 16.1952535 91.1136138 21.7928803 92.381014 20.4867674 88.216699 16.1952535'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+    cursor: pointer;
+}
+.ico-inputNum-more {
+    width: 7px;
+    height: 11px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='8px' height='12px' viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Cart' transform='translate(-934.000000, -522.000000)' fill='%23F53B49'%3E %3Cg id='Group-4' transform='translate(849.000000, 512.000000)'%3E %3Cpolygon id='Shape' transform='translate(89.031456, 16.195254) scale(-1, 1) translate(-89.031456, -16.195254) ' points='92.381014 11.9037397 91.1136138 10.5976268 85.6818986 16.1952535 91.1136138 21.7928803 92.381014 20.4867674 88.216699 16.1952535'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+    cursor: pointer;
+}
 /* buttons */
 .btn {
     display: inline-block;
@@ -1681,6 +1746,11 @@ h1 {
 .btn-red:hover {
     background: #f53b49;
     background: rgba(245, 59, 73, 0.7);
+}
+.btn-red.btn--outline {
+    border-color: #F53B49;
+    background: transparent;
+    color: #181B1E;
 }
 .btn-muted {
     border-color: #DDDDDD;
@@ -3821,4 +3891,274 @@ a.shopCta:hover {
     background: #181b1e;
     background: rgba(24, 27, 30, 0.3);
     content: ' ';
+}
+/* CART */
+.cartSteps {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-left: 35px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+}
+.cartSteps:after {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted #D2D5D6;
+    content: ' ';
+}
+.cartSteps__step {
+    position: relative;
+    color: #B9BEC3;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-family: 'BebasNeueBold';
+}
+.cartSteps__step span {}
+.cartSteps__step span:after {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #F53B49;
+    -webkit-box-shadow: inset 0px 0px 0 6px white, 0 0 0 2px rgba(155, 155, 155, 0.3);
+            box-shadow: inset 0px 0px 0 6px white, 0 0 0 2px rgba(155, 155, 155, 0.3);
+    content: ' ';
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.cartSteps__step.active {
+    color: #181B1E;
+}
+.cartSteps__step.active span {}
+.cartSteps__step.active span:after {
+    -webkit-box-shadow: inset 0px 0px 0 2px white, 0 0 0 2px rgba(155, 155, 155, 0.3);
+            box-shadow: inset 0px 0px 0 2px white, 0 0 0 2px rgba(155, 155, 155, 0.3);
+}
+.cart {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 17px;
+    background: white;
+    -webkit-box-shadow: 0 24px 24px rgba(203, 211, 227, 0.4);
+            box-shadow: 0 24px 24px rgba(203, 211, 227, 0.4);
+}
+.cart__head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 25px;
+    border-bottom: 1px dotted #CACBD9;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.cart__head span {
+    position: relative;
+    -webkit-flex: 1 1 20%;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-family: 'BebasNeueBold';
+    -webkit-box-flex: 1;
+}
+.cart__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #CACBD9;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.cart__item__image {
+    overflow: hidden;
+    max-width: 120px;
+    border-radius: 7px;
+    background: -webkit-linear-gradient(45deg, #3D6AC3, #203370);
+    background: linear-gradient(45deg, #3D6AC3, #203370);
+    font-size: 0;
+}
+.cart__item__image img {
+    max-width: 100%;
+}
+.cart__item__name {
+    letter-spacing: -1px;
+    font-size: 18px;
+    font-family: 'CoreSansA45';
+}
+.cart__item__name span {
+    display: block;
+    margin-top: 10px;
+    color: #566269;
+    font-size: 13px;
+}
+.cart__item__priceOne {
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-family: 'BebasNeueBold';
+}
+.cart__item__priceTotal {
+    letter-spacing: -2px;
+    font-size: 29px;
+}
+.cart__item__priceTotal .ico {
+    width: 9px;
+    height: 12px;
+}
+.cart__item__number input {
+    display: inline-block;
+    padding: 5px 10px;
+    max-width: 100px;
+    border: 2px solid #F53B49;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'CoreSansA55';
+}
+.cart__itemCol {
+    -webkit-flex: 1 1 20%;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+    -webkit-box-flex: 1;
+}
+.cart__itemCol--center {
+    text-align: center;
+}
+.cart__itemActions {
+    margin-top: 20px;
+    text-align: right;
+}
+.cart__itemActions__total {
+    display: inline-block;
+    margin-right: 30px;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    font-family: 'BebasNeueBold';
+}
+.cart__itemActions__totalPrice {
+    display: inline-block;
+    margin-left: 15px;
+    letter-spacing: -1.6px;
+    font-size: 24px;
+    font-family: 'CoreSansA55';
+}
+.cart__itemActions__totalPrice .ico {
+    margin-left: 3px;
+    width: 9px;
+    height: 12px;
+}
+.cartActions {
+    text-align: right;
+}
+.cartActions .btn {
+    margin-left: 12px;
+}
+/*Acessories */
+.shopAcessories {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+.shopAcessories__card {
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    overflow: hidden;
+    margin-right: 10px;
+    padding: 15px 13px;
+    border: 1px solid #EDF0F6;
+    background: white;
+    -webkit-box-shadow: 0 24px 24px rgba(203, 211, 227, 0.4);
+            box-shadow: 0 24px 24px rgba(203, 211, 227, 0.4);
+    text-align: center;
+    -webkit-box-flex: 1;
+}
+.shopAcessories__card .btn {
+    margin-top: 15px;
+}
+.shopAcessories__card:last-child {
+    margin-right: 0;
+}
+@media(max-width: 568px) {
+    .shopAcessories__card {
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+        -webkit-box-flex: 1;
+    }
+}
+.shopAcessories__card__image {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    min-height: 200px;
+    border-bottom: 1px dotted #C7CBCC;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+}
+.shopAcessories__card__image img {
+    max-width: 100%;
+}
+.shopAcessories__card__image--fixedLeft img {
+    position: absolute;
+    top: -15px;
+    left: -13px;
+}
+.shopAcessories__card__name {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'CoreSansA55';
+}
+.shopAcessories__card__price {
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: 'CoreSansA55';
+}
+.shopAcessories__card__price .ico {
+    width: 9px;
+    height: 12px;
 }

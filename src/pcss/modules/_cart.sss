@@ -1,0 +1,185 @@
+// CART
+
+.cartSteps
+  display: flex
+  justify-content: space-between
+  margin-top: 35px
+  margin-left: 35px
+  margin-right: 35px
+  position: relative
+  &::after
+    display: block
+    position: absolute
+    top: 23px
+    left: 0
+    width: 100%
+    content: ' '
+    height: 1px
+    border-bottom: 1px dotted #D2D5D6
+  &__step
+    font-family: 'BebasNeueBold'
+    font-size: 12px
+    color: #B9BEC3
+    letter-spacing: 3px
+    position: relative
+    &.active
+      color: $fontColor
+      span
+        &::after
+          box-shadow: inset 0px 0px 0 2px white, 0 0 0 2px color(#9B9B9B a(30%))
+    span
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        top: 20px
+        left: 50%
+        transform: translateX(-50%)
+        size: 10px
+        border-radius: 50%
+        background: $colorRed
+        box-shadow: inset 0px 0px 0 6px white, 0 0 0 2px color(#9B9B9B a(30%))
+        z-index: 2
+
+
+.cart
+  margin-top: 50px
+  margin-bottom: 40px
+  background: white
+  padding: 17px
+  box-shadow: 0 24px 24px color(#CBD3E3 a(40%))
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: center
+    border-bottom: 1px dotted #CACBD9
+    padding-top: 13px
+    padding-bottom: 25px
+    span
+      flex: 1 1 20%
+      font-family: 'BebasNeueBold'
+      font-size: 12px
+      letter-spacing: 3px
+      position: relative
+  &__item
+    padding-top: 25px
+    padding-bottom: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px dotted #CACBD9
+    &__image
+      border-radius: 7px
+      overflow: hidden
+      max-width: 120px
+      font-size: 0
+      background: linear-gradient(45deg, #3D6AC3, #203370)
+      img
+        max-width: 100%
+    &__name
+      font-family: 'CoreSansA45'
+      font-size: 18px
+      letter-spacing: -1px
+      span
+        display: block
+        margin-top: 10px
+        font-size: 13px
+        color: $colorMute
+    &__priceOne
+      font-family: 'BebasNeueBold'
+      letter-spacing: 3px
+      font-size: 12px
+    &__priceTotal
+      font-size: 29px
+      letter-spacing: -2px
+      .ico
+        width: 9px
+        height: 12px
+
+    &__number
+      input
+        display: inline-block
+        max-width: 100px
+        border: 2px solid $colorRed
+        text-align: center
+        font-family: 'CoreSansA55'
+        font-size: 13px
+        border-radius: 20px
+        padding: 5px 10px
+
+  &__itemCol
+    flex: 1 1 20%
+    &--center
+      text-align: center
+
+  &__itemActions
+    text-align: right
+    margin-top: 20px
+    &__total
+      display: inline-block
+      font-family: 'BebasNeueBold'
+      letter-spacing: 2.5px
+      font-size: 12px
+      margin-right: 30px
+    &__totalPrice
+      display: inline-block
+      font-family: 'CoreSansA55'
+      font-size: 24px
+      letter-spacing: -1.6px
+      margin-left: 15px
+      .ico
+        width: 9px
+        height: 12px
+        margin-left: 3px
+
+.cartActions
+  text-align: right
+  .btn
+    margin-left: 12px
+
+//Acessories
+.shopAcessories
+  display: flex
+  margin-top: 40px
+  margin-bottom: 140px
+  &__card
+    flex: 1 1 25%
+    text-align: center
+    background: white
+    border: 1px solid #EDF0F6
+    padding: 15px 13px
+    box-shadow: 0 24px 24px color(#CBD3E3 a(40%))
+    overflow: hidden
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+    @media($mobile)
+      flex: 1 1 100%
+    &__image
+      border-bottom: 1px dotted #C7CBCC
+      position: relative
+      min-height: 200px
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        max-width: 100%
+      &--fixedLeft
+        img
+          position: absolute
+          top: -15px
+          left: -13px
+    &__name
+      font-family: 'CoreSansA55'
+      font-size: 14px
+      margin-top: 20px
+    &__price
+      font-family: 'CoreSansA55'
+      font-size: 24px
+      margin-top: 15px
+      .ico
+        width: 9px
+        height: 12px
+    .btn
+      margin-top: 15px

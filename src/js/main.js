@@ -39,6 +39,40 @@ $(document).ready(function(){
     $(this).parent().toggleClass('is-active');
   });
 
+  // UI
+  $('.ui-number .ico').on('click', function(e){
+    var element = $(this).parent().find('input');
+    var currentValue = parseInt($(this).parent().find('input').val()) || 0;
+
+    if( $(this).is('.ico-inputNum-less') ){
+      if(currentValue <= 1){
+        return false;
+      }else{
+        element.val( currentValue - 1 );
+      }
+    } else{
+      if(currentValue >= 10){
+        return false;
+      } else{
+        element.val( currentValue + 1 );
+      }
+    }
+  });
+  // numbers only
+  $(".ui-number input").keydown(function (e) {
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+        (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+        (e.keyCode >= 35 && e.keyCode <= 40)) {
+             return;
+    }
+    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+    if ( $(this).val().length > 1 ){
+      e.preventDefault();
+    }
+  });
+
  	// Prevent # errors
 	$('[href="#"]').click(function (e) {
 		e.preventDefault();
@@ -115,7 +149,6 @@ $(document).ready(function(){
   // Masked input
   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
   $("input[name='phone']").mask("9 (999) 999-9999");
-  $("#tin").mask("99-9999999");
-  $("#ssn").mask("999-99-9999");
+  $(".--ui-number input").mask("99");
 
 });
