@@ -1,2 +1,247 @@
 // SHOP ITEM
- 
+
+.shopIntro
+  position: relative
+  background: white
+  padding: 15px 35px
+  border-radius: 5px
+  border: 1px solid color(#DCDCE4 a(55%))
+  box-shadow: 0 12px 12px color(#CBD3E3 a(40%))
+  &__name
+    font-family: 'CoreSansA45'
+    font-size: 25px
+    letter-spacing: -.9px
+    margin-bottom: 15px
+    margin-top: 7px
+  &__rating
+    display: inline-block
+    padding-right: 20px
+  &__availability
+    display: inline-block
+    font-family: 'CoreSansA45'
+    font-size: 11px
+    color: #8D8E9A
+    .ico
+      margin-left: 8px
+  &__art
+    display: inline-block
+    font-family: 'CoreSansA45'
+    font-size: 11px
+    color: #8D8E9A
+    border-left: 1px solid #CACBD9
+    padding-left: 20px
+  &__sticker
+    position: absolute
+    top: 0
+    right: 0
+    &.productMini__sticker--hot
+      top: 2px
+      left: auto
+      right: 10px
+  &__pictures
+    display: flex
+    margin-top: 25px
+    &__mini
+      margin-top: 15px
+      flex: 0 0 55px
+    &__miniWrap
+      display: flex
+      flex-direction: column
+      img, > span
+        display: block
+        max-width: 100%
+        margin-bottom: 20px
+        border: 3px solid transparent
+        border-radius: 2px
+        cursor: pointer
+        transition: border-color .3s ease-in-out
+        &.active
+          border-color: $colorRed
+        &:hover:not(.active)
+          border-color: color($colorRed a(50%))
+      span
+        padding-top: 10px
+        padding-bottom: 10px
+        text-align: center
+        font-family: 'CoreSansA55'
+      &__fold
+        text-align: center
+
+    &__main
+      flex: 1 1 auto
+      margin-left: 5%
+      margin-right: 10%
+      img
+        max-width: 100%
+
+  &__labels
+    position: absolute
+    bottom: 12px
+    right: 30px
+
+a.shopCta
+  transition: background .3s ease-in-out, box-shadow .3s ease-in-out
+  &:hover
+    background: color(#DCDCE4 a(25%))
+    box-shadow: 0 4px 4px color(#CBD3E3 a(30%))
+.shopCta
+  display: block
+  padding: 20px
+  position: relative
+  background: white
+  border-radius: 5px
+  border: 1px solid color(#DCDCE4 a(55%))
+  margin-bottom: 12px
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: center
+  &__wrapLeft
+    flex: 0 0 auto
+    margin-right: 17px
+  &__wrapRight
+    font-family: 'CoreSansA45'
+    font-size: 12px
+    a
+      display: inline-block
+      margin-bottom: 3px
+      color: $colorBlue
+      text-decoration: underline
+    &__price
+      span
+        &:nth-child(1)
+          margin-right: 3px
+        &:nth-child(2)
+          font-family: 'CoreSansA55'
+          font-size: 22px
+          letter-spacing: -2.2px
+          margin-right: 5px
+        &:nth-child(3)
+          font-size: 11px
+          color: #566269
+      .ico-info-tooltip
+        margin-left: 4px
+        vertical-align: top
+
+  &__helpTitle
+    font-family: 'BebasNeueBold'
+    font-size: 15px
+    letter-spacing: 1px
+    margin-bottom: 3px
+
+  &__helpDesc
+    color: #566269
+    font-size: 11px
+  .btn
+    margin-top: 10px
+    margin-bottom: 20px
+    .ico
+      margin-right: 15px
+
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: 'CoreSansA55'
+    font-size: 12px
+    margin-bottom: 15px
+    &--border
+      border-bottom: 1px dotted #CACBD9
+    &Left
+      flex: 1
+    &Right
+      flex: 1
+      text-align: right
+      color: #566269
+
+  &__mainPrice
+    font-size: 35px
+    letter-spacing: -2.5px
+  &__oldPrice
+    position: relative
+    color: $colorRed
+    font-family: 'CoreSansA55'
+    font-size: 15px
+    letter-spacing: -.9px
+    &::after
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      content: ' '
+      background: $colorRed
+      height: 1px
+      width: 100%
+    .ico-rub
+      color: $colorRed
+      width: 6px
+      height: 8px
+      background-image: svg-load('../../images/svg/ico-rub.svg', fill=$colorRed)
+  &__compare
+    margin-top: 15px
+    padding-top: 15px
+    border-top: 1px dotted #CACBD9
+    text-align: center
+    color: #566269
+    font-family: 'CoreSansA55'
+    font-size: 11px
+    .ico-compare
+      background-image: svg-load('../../images/svg/ico-compare.svg', fill=#566269)
+      margin-right: 10px
+      vertical-align: -3px
+    a
+      &:hover
+        color: $colorRed
+        .ico
+          background-image: svg-load('../../images/svg/ico-compare.svg', fill=$colorRed)
+
+
+.shopTabs
+  &__navi
+    display: flex
+    align-items: center
+    a
+      display: inline-block
+      padding: 20px 0px 20px 20px
+      font-family: 'BebasNeueBold'
+      font-size: 15px
+      letter-spacing: 1px
+      color: #8D8E9A
+      transition: color .3s ease-in-out
+      &::after
+        display: inline-block
+        content: ' '
+        background: #979797
+        width: 1px
+        height: 15px
+        margin-left: 20px
+      &:first-child
+        padding-left: 0
+      &:last-child
+        &::after
+          display: none
+      &.active
+        color: $fontColor
+      &:hover
+        color: $fontColor
+        span
+          background: $fontColor
+
+      span
+        display: inline-block
+        border-radius: 50%
+        size: 18px
+        text-align: center
+        background: #8D8E9A
+        font-size: 11px
+        color: #EEF1F7
+        padding-top: 5px
+        padding-left: 1px
+        line-height: 1
+        vertical-align: top
+        transition: background .3s ease-in-out
+
+  &__content
+    background: white
+    padding-top: 50px
+    padding-bottom: 70px

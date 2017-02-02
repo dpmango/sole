@@ -5,7 +5,7 @@ html
   body.lightBg
     include shared/header.pug
 
-    // CONTACTS::START
+    // PRODUCT::START
     .container
       .breadcrumbs
         a(href="#") Продукция
@@ -15,8 +15,109 @@ html
         span Беговая дорожка Sole TT8
 
       // contacts
-      .row
-        .col40
+      .row.mt30.mr6
+        .col70
+          .shopIntro
+            .shopIntro__name Беговая дорожка Sole TT8
+            .shopIntro__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+            .shopIntro__availability
+              span В наличии
+              i.ico.ico-stock.ico-stock--yes
+            .shopIntro__art
+              span Артикул: TT8
+            .shopIntro__sticker.productMini__sticker--hot
+
+            .shopIntro__pictures
+              .shopIntro__pictures__mini
+                .shopIntro__pictures__miniWrap
+                  img(src="images/shopMiniPic-1.png" data-src="").active
+                  img(src="images/shopMiniPic-2.png" data-src="")
+                  img(src="images/shopMiniPic-3.png" data-src="")
+                  img(src="images/shopMiniPic-4.png" data-src="")
+                  span(data-src='')
+                    i.ico.ico-video-play
+                    span ВИДЕО
+                  .shopIntro__pictures__miniWrap__fold
+                    i.ico.ico-down-arrow
+              .shopIntro__pictures__main
+                img(src="images/shopMainPic.png")
+            .shopIntro__labels
+              i.ico.ico-treadmill
+
+        // right bar
+        .col30
+          // credit block
+          .shopCta
+            .shopCta__wrap
+              .shopCta__wrapLeft
+                i.ico.ico-timer
+              .shopCta__wrapRight
+                a(href="#") Купить в кредит
+                .shopCta__wrapRight__price
+                  span от
+                  span 9 650
+                  span руб/мес
+                  i.ico.ico-info-tooltip
+          // price block
+          .shopCta
+            .shopCta__row.shopCta__row--border
+              .shopCta__rowLeft Цена (руб)
+              .shopCta__rowRight
+                span.shopCta__mainPrice 90 999
+            .shopCta__row
+              .shopCta__rowLeft Старая цена
+              .shopCta__rowRight
+                span.shopCta__oldPrice
+                  span 45 999
+                  i.ico.ico-rub
+            a(href="#").btn.btn-block.btn-red.btn--noBr
+              i.ico.ico-cart.ico-cart--white
+              span Добавить в корзину
+
+            .shopCta__row
+              .shopCta__rowLeft
+                span Доставка
+                i.ico.ico-info-tooltip
+              .shopCta__rowRight <u>Бесплатно</u>
+            .shopCta__row
+              .shopCta__rowLeft Сборка
+              .shopCta__rowRight <u>Бесплатно</u>
+            .shopCta__row
+              .shopCta__rowLeft Гарантия
+              .shopCta__rowRight <b>1 год</b>
+
+            .shopCta__compare
+              a(href="#")
+                i.ico.ico-compare
+                span Добавить к сравнению
+
+          // help block
+          a(href="#").shopCta
+            .shopCta__wrap
+              .shopCta__wrapLeft
+                i.ico.ico-comment-box
+              .shopCta__wrapRight
+                .shopCta__helpTitle нужна помощь с выбором?
+                .shopCta__helpDesc Бесплатно проконсультируем!
+
+      // TABS
+      .shopTabs.mt50
+        .shopTabs__navi
+          a(href="#").active информация
+          a(href="#") Хараткеристики
+          a(href="#") преимущества
+          a(href="#") отзывы <span>23</span>
+          a(href="#") инструкции
+
+    // TABS CONTENT
+    .shopTabs__content
+
+
 
 
     include shared/footer.pug
