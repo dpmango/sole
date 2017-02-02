@@ -424,6 +424,26 @@ h1 {
 .breadcrumbs span {
     color: #A3A4A5;
 }
+.banner {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    background: #F53B49 url('../images/mainpageProduct-redBg.png') no-repeat bottom center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.banner .btn {
+    margin: 15vw 0;
+}
 /* ICONS */
 .ico {
     display: inline-block;
@@ -565,6 +585,15 @@ h1 {
     width: 9px;
     height: 13px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='9px' height='13px' viewBox='0 0 9 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Contacts' transform='translate(-712.000000, -375.000000)' fill='%23F53B49'%3E %3Cpath d='M716.5,388 C716.5,388 721,381.953816 721,379.47973 C721,377.005643 718.985281,375 716.5,375 C714.014719,375 712,377.005643 712,379.47973 C712,381.953816 716.5,388 716.5,388 Z M716.512273,381.5 C717.648724,381.5 718.57,380.58854 718.57,379.464197 C718.57,378.339854 717.648724,377.428394 716.512273,377.428394 C715.375821,377.428394 714.454545,378.339854 714.454545,379.464197 C714.454545,380.58854 715.375821,381.5 716.512273,381.5 Z' id='Shape'/%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+.ico-download {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #F53B49;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='8px' height='11px' viewBox='0 0 8 11' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='instructions' transform='translate(-942.000000, -386.000000)' fill='%23000000'%3E %3Cg id='Group-3' transform='translate(933.000000, 379.000000)'%3E %3Cg id='Group' transform='translate(8.870968, 7.258065)'%3E %3Cpath d='M3.47740143,6.43326316 L3.47740143,0.730380306 C3.47740143,0.431775225 3.72581921,0.18970798 4.03225806,0.18970798 C4.33869692,0.18970798 4.5871147,0.431775225 4.5871147,0.730380306 L4.5871147,6.43331444 L6.58255376,4.48886587 C6.79952637,4.27938209 7.14944668,4.28016875 7.36542504,4.49062585 C7.58140339,4.70108295 7.58221068,5.04205793 7.36723118,5.25348387 L4.42459677,8.1209236 C4.32510814,8.21809074 4.19151141,8.27444572 4.05120015,8.27893569 C4.04490258,8.27905827 4.03858912,8.2791639 4.03225806,8.27916469 L4.03225806,8.27922581 L4.03225806,8.27922581 C3.95866104,8.27931739 3.88656294,8.26511488 3.81987081,8.23819531 C3.68560723,8.18324993 3.5768726,8.07993026 3.51971294,7.94547042 C3.46838837,7.82473675 3.46468557,7.69310274 3.50388274,7.57371127 C3.4866872,7.52154706 3.47740143,7.46592868 3.47740143,7.40819694 L3.47740143,6.43326316 L1.481931,4.48880475 C1.2649584,4.27932097 0.915038084,4.28010763 0.699059732,4.49056473 C0.48308138,4.70102183 0.482274085,5.04199681 0.697253584,5.25342275 L3.63991935,8.12086248 C3.69189251,8.17163912 3.75317868,8.21127574 3.81987081,8.23819531 Z M7.39664875,9.99704924 L0.667867384,9.99704924 C0.361428528,9.99704924 0.113010753,9.75498199 0.113010753,9.45637691 C0.113010753,9.15777183 0.361428528,8.91570458 0.667867384,8.91570458 L7.39664875,8.91570458 C7.7030876,8.91570458 7.95150538,9.15777183 7.95150538,9.45637691 C7.95150538,9.75498199 7.7030876,9.99704924 7.39664875,9.99704924 Z' id='Combined-Shape'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+    background-size: 8px 10px;
+    vertical-align: middle;
 }
 /* buttons */
 .btn {
@@ -1583,6 +1612,9 @@ h1 {
 .productsCatalog__image img {
     max-width: 100%;
 }
+.productsCatalog__image--noBg {
+    background: white;
+}
 .productsCatalog__content {
     -webkit-flex: 1 1 50%;
         -ms-flex: 1 1 50%;
@@ -1953,6 +1985,57 @@ h1 {
     font-family: 'Helvetica Neue';
     line-height: 23px;
     opacity: 0;
+}
+.tableRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding-top: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.tableRow__left {
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    font-family: 'CoreSansA45';
+    -webkit-box-flex: 1;
+}
+.tableRow__middle {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 7px;
+    width: 100%;
+    border-bottom: 1px dotted #A3A4A5;
+    -webkit-box-flex: 1;
+}
+.tableRow__right {
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'CoreSansA55';
+    -webkit-box-flex: 1;
+}
+.tableRow__right span {
+    margin-right: 10px;
+}
+.tableRow__right a {
+    text-decoration: underline;
+}
+.tableRow__right a:hover {
+    color: #F53B49;
 }
 /* CONTACT */
 .contactBlock {

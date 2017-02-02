@@ -38,4 +38,4 @@ __Production__
 
 ### Push command (gh-pages fix)
 
-git add . && git commit -m "faq and contact" && git push origin master && git subtree push --prefix dist origin gh-pages
+git add . && git commit -m "honors-instructions-index" && git push origin master && git subtree push --prefix dist origin gh-pages

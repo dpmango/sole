@@ -1,0 +1,60 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // PRODUCTS::START
+    .container
+      .breadcrumbs
+        a(href="#") Главная
+        i.ico.ico-crumb-separator
+        span Наши награды
+
+      .heading.mt50
+        .heading__name
+          span Наши награды
+
+      // row
+      .productsCatalog
+        .productsCatalog__image.productsCatalog__image--noBg
+          img(src="images/awwards.png")
+        .productsCatalog__content
+          .heading
+            .heading__name Эллиптические тренажеры
+          .productsCatalog__title Полный контроль над тренировкой
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+
+      // row
+      .productsCatalog.productsCatalog--right
+        .productsCatalog__content
+          .heading
+            .heading__name Беговые дорожки
+          .productsCatalog__title Малая часть большого счастья.
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+        .productsCatalog__image.productsCatalog__image--noBg
+          img(src="images/awwards.png")
+
+      // row
+      .productsCatalog
+        .productsCatalog__image.productsCatalog__image--noBg
+          img(src="images/awwards.png")
+        .productsCatalog__content
+          .heading
+            .heading__name Горизонтальные велотренажеры
+          .productsCatalog__title Гаджеты. Тема раскрыта.
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+
+      // row
+      .productsCatalog.productsCatalog--right
+        .productsCatalog__content
+          .productsCatalog__content
+            .heading
+              .heading__name Сайклинг
+            .productsCatalog__title Идеальное место, чтобы умножать скорость на время.
+            .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности.
+        .productsCatalog__image.productsCatalog__image--noBg
+          img(src="images/awwards.png")
+
+    include shared/footer.pug
