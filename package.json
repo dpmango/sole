@@ -38,6 +38,7 @@
     "sugarss": "^0.2.0"
   },
   "dependencies": {
+    "critical": "^0.8.1",
     "postcss-use": "^2.3.0"
   }
 }

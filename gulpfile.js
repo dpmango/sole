@@ -1,4 +1,5 @@
 var gulp          = require('gulp');
+var gutil         = require('gulp-util');
 var rename        = require('gulp-rename');
 var pug           = require('gulp-pug');
 var postcss       = require('gulp-postcss');
@@ -20,6 +21,7 @@ var useref        = require('gulp-useref');
 var uglify        = require('gulp-uglify');
 var gulpIf        = require('gulp-if');
 var imagemin      = require('gulp-imagemin');
+var critical      = require('critical').stream;
 var cache         = require('gulp-cache');
 var del           = require('del');
 var runSequence   = require('run-sequence');
@@ -129,12 +131,21 @@ gulp.task('cssnano', function () {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('dist/css'));;
 });
+
 gulp.task('images', function(){
   return gulp.src('./src/images/**/*.+(png|jpg|gif|svg)')
   .pipe(cache(imagemin({
       interlaced: true
     })))
   .pipe(gulp.dest('dist/images'))
+});
+
+// Generate & Inline Critical-path CSS
+gulp.task('critical', function () {
+  return gulp.src('dist/*.html')
+      .pipe(critical({base: 'dist/', inline: true, minify: true, css: ['dist/css/styles.css']}))
+      .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
+      .pipe(gulp.dest('dist'));
 });
 
 gulp.task('video', function() {
