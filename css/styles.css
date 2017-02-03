@@ -1873,6 +1873,23 @@ span.bigger {
     background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='8px' height='12px' viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Cart' transform='translate(-934.000000, -522.000000)' fill='%23F53B49'%3E %3Cg id='Group-4' transform='translate(849.000000, 512.000000)'%3E %3Cpolygon id='Shape' transform='translate(89.031456, 16.195254) scale(-1, 1) translate(-89.031456, -16.195254) ' points='92.381014 11.9037397 91.1136138 10.5976268 85.6818986 16.1952535 91.1136138 21.7928803 92.381014 20.4867674 88.216699 16.1952535'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
     cursor: pointer;
 }
+.ico-print {
+    width: 18px;
+    height: 15px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='18px' height='15px' viewBox='0 0 18 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Comparison' transform='translate(-356.000000, -469.000000)' fill='%23000000'%3E %3Cpath d='M371.388393,472.769231 L370.645089,472.769231 L370.645089,469 L359.354911,469 L359.354911,472.769231 L358.611607,472.769231 C357.165179,472.769231 356,473.884615 356,475.269231 L356,478.576923 C356,479.961538 357.165179,481.076923 358.611607,481.076923 L359.354911,481.076923 L359.354911,484 L370.645089,484 L370.645089,481.076923 L371.388393,481.076923 C372.834821,481.076923 374,479.961538 374,478.576923 L374,475.269231 C374,473.884615 372.834821,472.769231 371.388393,472.769231 Z M360.560268,470.153846 L369.439732,470.153846 L369.439732,472.769231 L360.560268,472.769231 L360.560268,470.153846 Z M360.560268,482.846154 L360.560268,479 L369.439732,479 L369.439732,482.846154 L360.560268,482.846154 Z M372.794643,478.576923 C372.794643,479.326923 372.171875,479.923077 371.388393,479.923077 L370.645089,479.923077 L370.645089,479 L371.026786,479 C371.368304,479 371.629464,478.75 371.629464,478.423077 C371.629464,478.096154 371.368304,477.846154 371.026786,477.846154 L370.645089,477.846154 L359.354911,477.846154 L358.973214,477.846154 C358.631696,477.846154 358.370536,478.096154 358.370536,478.423077 C358.370536,478.75 358.631696,479 358.973214,479 L359.354911,479 L359.354911,479.923077 L358.611607,479.923077 C357.828125,479.923077 357.205357,479.326923 357.205357,478.576923 L357.205357,475.269231 C357.205357,474.519231 357.828125,473.923077 358.611607,473.923077 L359.354911,473.923077 L370.645089,473.923077 L371.388393,473.923077 C372.171875,473.923077 372.794643,474.519231 372.794643,475.269231 L372.794643,478.576923 Z' id='Shape'/%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+.ico-delete {
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='9px' height='8px' viewBox='0 0 9 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Comparison' transform='translate(-716.000000, -237.000000)' fill='%23000000'%3E %3Cg id='Group' transform='translate(716.000000, 236.000000)'%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-45.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-315.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+.ico-clear {
+    margin-right: 10px;
+    width: 20px;
+    height: 13px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='20px' height='13px' viewBox='0 0 20 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Comparison' transform='translate(-272.000000, -2058.000000)' fill='%23F53B49'%3E %3Cpath d='M272,2058 L272,2071 L286.047619,2071 L292,2064.5 L286.047619,2058 L272,2058 Z M282.963447,2061.31134 C283.041412,2061.50367 282.992131,2061.72418 282.839711,2061.86501 L280.198561,2064.50635 L282.839711,2067.1399 C282.970496,2067.26429 283.023866,2067.44964 282.979257,2067.62454 C282.934648,2067.79944 282.799022,2067.93658 282.62464,2067.98312 C282.450257,2068.02967 282.264338,2067.97834 282.138521,2067.84893 L279.497371,2065.20759 L276.856221,2067.84893 C276.730404,2067.97834 276.544484,2068.02967 276.370102,2067.98312 C276.195719,2067.93658 276.060094,2067.79944 276.015484,2067.62454 C275.970875,2067.44964 276.024245,2067.26429 276.155031,2067.1399 L278.796181,2064.50635 L276.155031,2061.86501 C276.013985,2061.73034 275.964376,2061.5258 276.02805,2061.34147 C276.091725,2061.15713 276.256997,2061.02683 276.451089,2061.00794 C276.601592,2060.99331 276.750605,2061.04776 276.856221,2061.15598 L279.497371,2063.79732 L282.138521,2061.15598 C282.215451,2061.07592 282.316899,2061.02382 282.426788,2061.00794 C282.447379,2061.00404 282.468197,2061.00143 282.489116,2061.00015 C282.69657,2060.99508 282.885483,2061.11902 282.963447,2061.31134 Z' id='Shape'/%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+    vertical-align: middle;
+}
 /* buttons */
 .btn {
     display: inline-block;
@@ -1921,6 +1938,10 @@ span.bigger {
     border-color: #F53B49;
     background: transparent;
     color: #181B1E;
+}
+.btn-white {
+    border-radius: 50px;
+    background: white;
 }
 .btn-muted {
     border-color: #DDDDDD;
@@ -4383,3 +4404,131 @@ a.shopCta:hover {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
 }
+/* COMPARE */
+.compare {
+    margin-top: 80px;
+    font-family: 'CoreSansA45';
+}
+.compare__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.compare__row:first-child .compare__col {
+    padding: 25px 13px;
+    border-right: 1px solid rgba(142, 143, 155, 0.1);
+    border-bottom: none;
+}
+.compare__row:first-child .compare__col:first-child {
+    border: 1px solid #EDF0F6;
+    border-right: none;
+}
+.compare__row:nth-child(2) .compare__col {
+    border-bottom: none;
+}
+.compare__col {
+    position: relative;
+    -webkit-flex: 0 1 260px;
+        -ms-flex: 0 1 260px;
+            flex: 0 1 260px;
+    padding: 10px 13px;
+    border-bottom: 1px dotted #F3F3F5;
+    -webkit-box-flex: 0;
+}
+.compare__col p {
+    color: #778092;
+    font-size: 13px;
+}
+.compare__col .btn .ico {
+    margin-right: 10px;
+    margin-left: 0;
+}
+.compare__col .ico-delete {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+.compare__col:first-child {
+    -webkit-flex: 0 0 210px;
+        -ms-flex: 0 0 210px;
+            flex: 0 0 210px;
+    margin-right: 10px;
+    border-bottom: none;
+    background: #F0F3F9;
+    -webkit-box-flex: 0;
+}
+.compare__col:first-child p {
+    color: #181B1E;
+}
+.compare__nameBig {
+    letter-spacing: -.85px;
+    font-size: 22px;
+    font-family: 'CoreSansA45';
+}
+.compare__nameBig:before {
+    display: inline-block;
+    margin-right: 20px;
+    width: 2px;
+    height: 20px;
+    background: #181B1E;
+    content: ' ';
+    vertical-align: middle;
+}
+.compare__category {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+    letter-spacing: -.5px;
+    font-size: 13px;
+    font-family: 'CoreSansA45';
+    line-height: 22px;
+}
+.compare__category span {
+    display: block;
+    color: #F53B49;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: 'BebasNeueBold';
+}
+.compare__print {
+    margin-top: 35px;
+    text-align: center;
+}
+.compare__print span {
+    display: block;
+    letter-spacing: -.5px;
+    font-size: 12px;
+    font-family: 'CoreSansA55';
+    line-height: 22px;
+}
+.compare__image {
+    max-width: 100%;
+}
+.compare__itemName {
+    margin-top: 7px;
+    text-align: center;
+    letter-spacing: -.85px;
+    font-size: 13px;
+    font-family: 'CoreSansA55';
+}
+.compare__itemPrice {
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: -2px;
+    font-size: 29px;
+    font-family: 'CoreSansA35';
+}
+.compare__itemPrice .ico {
+    width: 9px;
+    height: 12px;
+}
+.compare__clear {
+    margin-top: 25px;
+    margin-bottom: 150px;
+    font-size: 12px;
+    font-family: 'CoreSansA55';
+}
+/* COMPARE */
