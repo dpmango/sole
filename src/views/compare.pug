@@ -2,25 +2,241 @@ doctype html
 html
   include shared/head.pug
 
-  body.lightBg
+  body
     include shared/header.pug
 
-    // CONTACTS::START
+    // COMPARE::START
     .container
       .breadcrumbs
         a(href="#") Главная
         i.ico.ico-crumb-separator
-        span Корзина
+        span Сравнение
 
-      .heading.wrap.mt50
-        .heading__name
-          h1
-            span Оформление заказа
-            
-      // contacts
-      .row.mb50
-        .col40.row
+      .compare
+        // top row
+        .compare__row
+          .compare__col
+            .compare__nameBig Сравнение
+            .compare__category В списке сравнения: <span> беговые дорожки </span>
+            .text-center
+              span.btn.btn-white
+                i.ico.ico-compare
+                span Товаров: 5
+            .compare__print
+              i.ico.ico-print
+              span Версия для печати
+          .compare__col
+            i.ico.ico-delete
+            img.compare__image(src="images/compareImg-1.png")
+            .compare__itemPrice
+              span 45 999
+              i.ico.ico-rub
+            .compare__itemName SOLE F80
+          .compare__col
+            i.ico.ico-delete
+            img.compare__image(src="images/compareImg-2.png")
+            .compare__itemPrice
+              span 45 999
+              i.ico.ico-rub
+            .compare__itemName SOLE F80
+          .compare__col
+            i.ico.ico-delete
+            img.compare__image(src="images/compareImg-3.png")
+            .compare__itemPrice
+              span 45 999
+              i.ico.ico-rub
+            .compare__itemName SOLE F80
 
+        // next row
+        .compare__row
+          .compare__col
+            .compare__nameBig Характеристики
+          .compare__col
+            .text-center
+              a(href="#").btn.btn-red В коризну
+          .compare__col
+            .text-center
+              a(href="#").btn.btn-red В коризну
+          .compare__col
+            .text-center
+              a(href="#").btn.btn-red В коризну
+
+        // next row
+        .compare__row
+          .compare__col
+            p Тип дорожки
+            p Скорость
+            p Мощность двигателя
+            p Беговое полотно
+          .compare__col
+            p полукоммерческая эксплуатация
+            p 0.8-20 км/ч
+            p 4.0 л.с.
+            p 4-х слойное, усиленное
+          .compare__col
+            p полукоммерческая эксплуатация
+            p 0.8-20 км/ч
+            p 4.0 л.с.
+            p 4-х слойное, усиленное
+          .compare__col
+            p полукоммерческая эксплуатация
+            p 0.8-20 км/ч
+            p 4.0 л.с.
+            p 4-х слойное, усиленное
+
+        // next row
+        .compare__row
+          .compare__col
+            p Размер бегового полотна (ДхШ)
+          .compare__col
+            p 152 х 56 см
+          .compare__col
+            p 152 х 56 см
+          .compare__col
+            p 152 х 56 см
+        // next row
+        .compare__row
+          .compare__col
+            p Регулировка угла наклона
+            p Наклон бегового полотна
+            p Дека
+            p Система амортизации
+            p Измерение пульса
+            p Консоль
+          .compare__col
+            p автоматическая
+            p -6%-15%
+            p 18 мм с системой шумопоглащения
+            p Cushion Flex Shock Absorption
+            p сенсорные датчики, кардиопояс(опция)
+            p 10.1” TFT дисплей
+          .compare__col
+            p автоматическая
+            p -6%-15%
+            p 18 мм с системой шумопоглащения
+            p Cushion Flex Shock Absorption
+            p сенсорные датчики, кардиопояс(опция)
+            p 10.1” TFT дисплей
+          .compare__col
+            p автоматическая
+            p -6%-15%
+            p 18 мм с системой шумопоглащения
+            p Cushion Flex Shock Absorption
+            p сенсорные датчики, кардиопояс(опция)
+            p 10.1” TFT дисплей
+        // next row
+        .compare__row
+          .compare__col
+            p Показания консоли
+          .compare__col
+            p время тренировки, пройденная дистанция, пульс, калории, скорость, уровень подъема, профиль программы
+          .compare__col
+            p время тренировки, пройденная дистанция, пульс, калории, скорость, уровень подъема, профиль программы
+          .compare__col
+            p время тренировки, пройденная дистанция, пульс, калории, скорость, уровень подъема, профиль программы
+        // next row
+        .compare__row
+          .compare__col
+            p Кол-во программ
+          .compare__col
+            p 10 (в.ч. 2 пульсозависимые)
+          .compare__col
+            p 10 (в.ч. 2 пульсозависимые)
+          .compare__col
+            p 10 (в.ч. 2 пульсозависимые)
+        // next row
+        .compare__row
+          .compare__col
+            p Спецификации программ
+          .compare__col
+            p 6 установленных программ; 2 программы, создаваемые пользователем; 2 кардиопрограммы
+          .compare__col
+            p 6 установленных программ; 2 программы, создаваемые пользователем; 2 кардиопрограммы
+          .compare__col
+            p 6 установленных программ; 2 программы, создаваемые пользователем; 2 кардиопрограммы
+        // next row
+        .compare__row
+          .compare__col
+            p Многоязычный интерфейс
+            p Интеграция и Мультимедиа
+          .compare__col
+            p английский
+            p динамики, Bluetooth / Мобильное приложение
+          .compare__col
+            p английский
+            p динамики, Bluetooth / Мобильное приложение
+          .compare__col
+            p английский
+            p динамики, Bluetooth / Мобильное приложение
+
+        // next row
+        .compare__row
+          .compare__col
+            p Питание
+            p Складывание
+            p Габариты (ДхШхВ)
+            p Вес
+            p Максимальный вес пользователя
+          .compare__col
+            p 220 В
+            p нет
+            p 210 х 92 х 147 см
+            p 145 кг
+            p 182 кг
+          .compare__col
+            p 220 В
+            p нет
+            p 210 х 92 х 147 см
+            p 145 кг
+            p 182 кг
+          .compare__col
+            p 220 В
+            p нет
+            p 210 х 92 х 147 см
+            p 145 кг
+            p 182 кг
+        // next row
+        .compare__row
+          .compare__col
+            p Дополнительные характеристики
+          .compare__col
+            p транспортировочные ролики, подстаканники, вентилятор
+          .compare__col
+            p транспортировочные ролики, подстаканники, вентилятор
+          .compare__col
+            p транспортировочные ролики, подстаканники, вентилятор
+        // next row
+        .compare__row
+          .compare__col
+            p Гарантия
+          .compare__col
+            p домашняя эксплуатация - 2 года, полукоммерческая - 1 год
+          .compare__col
+            p домашняя эксплуатация - 2 года, полукоммерческая - 1 год
+          .compare__col
+            p домашняя эксплуатация - 2 года, полукоммерческая - 1 год
+        // next row
+        .compare__row
+          .compare__col
+            p Производитель
+            p Страна изготовления
+            p Доп. опции
+          .compare__col
+            p Sole
+            p Тайвань
+            p Да
+          .compare__col
+            p Sole
+            p Тайвань
+            p Да
+          .compare__col
+            p Sole
+            p Тайвань
+            p Да
+
+      .compare__clear
+        i.ico.ico-clear
+        span Очистить список
 
 
     include shared/footer.pug

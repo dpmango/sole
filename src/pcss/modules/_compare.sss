@@ -1,0 +1,109 @@
+// COMPARE
+.compare
+  margin-top: 80px
+  font-family: 'CoreSansA45'
+  &__row
+    display: flex
+    &:first-child
+      .compare__col
+        padding: 25px 13px
+        border-right: 1px solid color(#8E8F9B a(10%))
+        border-bottom: none
+        &:first-child
+          border-right: none
+          border: 1px solid #EDF0F6
+    &:nth-child(2)
+      .compare__col
+        border-bottom: none
+
+  &__col
+    flex: 0 1 260px
+    padding: 10px 13px
+    position: relative
+    border-bottom: 1px dotted #F3F3F5
+    p
+      color: #778092
+      font-size: 13px
+    &:first-child
+      flex: 0 0 210px
+      margin-right: 10px
+      background: #F0F3F9
+      border-bottom: none
+      p
+        color: $fontColor
+
+    .btn .ico
+      margin-right: 10px
+      margin-left: 0
+
+    .ico-delete
+      position: absolute
+      top: 0px
+      right: 10px
+      cursor: pointer
+      z-index: 2
+
+  &__nameBig
+    font-family: 'CoreSansA45'
+    font-size: 22px
+    letter-spacing: -.85px
+    &::before
+      display: inline-block
+      content: ' '
+      height: 20px
+      width: 2px
+      background: $fontColor
+      margin-right: 20px
+      vertical-align: middle
+
+  &__category
+    margin-top: 40px
+    margin-bottom: 35px
+    font-size: 13px
+    line-height: 22px
+    letter-spacing: -.5px
+    font-family: 'CoreSansA45'
+    text-align: center
+    span
+      display: block
+      font-family: 'BebasNeueBold'
+      font-size: 14px
+      color: $colorRed
+      text-decoration: underline
+
+  &__print
+    text-align: center
+    margin-top: 35px
+    span
+      display: block
+      font-family: 'CoreSansA55'
+      font-size: 12px
+      line-height: 22px
+      letter-spacing: -.5px
+
+  &__image
+    max-width: 100%
+
+  &__itemName
+    font-family: 'CoreSansA55'
+    font-size: 13px
+    letter-spacing: -.85px
+    margin-top: 7px
+    text-align: center
+
+  &__itemPrice
+    font-family: 'CoreSansA35'
+    font-size: 29px
+    letter-spacing: -2px
+    margin-top: 15px
+    text-align: center
+
+    .ico
+      width: 9px
+      height: 12px
+
+  &__clear
+    margin-top: 25px
+    margin-bottom: 150px
+    font-family: 'CoreSansA55'
+    font-size: 12px
