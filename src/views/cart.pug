@@ -29,7 +29,7 @@ html
           span завершение
 
       // cart contents
-      .cart
+      .cart#cartStepOne
         .cart__head
           span фото
           span продукция
@@ -88,12 +88,117 @@ html
 
       .cartActions
         a(href="#").btn.btn-red.btn--noBr Купить в 1 клик
-        a(href="#").btn.btn-red.btn--noBr.btn--outline
+        a(href="#").btn.btn-red.btn--noBr.btn--outline#cartStepOneTrigger
           span Далее
           i.ico.ico-right-arrow
 
+      // STEP 2
+      .cart#cartStepTwo
+        .cart__uiGroup.pt50
+          .cart__uiGroup__caption Контактные данные
+          .ui-input.ui-input--error
+            input(type="text" placeholder="Ваше имя и фамилия")
+            .ui-input__validation Заполните поле
+          .ui-input
+            input(type="email" placeholder="Email")
+            .ui-input__validation Заполните поле
+          .ui-input
+            input(type="tel" placeholder="Номер телефона")
+            .ui-input__validation Заполните поле
+        // group
+        .cart__uiGroup
+          .cart__uiGroup__caption адрес доставки
+          .ui-input
+            input(type="text" placeholder="Город")
+            .ui-input__validation Заполните поле
+          .ui-input
+            input(type="text" placeholder="Улица")
+            .ui-input__validation Заполните поле
+          .ui-row
+            .ui-input
+              label Дом
+              input(type="text")
+            .ui-input
+              label Корпус
+              input(type="text")
+            .ui-input
+              label Кв.
+              input(type="text")
+        // group
+        .cart__uiGroup
+          .cart__uiGroup__caption ваш комментарий
+          .ui-input
+            textarea(rows="4")
+            .ui-input__validation Заполните поле
+          .ui-checkbox
+            input(type="checkbox" id="checkbox_1")
+            label(for="checkbox_1")
+              span Присылать информацию о новинках и акциях
+
+        .text-center.mb50
+          a(href="#").btn.btn-red.btn--noBr#cartStepTwoTrigger Далее - Доставка, оплата
+
+      // STEP 3
+      .cart#cartStepThree
+        .cart__uiGroup.pt50
+          .cart__uiGroup__caption Способ оплаты
+          .cart__uiGroup__box
+            .ui-radio
+              input(type="radio" name="radio_1" id="radio_1_1")
+              label(for="radio_1_1")
+                span Наличными курьеру
+            .ui-radio
+              input(type="radio" name="radio_1" id="radio_1_2")
+              label(for="radio_1_2")
+                span Картой
+            .ui-radio
+              input(type="radio" name="radio_1" id="radio_1_3")
+              label(for="radio_1_3")
+                span Безналичный перевод
+        .cart__uiGroup
+          .cart__uiGroup__caption Способ доставки
+          .cart__uiGroup__box
+            .ui-radio
+              input(type="radio" name="radio_2" id="radio_2_1")
+              label(for="radio_2_1")
+                span Курьером (0 руб)
+            .ui-radio
+              input(type="radio" name="radio_2" id="radio_2_2")
+              label(for="radio_2_2")
+                span Самовывоз
+            .ui-radio
+              input(type="radio" name="radio_2" id="radio_2_3")
+              label(for="radio_2_3")
+                span Эксперсс доставка (5000 руб)
+            .cart__uiGroup__boxTip Текст для комментариев. В случае комменатария, даем клиенту подсказку. Что выбирать следующим.
+        .cart__uiGroup
+          .cart__uiGroup__caption Выбор склада
+          .cart__uiGroup__box
+            .ui-radio
+              input(type="radio" name="radio_3" id="radio_3_1")
+              label(for="radio_3_1")
+                span Москва, ул. <br> Болотниковская 114, <br> д. 13, стр 1 <br>(здание Спортмастер)
+            .ui-radio
+              input(type="radio" name="radio_3" id="radio_3_2")
+              label(for="radio_3_2")
+                span Москва, ул. <br> Болотниковская 114, <br> д. 13, стр 1 <br>(здание Спортмастер)
+
+        .text-center.mb50
+          a(href="#").btn.btn-red.btn--noBr#cartStepThreeTrigger Завершить
+
+      // STEP 4
+      .cart#cartStepFour
+        .cart__uiGroup.cart__uiGroup--lastStep
+          img(src="images/orderDone.png")
+          .cart__uiGroup__caption евгений, спасибо за заказ!
+          p Скоро вы получите подтверждение
+
+        .text-center.mb50
+          a(href="#").btn.btn-red.btn--noBr#cartStepFourTrigger Перейти на главную
+
+
       // Acessories
-      .text-center.mt90
+      .text-center#cartShopAcessories.mt90.mb40
         span.bigger Возможно Вас заинтересуют аксессуары:
 
       .shopAcessories

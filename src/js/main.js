@@ -73,6 +73,42 @@ $(document).ready(function(){
     }
   });
 
+
+  // FAKE CART
+  $('#cartStepTwo').hide();
+  $('#cartStepThree').hide();
+  $('#cartStepFour').hide();
+
+  $('#cartStepOneTrigger').on('click', function(){
+    $("html, body").animate({ scrollTop: 175 }, 2000);
+
+    $('#cartStepOne').hide();
+    $('.cartActions').hide();
+    $('#cartShopAcessories').hide();
+    $('.shopAcessories').hide();
+
+    $('#cartStepTwo').fadeIn();
+    $('.cartSteps .cartSteps__step:nth-child(2)').addClass('active');
+  });
+
+  $('#cartStepTwoTrigger').on('click', function(){
+    $("html, body").animate({ scrollTop: 175 }, 2000);
+
+    $('#cartStepTwo').hide();
+
+    $('#cartStepThree').fadeIn();
+    $('.cartSteps .cartSteps__step:nth-child(3)').addClass('active');
+  });
+
+  $('#cartStepThreeTrigger').on('click', function(){
+    $("html, body").animate({ scrollTop: 175 }, 2000);
+    
+    $('#cartStepThree').hide();
+
+    $('#cartStepFour').fadeIn();
+    $('.cartSteps .cartSteps__step:nth-child(4)').addClass('active');
+  });
+
  	// Prevent # errors
 	$('[href="#"]').click(function (e) {
 		e.preventDefault();
