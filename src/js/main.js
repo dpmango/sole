@@ -73,6 +73,17 @@ $(document).ready(function(){
     }
   });
 
+  //select
+  $('.ui-select > span').on('click', function(){
+    // hide all first
+    $(this).parent().find('.ui-selectDrop').addClass('active');
+  });
+
+  $('.ui-selectDrop span').on('click', function(){
+    $(this).closest('.ui-select').find('> span').text($(this).text());
+    $(this).parent().removeClass('active');
+  });
+
 
   // FAKE CART
   $('#cartStepTwo').hide();
@@ -102,7 +113,7 @@ $(document).ready(function(){
 
   $('#cartStepThreeTrigger').on('click', function(){
     $("html, body").animate({ scrollTop: 175 }, 2000);
-    
+
     $('#cartStepThree').hide();
 
     $('#cartStepFour').fadeIn();

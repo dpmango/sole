@@ -21,6 +21,18 @@
 .ui-input
   margin-bottom: 20px
   position: relative
+  &--labeled
+    display: flex
+    align-items: center
+    label
+      display: inline-block
+      flex: 1 1 40%
+      font-family: 'CoreSansA45'
+      font-size: 13px
+      letter-spacing: -.5px
+    input
+      display: inline-block
+      flex: 1 1 60%
   input, textarea
     display: block
     width: 100%
@@ -56,6 +68,15 @@
     color: $colorRed
     font-size: 12px
     font-family: 'CoreSansA45'
+
+.ui-group
+  margin-bottom: 60px
+
+.ui-caption
+  font-family: 'BebasNeueBold'
+  font-size: 15px
+  letter-spacing: 3.5px
+  margin-bottom: 20px
 
 .ui-row
   display: flex
@@ -157,3 +178,53 @@
       letter-spacing: -.5px
       font-family: 'CoreSansA45'
       cursor: pointer
+
+.ui-select
+  position: relative
+  margin-bottom: 20px
+  > span
+    cursor: pointer
+    display: block
+    width: 100%
+    border: 1px solid #DFE0E8
+    background: white svg-load('../../images/svg/select-toggle.svg') no-repeat calc(100% - 12px) center
+    padding: 12px 10px 10px 10px
+    font-family: 'CoreSansA45'
+    font-size: 13px
+    position: relative
+    z-index: 1
+    letter-spacing: -.5px
+    transition: background-size .3s ease-out
+    &:hover
+      background-size: 10px
+
+.ui-selectDrop
+  position: absolute
+  top: 37px
+  left: 0
+  width: 100%
+  height: 0.1px
+  overflow: hidden
+  opacity: 0
+  max-height: 300px
+  z-index: 10
+  background: white
+  border: 1px solid #DFE0E8
+  &.active
+    width: 100%
+    height: auto
+    opacity: 1
+    overflow-y: scroll
+
+  span
+    display: block
+    cursor: pointer
+    border-bottom: 1px solid color(#DFE0E8 a(50%))
+    padding: 10px 0px
+    margin-left: 15px
+    margin-right: 15px
+    font-family: 'CoreSansA45'
+    font-size: 13px
+    transition: color .4s ease-in-out
+    &:hover
+      color: $colorRed

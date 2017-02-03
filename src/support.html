@@ -14,7 +14,7 @@
     <meta name="description" keywords=""><!--[if lt IE 9]>
     <script src="components/html5shiv/dist/html5shiv.js"></script><![endif]-->
   </head>
-  <body class="lightBg">
+  <body>
     <!-- FIXED NAV::START-->
     <div class="menuFixed">
       <div class="menuFixed__hamb"><a class="icoWrap" href="#" id="menuDropOpen"><i class="ico ico-hamburger"></i></a></div>
@@ -64,16 +64,73 @@
           <div class="icoWrap"><i class="ico ico-phone"></i></div><span>8 (800) 960-22-11</span></a>
       </div>
     </header>
-    <!-- COMPARE::START-->
+    <!-- SUPPORT::START-->
     <div class="container">
-      <div class="breadcrumbs"><a href="#">Главная</a><i class="ico ico-crumb-separator"></i><span>Сравнение</span></div>
-      <div class="compare">
-        <div class="compare__row">
-          <div class="compare__col">
-            <div class="compare__nameBig">Сравнение</div>
-          </div>
+      <div class="breadcrumbs"><a href="#">Главная</a><i class="ico ico-crumb-separator"></i><a href="#">Поддержка</a><i class="ico ico-crumb-separator"></i><span>Оставить заявку на сервис</span></div>
+      <div class="support">
+        <div class="support__col">
+          <div class="support__pages"><a class="active" href="#"><span>Оставить заявку на сервис</span></a><a href="#"><span>Регистрация приобретенного тренажера</span></a></div>
         </div>
-        <div class="compare__row"></div>
+        <div class="support__col">
+          <h1>Оставить заявку на сервис</h1>
+          <div class="ui-group">
+            <div class="ui-input">
+              <input type="text" placeholder="Регистрационный номер">
+            </div>
+            <div class="ui-input">
+              <input type="text" placeholder="Фио">
+            </div>
+            <div class="ui-input">
+              <input type="tel" placeholder="Телефон">
+            </div>
+            <div class="ui-input">
+              <input type="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-caption">адрес доставки</div>
+            <div class="ui-input">
+              <input type="text" placeholder="Город">
+              <div class="ui-input__validation">Заполните поле</div>
+            </div>
+            <div class="ui-input">
+              <input type="text" placeholder="Улица">
+              <div class="ui-input__validation">Заполните поле</div>
+            </div>
+            <div class="ui-row">
+              <div class="ui-input">
+                <label>Дом</label>
+                <input type="text">
+              </div>
+              <div class="ui-input">
+                <label>Корпус</label>
+                <input type="text">
+              </div>
+              <div class="ui-input">
+                <label>Кв.</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-select"><span>Выбрать модель</span>
+              <input type="hidden">
+              <div class="ui-selectDrop"><span>Модель 1</span><span>Модель 2</span><span>Модель 3</span></div>
+            </div>
+            <div class="ui-select"><span>Гарантия - 1 год</span>
+              <input type="hidden">
+              <div class="ui-selectDrop"><span>Гарантия - 1 год</span><span>Гарантия - 2 года</span><span>Гарантия - 3 года</span></div>
+            </div>
+            <div class="ui-input ui-input--labeled">
+              <label>Дата продажи:</label>
+              <input class="datepicker-here" type="text" data-position="bottom left">
+            </div>
+            <div class="ui-checkbox">
+              <input type="checkbox" id="checkbox_1">
+              <label for="checkbox_1"><span>Гарантийный случай</span></label>
+            </div>
+          </div><a class="btn btn-red btn-block btn--noBr" href="#">Отправить заявку</a>
+        </div>
       </div>
     </div>
     <!-- FOOTER::START-->
@@ -126,6 +183,7 @@
     <script src="components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="components/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="components/air-datepicker/dist/js/datepicker.min.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
   </body>

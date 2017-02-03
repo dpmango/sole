@@ -2,23 +2,82 @@ doctype html
 html
   include shared/head.pug
 
-  body.lightBg
+  body
     include shared/header.pug
 
-    // COMPARE::START
+    // SUPPORT::START
     .container
       .breadcrumbs
         a(href="#") Главная
         i.ico.ico-crumb-separator
-        span Сравнение
+        a(href="#") Поддержка
+        i.ico.ico-crumb-separator
+        span Оставить заявку на сервис
 
-      .compare
-        .compare__row
-          .compare__col
-            .compare__nameBig Сравнение
+      .support
+        .support__col
+          .support__pages
+            a(href="#").active
+              span Оставить заявку на сервис
+            a(href="#")
+              span Регистрация приобретенного тренажера
 
+        .support__col
+          h1 Оставить заявку на сервис
+          .ui-group
+            .ui-input
+              input(type="text" placeholder="Регистрационный номер")
+            .ui-input
+              input(type="text" placeholder="Фио")
+            .ui-input
+              input(type="tel" placeholder="Телефон")
+            .ui-input
+              input(type="email" placeholder="Email")
 
-        .compare__row
+          .ui-group
+            .ui-caption адрес доставки
+            .ui-input
+              input(type="text" placeholder="Город")
+              .ui-input__validation Заполните поле
+            .ui-input
+              input(type="text" placeholder="Улица")
+              .ui-input__validation Заполните поле
+            .ui-row
+              .ui-input
+                label Дом
+                input(type="text")
+              .ui-input
+                label Корпус
+                input(type="text")
+              .ui-input
+                label Кв.
+                input(type="text")
+          .ui-group
+            .ui-select
+              span Выбрать модель
+              input(type="hidden")
+              .ui-selectDrop
+                span Модель 1
+                span Модель 2
+                span Модель 3
+            .ui-select
+              span Гарантия - 1 год
+              input(type="hidden")
+              .ui-selectDrop
+                span Гарантия - 1 год
+                span Гарантия - 2 года
+                span Гарантия - 3 года
+            .ui-input.ui-input--labeled
+              label Дата продажи:
+              input.datepicker-here(type="text" data-position="bottom left")
+
+            .ui-checkbox
+              input(type="checkbox" id="checkbox_1")
+              label(for="checkbox_1")
+                span Гарантийный случай
+
+          a(href="#").btn.btn-red.btn-block.btn--noBr Отправить заявку
+
 
 
 
