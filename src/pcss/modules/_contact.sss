@@ -104,3 +104,46 @@
           font-size: 13px
           font-family: 'CoreSansA45'
           color: #A3A4A5
+
+.contactMaps
+  &__tabs
+    margin-bottom: 15px
+    a
+      position: relative
+      display: inline-block
+      font-family: 'CoreSansA45'
+      font-size: 13px
+      letter-spacing: -.5px
+      line-height: 22px
+      margin-right: 20px
+      &::after
+        display: none
+        content: ' '
+        position: absolute
+        top: 36px
+        left: 45%
+        z-index: 99
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 12px 8.5px 0 8.5px
+        border-color: #f2f5fa transparent transparent transparent
+      .ico
+        display: none
+      &.active
+        color: $colorRed
+        text-decoration: underline
+        &::after
+          display: inline-block
+        .ico
+          display: inline-block
+          margin-right: 10px
+          vertical-align: middle
+  &__maps
+    width: 100%
+    &__map
+      width: 100%
+      height: 460px
+      display: none
+      &.active
+        display: block

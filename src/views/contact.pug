@@ -68,9 +68,32 @@ html
             a(href="#").btn.btn-block.btn--outline.btn-gray Скачать реквизиты
 
       .heading.mt50
-        .heading__name
+        .heading__name.heading__name--small
           h3
             span Наши представительства:
+
+      .contactMaps__tabs
+        a(href="#").active
+          i.ico.ico-address
+          span Москва
+        a(href="#")
+          i.ico.ico-address
+          span Санкт-Питербург
+        a(href="#")
+          i.ico.ico-address
+          span Новосибирск
+
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ7cSH9q3PNktp36f_tvdwXRJYlHTn6TM')
+    script(type='text/javascript', src='js/maps.js')
+    .contactMaps__maps
+      .contactMaps__maps__map.active#contactMapMoscow
+      .contactMaps__maps__map#contactMapPiter
+      .contactMaps__maps__map#contactMapSiberia
+
+
+
+
+
 
 
     include shared/footer.pug

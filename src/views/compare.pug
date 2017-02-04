@@ -60,6 +60,22 @@ html
           .compare__col
             .text-center
               a(href="#").btn.btn-red В коризну
+        // next row
+        .compare__row.compare__row--controls
+          .compare__col
+            .ui-toggler
+              input(type="radio" name="compare" id="compare_1" checked)
+              label(for='compare_1')
+                span Все
+              input(type="radio" name="compare" id="compare_2")
+              label(for='compare_2')
+                span Различающиеся
+          .compare__col
+          .compare__col
+          .compare__col
+            span Показать еще
+            i.ico.ico-nav-prev
+            i.ico.ico-nav-next.active
 
         // next row
         .compare__row

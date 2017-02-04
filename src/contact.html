@@ -18,9 +18,9 @@
     <!-- FIXED NAV::START-->
     <div class="menuFixed">
       <div class="menuFixed__hamb"><a class="icoWrap" href="#" id="menuDropOpen"><i class="ico ico-hamburger"></i></a></div>
-      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-bowflex"></i><i class="ico ico-logo-bowflex-name"></i></a></div>
+      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-bowflex"></i></a></div>
       <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-schwinn"></i></a></div>
-      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-bowflex"></i><i class="ico ico-logo-bowflex-name"></i></a></div>
+      <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-bowflex"></i></a></div>
       <div class="menuFixed__logo"><a class="icoWrap" href="#"><i class="ico ico-logo-schwinn"></i></a></div>
       <div class="menuFixed__compare"><a class="icoWrap" href="#" id="showCompare"><i class="ico ico-compare"></i><span>Сравнение</span></a>
         <div class="menuFixed__compareDrop">
@@ -52,7 +52,9 @@
         <div class="header__navi">
           <ul>
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Продукция</a></li>
+            <li class="have-drop"><a href="#">Продукция</a>
+              <div class="header__navi__drop"><a href="#"><span>Эллиптические тренажеры</span></a><a href="#"><span>беговые дорожки</span></a><a href="#"><span>Сайклинг</span></a><a href="#"><span>Горизонтальные велотренажеры</span></a><a href="#"><span>Вертикальные велотренажеры</span></a><a href="#"><span>Аксессуары</span></a></div>
+            </li>
             <li><a href="#">Поддержка</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">
@@ -131,10 +133,18 @@
         </div>
       </div>
       <div class="heading mt50">
-        <div class="heading__name">
+        <div class="heading__name heading__name--small">
           <h3><span>Наши представительства:</span></h3>
         </div>
       </div>
+      <div class="contactMaps__tabs"><a class="active" href="#"><i class="ico ico-address"></i><span>Москва</span></a><a href="#"><i class="ico ico-address"></i><span>Санкт-Питербург</span></a><a href="#"><i class="ico ico-address"></i><span>Новосибирск</span></a></div>
+    </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ7cSH9q3PNktp36f_tvdwXRJYlHTn6TM"></script>
+    <script type="text/javascript" src="js/maps.js"></script>
+    <div class="contactMaps__maps">
+      <div class="contactMaps__maps__map active" id="contactMapMoscow"></div>
+      <div class="contactMaps__maps__map" id="contactMapPiter"></div>
+      <div class="contactMaps__maps__map" id="contactMapSiberia"></div>
     </div>
     <!-- FOOTER::START-->
     <footer class="footer">

@@ -198,4 +198,11 @@ $(document).ready(function(){
   $("input[name='phone']").mask("9 (999) 999-9999");
   $(".--ui-number input").mask("99");
 
+  //CONTACT
+  $('.contactMaps__tabs').on('click', 'a:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('body').find('.contactMaps__maps__map').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
 });

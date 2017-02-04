@@ -228,3 +228,39 @@
     transition: color .4s ease-in-out
     &:hover
       color: $colorRed
+
+.ui-input .datepicker-here
+  background-image: svg-load('../../images/svg/ico-dateinput.svg'), svg-load('../../images/svg/ico-input-separator.svg')
+  background-repeat: no-repeat, no-repeat
+  background-position: 15px center, 44px center
+  padding-left: 60px
+
+.ui-toggler
+  display: flex
+  justify-content: space-between
+  border: 1px solid #E0E4EC
+  border-radius: 4px
+  overflow: hidden
+  input
+    display: none
+    width: 0.1em
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    &:checked
+      + label
+        color: white
+        background: #666C77
+        box-shadow: inset 0 1px 3px color(black a(54%))
+
+    + label
+      flex: 1 1 auto
+      display: inline-block
+      font-family: 'CoreSansA55'
+      font-size: 11px
+      color: #666C77
+      padding: 12px 10px
+      background: linear-gradient(to bottom, #FFFFFF, #E9EEF7)
+      text-align: center
+      cursor: pointer
