@@ -16,6 +16,8 @@ h1
       flex: 1 1 100%
   &--fluid
     margin-left: 16%
+    @media($mobile)
+      margin-left: 20px
   &--center
     justify-content: center
     text-align: center
@@ -42,6 +44,8 @@ h1
       background: $fontColor
       margin-right: 28px
       vertical-align: middle
+      @media($mobile)
+        margin-right: 20px
     &--small
       &::before
         height: 20px

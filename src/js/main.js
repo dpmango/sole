@@ -20,9 +20,10 @@ $(document).ready(function(){
 
   // Play Video
   $('#startVideo').on('click', function(){
+    $(this).hide();
     $(this).closest('.row').find('img').hide();
     $(this).closest('.row').find('.videoMainpage__video').show();
-    $('video').play();
+    //$('video').play();
   });
 
   $("video").click(function() {
@@ -144,14 +145,37 @@ $(document).ready(function(){
       0:{
         items: 1,
       },
-      600:{
+      768:{
         items: 1,
       },
-      1000:{
+      992:{
         items: 1,
       }
     }
   });
+
+  $('#owlGoodsMobile').owlCarousel({
+    loop: false,
+    nav: false,
+    dots: true,
+    responsiveRefreshRate: 10,
+    margin: 0,
+    responsive: {
+      0:{
+        items: 1,
+      },
+      568:{
+        items: 2,
+      },
+      768:{
+        items: 3,
+      },
+      992:{
+        items: 4,
+      }
+    }
+  });
+
 
   // Magnific Popup
   $('.popup-with-zoom-anim').magnificPopup({

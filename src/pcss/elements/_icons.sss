@@ -40,7 +40,10 @@
   width: 15px
   height: 14px
   vertical-align: -2px
-  &--red
+  @media($mobile)
+    width: 20px
+    height: 19px
+  &--red, &.active
     background-image: svg-load('../../images/svg/ico-cart.svg', fill=#F53B49)
   &--white
     background-image: svg-load('../../images/svg/ico-cart.svg', fill=#FFF)

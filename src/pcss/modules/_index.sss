@@ -9,17 +9,31 @@
   position: relative
   @media(width <= 860px)
     height: auto
+    margin-top: 0
+  @media($mobile)
+    font-size: 0
+    background: linear-gradient(45deg, #3D6AC3, #203370)
+    margin-bottom: 10px
   img
     max-width: 100%
     max-height: 800px
+    @media($mobile)
+      width: 150%
+      max-width: 150%
+      margin-left: -30%
+      opacity: .9
   &__video
     margin-top: 70px
     display: none
     position: relative
     max-width: 1280px
     overflow: hidden
+    @media($mobile)
+      margin-top: 0
     video
       margin-top: -30px
+      @media($mobile)
+        margin-top: 0
 
   .icoWrap
     width: 67px
@@ -27,6 +41,7 @@
     position: absolute
     top: 50%
     left: 50%
+    z-index: 3
     transform: translate(-50%,-50%)
     transition: all .4s ease-in-out
     &:hover
@@ -41,6 +56,9 @@
   margin-top: 50px
   margin-bottom: 100px
   font-size: 0
+  @media($mobile)
+    margin-top: 25px
+    margin-bottom: 40px
   &__card
     display: block
     flex: 1 1 33.3%
@@ -50,17 +68,50 @@
       flex-basis: 50%
     @media($mobile)
       flex-basis: 100%
+    &:nth-child(1)
+      order: 2
+    &:nth-child(2)
+      order: 1
+    &:nth-child(3)
+      order: 4
+      .productsMainpage__card__name
+        top: 200px
+    &:nth-child(4)
+      order: 3
+      .productsMainpage__card__name
+        top: auto
+        bottom: 20px
+      img
+        width: 90%
+        margin-left: 5%
+        margin-bottom: 10%
+    &:nth-child(5)
+      order: 5
+      background: white
+      .productsMainpage__card__name
+        transform: rotate(270deg)
+        left: -25px
+        top: 50%
+    &:nth-child(6)
+      order: 6
+
     &--muted
       background: linear-gradient(45deg, #3D6AC3, #203370)
-      img
-        opacity: 1
+    img
+      width: 100%
     &--rightText
       .productsMainpage__card__name
         text-align: right
         left: auto
         right: 9%
+        @media($mobile)
+          right: auto
+          left: 20px
+          text-align: left
     &--red
       background: $colorRed url('../images/mainpageProduct-redBg.png') no-repeat bottom center
+      @media($mobile)
+        height: 235px
       .btn
         position: absolute
         top: 50%
@@ -74,6 +125,10 @@
       left: 9%
       top: 13%
       z-index: 2
+      @media($mobile)
+        font-size: 19px
+        left: 20px
+        top: 100px
     img
       max-width: 100%
       max-height: 100%
@@ -86,22 +141,54 @@
   margin-right: 5%
   margin-bottom: 130px
   background: white
+  @media($mobile)
+    margin-left: 20px
+    margin-right: 20px
+    margin-bottom: 90px
+    &.mt100
+      margin-top: 35px
+  &--awards
+    @media($mobile)
+      margin-bottom: 50px
+      .textSection__description
+        text-align: center
+      .textSection__cta
+        text-align: center
   .heading
     margin-bottom: 30px
+    @media($mobile)
+      margin-left: -15px
   &__slide
     display: flex
     margin-top: 20px
     align-items: center
+    @media($mobile)
+      flex-wrap: wrap
   &__content
     flex: 1 1 50%
     padding-left: 12%
     padding-right: 15px
+    @media($mobile)
+      flex: 1 1 100%
+      padding-left: 15px
   &__image
     flex: 1 1 50%
     padding-left: 15px
     padding-right: 10%
+    @media($mobile)
+      display: none
+      flex: 1 1 100%
+      padding-left: 0
+      padding-right: 0px
+      text-align: center
+      margin-top: 10px
     img
+      display: inline-block
       max-width: 100%
+    &--mobile
+      display: none
+      @media($mobile)
+        display: block
   &__title
     font-family: 'CoreSansA25'
     font-size: 51px
@@ -111,19 +198,29 @@
     @media($wide)
       font-size: 45px
       line-height: 55px
+    @media($mobile)
+      font-size: 41px
+      line-height: 45px
   &__description
     font-family: 'CoreSansA25'
     font-size: 20px
     line-height: 27px
     letter-spacing: -.75px
+    @media($mobile)
+      font-size: 18px
+      line-height: 27px
   &__cta
-    display: inline-block
+    display: block
+    @media($mobile)
+      text-align: center
     a
       display: inline-block
       color: $colorBlue
       font-family: 'CoreSansA45'
       font-size: 16px
       margin-top: 20px
+      @media($mobile)
+        margin-top: 10px
     &::after
       display: inline-block
       content: ' '
@@ -141,17 +238,37 @@
   .heading
     margin-top: 80px
     margin-bottom: 40px
+    @media($mobile)
+      margin-top: 50px
   .btn
     margin-top: 35px
     margin-bottom: 100px
+    @media($mobile)
+      margin-bottom: 50px
   &__content
     flex: 1 1 45%
     padding-left: 7%
     background: color(white a(90%))
+    @media($mobile)
+      flex: 1 1 100%
+      background: color(black a(50%))
+      position: relative
+      z-index: 2
+      color: white
+      padding-left: 35px
+      padding-right: 30px
+      .heading
+        margin-left: -15px
+      .heading__name::before
+        background: white
   &__image
     flex: 0 1 55%
+    background: color(white a(90%))
     overflow: hidden
     position: relative
+    @media($mobile)
+      position: absolute 0 0 0 0
+      z-index: 1
     img
       position: absolute
       top: 0
@@ -163,27 +280,44 @@
     letter-spacing: -1.75px
     margin-bottom: 25px
     max-width: 400px
+    @media($mobile)
+      font-size: 41px
+      line-height: 45px
+      max-width: 320px
   &__description
     font-family: 'CoreSansA25'
     font-size: 20px
     line-height: 27px
     letter-spacing: -.75px
     max-width: 400px
+    @media($mobile)
+      font-size: 18px
+
 
 
 // SHOP
 .shopGoods
   margin-bottom: 110px
+  @media($mobile)
+    margin-bottom: 80px
   &__card
     flex: 1 1 25%
     text-align: center
     border-right: 1px solid color(#8E8F9B a(10%))
-    &:last-child
+    @media($mobile)
       border-right: none
+      margin-left: 15px
+      margin-right: 15px
     img
       max-width: 100%
+      transition: transform .3s ease-in-out
+      @media($tablet-from)
+        &:hover
+          transform: scale(1.1)
     &__rating
       margin-top: 5px
+      position: relative
+      z-index: 3
 
     &__price
       margin-top: 10px
@@ -201,9 +335,10 @@
       font-family: 'CoreSansA55'
       letter-spacing: -.85px
     &__cta
+      display: inline-block
       margin-top: 15px
       position: relative
     &__compare
       position: absolute
       top: 10px
-      right: 60px
+      right: -30px

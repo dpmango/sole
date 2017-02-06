@@ -11,14 +11,15 @@ html
       .menuFixed__logo
         a(href="#").icoWrap
           i.ico.ico-logo-bowflex
-          i.ico.ico-logo-bowflex-name
       .menuFixed__logo
         a(href="#").icoWrap
           i.ico.ico-logo-schwinn
       .menuFixed__logo
         a(href="#").icoWrap
           i.ico.ico-logo-bowflex
-          i.ico.ico-logo-bowflex-name
+      .menuFixed__logo
+        a(href="#").icoWrap
+          i.ico.ico-logo-schwinn
       .menuFixed__logo
         a(href="#").icoWrap
           i.ico.ico-logo-schwinn
@@ -145,11 +146,14 @@ html
     section.textSection
       .row
         .owl-carousel#owlTechMainpage
+          // slide
           .textSection__slide
             .textSection__content
               .textSection__title Полный контроль над тренировкой
               .textSection__description
                 p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+              .textSection__image.textSection__image--mobile
+                img(src="images/technologies.png")
               .textSection__cta
                 a(href="#") Узнайте больше
             .textSection__image
@@ -160,6 +164,8 @@ html
               .textSection__title Полный контроль над тренировкой
               .textSection__description
                 p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+              .textSection__image.textSection__image--mobile
+                img(src="images/technologies.png")
               .textSection__cta
                 a(href="#") Узнайте больше
             .textSection__image
@@ -170,6 +176,8 @@ html
               .textSection__title Полный контроль над тренировкой
               .textSection__description
                 p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
+              .textSection__image.textSection__image--mobile
+                img(src="images/technologies.png")
               .textSection__cta
                 a(href="#") Узнайте больше
             .textSection__image
@@ -181,7 +189,7 @@ html
         .promoMainpage__content
           .heading
             .heading__name
-              span Технологии
+              span Sole для Фитнес Студий
           .promoMainpage__title Ваша цель ближе, чем вы думаете.
           .promoMainpage__description Тренажеры компании отвечают высоким стандартам качества и функциональности.
           a(href="#").btn.btn-red Подробнее
@@ -189,14 +197,16 @@ html
           img(src="images/promoMainpage.png")
 
     // AWARDS
-    section.textSection.mt100
+    section.textSection.textSection--awards.mt100
       .row
         .textSection__slide
           .textSection__content
             .heading
               .heading__name
                 span Наши награды
-            .textSection__title Полный контроль над тренировкой
+            .textSection__title Никаких трюков. Только заслуги.
+            .textSection__image.textSection__image--mobile
+              img(src="images/awwards.png")
             .textSection__description
               p Тренажеры компании отвечают высоким стандартам качества и функциональности, что соответствует строгим требованиям современной высоко конкурентной отрасли фитнес оборудования.
             .textSection__cta
@@ -211,86 +221,86 @@ html
           i.ico.ico-cart.ico-cart--red
           span Интернет магазин
       .row.jcsb.mt90
-        // card
-        .shopGoods__card
-          a(href="#")
-            img(src="images/productImage-1.png")
-          .shopGoods__card__rating
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star.ico-star--blank
-            span (6)
-          .shopGoods__card__price
-            span 20 499
-            i.ico.ico-rub
-          .shopGoods__card__name Велотренажер E90
-          .shopGoods__card__brand SOLE
-          .shopGoods__card__cta
-            a(href="#").btn.btn-red В корзину
-            a(href="#").shopGoods__card__compare
-              i.ico.ico-compare
-        // card
-        .shopGoods__card
-          a(href="#")
-            img(src="images/productImage-2.png")
-          .shopGoods__card__rating
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star.ico-star--blank
-            span (6)
-          .shopGoods__card__price
-            span 20 499
-            i.ico.ico-rub
-          .shopGoods__card__name Велотренажер E90
-          .shopGoods__card__brand SOLE
-          .shopGoods__card__cta
-            a(href="#").btn.btn-red В корзину
-            a(href="#").shopGoods__card__compare
-              i.ico.ico-compare
-
-        // card
-        .shopGoods__card
-          a(href="#")
-            img(src="images/productImage-3.png")
-          .shopGoods__card__rating
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star.ico-star--blank
-            span (6)
-          .shopGoods__card__price
-            span 20 499
-            i.ico.ico-rub
-          .shopGoods__card__name Велотренажер E90
-          .shopGoods__card__brand SOLE
-          .shopGoods__card__cta
-            a(href="#").btn.btn-red В корзину
-            a(href="#").shopGoods__card__compare
-              i.ico.ico-compare
-        // card
-        .shopGoods__card
-          a(href="#")
-            img(src="images/productImage-4.png")
-          .shopGoods__card__rating
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star
-            i.ico.ico-star.ico-star--blank
-            span (6)
-          .shopGoods__card__price
-            span 20 499
-            i.ico.ico-rub
-          .shopGoods__card__name Велотренажер E90
-          .shopGoods__card__brand SOLE
-          .shopGoods__card__cta
-            a(href="#").btn.btn-red В корзину
-            a(href="#").shopGoods__card__compare
-              i.ico.ico-compare
+        .owl-carousel#owlGoodsMobile
+          // card
+          .shopGoods__card
+            a(href="#")
+              img(src="images/productImage-1.png")
+            .shopGoods__card__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+              span (6)
+            .shopGoods__card__price
+              span 20 499
+              i.ico.ico-rub
+            .shopGoods__card__name Велотренажер E90
+            .shopGoods__card__brand SOLE
+            .shopGoods__card__cta
+              a(href="#").btn.btn-red В корзину
+              a(href="#").shopGoods__card__compare
+                i.ico.ico-compare
+          // card
+          .shopGoods__card
+            a(href="#")
+              img(src="images/productImage-2.png")
+            .shopGoods__card__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+              span (6)
+            .shopGoods__card__price
+              span 20 499
+              i.ico.ico-rub
+            .shopGoods__card__name Велотренажер E90
+            .shopGoods__card__brand SOLE
+            .shopGoods__card__cta
+              a(href="#").btn.btn-red В корзину
+              a(href="#").shopGoods__card__compare
+                i.ico.ico-compare
+          // card
+          .shopGoods__card
+            a(href="#")
+              img(src="images/productImage-3.png")
+            .shopGoods__card__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+              span (6)
+            .shopGoods__card__price
+              span 20 499
+              i.ico.ico-rub
+            .shopGoods__card__name Велотренажер E90
+            .shopGoods__card__brand SOLE
+            .shopGoods__card__cta
+              a(href="#").btn.btn-red В корзину
+              a(href="#").shopGoods__card__compare
+                i.ico.ico-compare
+          // card
+          .shopGoods__card
+            a(href="#")
+              img(src="images/productImage-4.png")
+            .shopGoods__card__rating
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star
+              i.ico.ico-star.ico-star--blank
+              span (6)
+            .shopGoods__card__price
+              span 20 499
+              i.ico.ico-rub
+            .shopGoods__card__name Велотренажер E90
+            .shopGoods__card__brand SOLE
+            .shopGoods__card__cta
+              a(href="#").btn.btn-red В корзину
+              a(href="#").shopGoods__card__compare
+                i.ico.ico-compare
 
     include shared/footer.pug

@@ -180,11 +180,18 @@
 
 //HEADER
 .header
-  padding-top: 25px
+  padding-top: 32px
   margin-left: 75px
   padding-right: 4.5%
   position: relative
   z-index: 9
+  @media($mobile)
+    background: $black
+    color: white
+    height: 82px
+    padding-right: 15px
+    margin-left: 0
+
   &--black
     background: $black
     padding-top: 30px
@@ -196,6 +203,13 @@
     height: 24px
     margin-left: 35px
     flex: 0 0 123px
+    @media($mobile)
+      margin-left: calc(50% - 62px)
+      margin-right: auto
+    .ico-logo
+      @media($mobile)
+        background-image: svg-load('../../images/svg/logo-white.svg')
+
   &__navi
     font-family: 'BebasNeueBold'
     font-size: 15px
@@ -236,6 +250,9 @@
               @media($desktop)
                 height: auto
                 width: 500px
+      .ico-cart
+        @media($mobile)
+          background-image: svg-load('../../images/svg/ico-cart.svg', fill=#FFF)
 
     &__drop
       overflow: hidden
@@ -291,6 +308,15 @@
       border-radius: 50%
       padding-left: 4.5px
       line-height: 14px
+      @media($mobile)
+        width: 15px
+        height: 15px
+        right: 0
+        top: -9px
+        font-size: 10px
+        line-height: 18px
+        text-align: center
+        padding-left: 1px
   &__phone
     font-family: 'BebasNeueBold'
     font-size: 17px
@@ -298,6 +324,8 @@
     margin-left: auto
     flex-basis: 130px
     transition: color .3s ease-in-out
+    @media($mobile)
+      display: none
     &:hover
       color: $colorRed
     .icoWrap
@@ -312,25 +340,42 @@
   background: $fontColor
   padding: 75px 9.5% 100px 9.5%
   color: white
+  @media($mobile)
+    padding: 40px 20px 30px 20px
+    text-align: center
+  .row
+    @media($mobile)
+      flex-direction: column
   &__col
     flex: 1 1 15%
     padding-left: 10px
     padding-right: 10px
+    @media($mobile)
+      padding-left: 0
+      padding-right: 0
     &--wide
       flex: 0 1 20%
   &__logo
     width: 123px
     height: 24px
+    @media($mobile)
+      display: inline-block
   &__about
     color: $colorWhiteMute
     margin-top: 20px
     font-size: 12px
     letter-spacing: -.65px
+    @media($mobile)
+      font-size: 12px
+      opacity: .5
+      line-height: 1.35em
   &__copy
     margin-top: 25px
     font-size: 13px
     letter-spacing: -.7px
   &__menu
+    @media($mobile)
+      display: none
     &__head
       font-size: 15px
       font-family: 'BebasNeueBold'

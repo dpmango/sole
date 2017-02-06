@@ -27,6 +27,7 @@ var useref        = require('gulp-useref');
 var uglify        = require('gulp-uglify');
 var gulpIf        = require('gulp-if');
 var imagemin      = require('gulp-imagemin');
+var pngquant      = require('imagemin-pngquant');
 var critical      = require('critical').stream;
 var cache         = require('gulp-cache');
 var del           = require('del');
@@ -58,7 +59,6 @@ gulp.task('build', function (callback) {
     'postcss',
     ['useref', 'images', 'fonts', 'video'],
     'cssnano',
-    'critical',
     callback
   )
 })
@@ -148,7 +148,10 @@ gulp.task('cssnano', function () {
 gulp.task('images', function(){
   return gulp.src('./src/images/**/*.+(png|jpg|gif|svg)')
   .pipe(cache(imagemin({
-      interlaced: true
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 7,
+      use: [pngquant()]
     })))
   .pipe(gulp.dest('dist/images'))
 });
@@ -156,7 +159,7 @@ gulp.task('images', function(){
 // Generate & Inline Critical-path CSS
 gulp.task('critical', function () {
   return gulp.src('dist/*.html')
-      .pipe(critical({base: 'dist/', inline: true, minify: true, css: ['dist/css/styles.css']}))
+      .pipe(critical({base: 'dist/', inline: true, minify: true, css: ['dist/css/styles.min.css']}))
       .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
       .pipe(gulp.dest('dist'));
 });
@@ -175,7 +178,7 @@ gulp.task('clean:dist', function() {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 })
 
-gulp.task('cache:clear', function (callback) {
+gulp.task('cache', function (callback) {
   return cache.clearAll(callback)
 })
 

@@ -3,7 +3,7 @@
 $mobile: width <= 568px
 $mobile-from: width >= 568px
 $tablet: width <= 768px
-$tablet-from: width <= 768px
+$tablet-from: width >= 768px
 $desktop: width <= 1000px
 $desktop-from: width >= 1000px
 $wide: width <= 1200px
@@ -62,6 +62,11 @@ body, html
     flex-wrap: wrap
   &.mr6
     margin-right: 6%
+    @media($tablet)
+      margin-right: 0
+  &.mt90
+    @media($mobile)
+      margin-top: 35px
   @media($mobile)
     flex-wrap: wrap
 
