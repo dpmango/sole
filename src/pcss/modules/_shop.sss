@@ -7,6 +7,14 @@
   border-radius: 5px
   border: 1px solid color(#DCDCE4 a(55%))
   box-shadow: 0 12px 12px color(#CBD3E3 a(40%))
+  @media($mobile)
+    box-shadow: none
+    border: none
+    border-radius: 0
+    margin-left: -15px
+    margin-right: -15px
+    padding-left: 20px
+    padding-right: 20px
   &__name
     font-family: 'CoreSansA45'
     font-size: 25px
@@ -38,15 +46,30 @@
       top: 2px
       left: auto
       right: 10px
+      @media($mobile)
+        top: 100px
+        left: 10px
+        right: auto
   &__pictures
     display: flex
     margin-top: 25px
+    @media($mobile)
+      margin-top: 10px
+      flex-direction: column
     &__mini
       margin-top: 15px
       flex: 0 0 55px
+      @media($mobile)
+        order: 2
+        margin-right: 20px
+
     &__miniWrap
       display: flex
       flex-direction: column
+      @media($mobile)
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
       img, > span
         display: block
         max-width: 100%
@@ -64,13 +87,26 @@
         padding-bottom: 10px
         text-align: center
         font-family: 'CoreSansA55'
+      .ico-video-play
+        @media($mobile)
+          display: block
+          margin-left: auto
+          margin-right: auto
       &__fold
         text-align: center
+        @media($mobile)
+          transform: rotate(270deg)
+          margin-left: 40px
+          margin-top: -10px
 
     &__main
       flex: 1 1 auto
       margin-left: 5%
       margin-right: 10%
+      @media($mobile)
+        order: 1
+        margin-left: 0
+        margin-right: 0
       img
         max-width: 100%
 
@@ -78,6 +114,8 @@
     position: absolute
     bottom: 12px
     right: 30px
+    @media($mobile)
+      bottom: 100px
 
 a.shopCta
   transition: background .3s ease-in-out, box-shadow .3s ease-in-out
@@ -92,6 +130,20 @@ a.shopCta
   border-radius: 5px
   border: 1px solid color(#DCDCE4 a(55%))
   margin-bottom: 12px
+  @media($mobile)
+    margin-left: -15px
+    margin-right: -15px
+    border: none
+    border-radius: 0
+  &:nth-child(1)
+    @media($mobile)
+      order: 2
+  &:nth-child(2)
+    @media($mobile)
+      order: 1
+  &:nth-child(3)
+    @media($mobile)
+      display: none
   &__wrap
     display: flex
     align-items: center
@@ -197,9 +249,16 @@ a.shopCta
 
 
 .shopTabs
+  @media($mobile)
+    margin-top: 0
   &__navi
     display: flex
     align-items: center
+    @media($mobile)
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      text-align: left
     a
       display: inline-block
       padding: 20px 0px 20px 20px
@@ -208,6 +267,11 @@ a.shopCta
       letter-spacing: 1px
       color: #8D8E9A
       transition: color .3s ease-in-out
+      @media($mobile)
+        position: relative
+        flex: 1 1 100%
+        padding: 20px 0px
+        width: 100%
       &::after
         display: inline-block
         content: ' '
@@ -215,13 +279,33 @@ a.shopCta
         width: 1px
         height: 15px
         margin-left: 20px
+        @media($mobile)
+          background-color: $colorRed
+          size: 30px
+          position: absolute
+          top: 10px
+          right: 0
+          border-radius: 50%
+          background-image: svg-load('../../images/svg/ico-plus.svg')
+          background-size: 9px 9px
+          background-position: center
+          background-repeat: no-repeat
+          cursor: pointer
+
       &:first-child
         padding-left: 0
       &:last-child
         &::after
           display: none
+          @media($mobile)
+            display: inline-block
       &.active
         color: $fontColor
+        &::after
+          @media($mobile)
+            background-color: #BFC0C9
+            background-image: svg-load('../../images/svg/ico-minus.svg')
+
       &:hover
         color: $fontColor
         span
@@ -240,6 +324,8 @@ a.shopCta
         line-height: 1
         vertical-align: top
         transition: background .3s ease-in-out
+        @media($mobile)
+          display: none
 
   &__content
     background: white
@@ -249,6 +335,8 @@ a.shopCta
     padding-right: 6%
     @media($desktop)
       padding-right: 0
+    @media($mobile)
+      display: none
     .row ul
       flex: 1 1 50%
     ul
@@ -312,6 +400,8 @@ a.shopCta
 .shopTestimonials
   margin-top: 30px
   margin-bottom: 40px
+  @media($mobile)
+    display: none
   h3
     font-size: 18px
     letter-spacing: -.65px
@@ -390,6 +480,8 @@ a.shopCta
   background: white
   padding-top: 70px
   padding-bottom: 70px
+  @media($mobile)
+    display: none
   .textSection__content
     padding-left: 0
   .textSection__image
@@ -400,6 +492,8 @@ a.shopCta
   background: white
   padding-bottom: 100px
   padding-top: 50px
+  @media($mobile)
+    display: none
   &__title
     font-family: 'CoreSansA45'
     font-size: 25px
@@ -418,3 +512,26 @@ a.shopCta
     max-width: 500px
     margin-top: 25px
     margin-bottom: 25px
+
+// mobile
+.shopPage .row .productMini
+  @media($mobile)
+    display: none
+    margin-left: -15px
+    margin-right: -15px
+    margin-top: 30px
+    border: none
+    &:first-child
+      display: block
+
+.mobileGoods
+  @media($mobile)
+    background: white
+    padding-bottom: 20px
+    margin-right: 0
+    margin-left: 0
+    padding-left: 15px
+    padding-right: 15px
+    .heading
+      margin: 0
+      padding-top: 30px

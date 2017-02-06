@@ -176,6 +176,10 @@ $(document).ready(function(){
     }
   });
 
+  $('.shareTrigger').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parent().find('.shareArticle').toggleClass('active');
+  });
 
   // Magnific Popup
   $('.popup-with-zoom-anim').magnificPopup({

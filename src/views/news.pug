@@ -2,7 +2,7 @@ doctype html
 html
   include shared/head.pug
 
-  body
+  body.newsInnerPage
     include shared/header.pug
 
     // NEWS::START
@@ -38,8 +38,24 @@ html
               p Популярность тестирования тренерского персонала в Украине набирает обороты. Независимый эксперт объективно оценивает уровень знаний тренеров и инструкторов разных направлений и на основе результатов оценки рекомендует необходимое обучение. Фитнес-индустрия бурно развивается, на рынке множество предложений обучения. Как сохранить лидерство и предоставлять услуги высокого качества? Своевременно и объективно оценивать знания и профессиональные навыки сотрудников, обеспечивать их необходимой информацией для сохранения и повышения квалификации. Хотите узнать как? Тогда мы едем к Вам!
 
 
-              a(href="#").btn.btn-muted.btn--outline.btn--rounded
+              a(href="#").btn.btn-muted.btn--outline.btn--rounded.shareTrigger
                 i.ico.ico-share
+              .shareArticle
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-vk
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-fb
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-tw
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-plus
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-in
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-pin
+                a(href="#")
+                  i.ico.ico-sharein.ico-sharein-ok
+
 
         //sidebar
         .col35

@@ -2,11 +2,11 @@ doctype html
 html
   include shared/head.pug
 
-  body.lightBg
+  body.lightBg.shopPage
     include shared/header.pug
 
     // PRODUCT::START
-    .container
+    .container.container--mdWide
       .breadcrumbs
         a(href="#") Продукция
         i.ico.ico-crumb-separator
@@ -50,7 +50,7 @@ html
               i.ico.ico-treadmill
 
         // right bar
-        .col30
+        .col30.flex--mobile
           // credit block
           .shopCta
             .shopCta__wrap
@@ -198,7 +198,7 @@ html
                 img(src="images/technologies.png")
 
     // FEATURED GOODS
-    .container
+    .container.mobileGoods
       .heading.mt50
         .heading__name
           span С этим товаром покупают
@@ -318,7 +318,7 @@ html
 
     // SIMILAR GOODS
     .whiteBg
-      .container
+      .container.mobileGoods
         .heading.mt50
           .heading__name
             span Аналогичные товары

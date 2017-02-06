@@ -3,16 +3,33 @@
   align-items: center
   margin-top: 50px
   margin-bottom: 20px
+  @media($mobile)
+    flex-direction: column
+    margin-bottom: 0
+    .heading
+      margin-left: -15px
   &:last-child
     margin-bottom: 140px
   &--right
     .productsCatalog__content
       margin-right: 4%
       margin-left: 0
+      @media($mobile)
+        margin-left: 20px
+        margin-right: 0
+        order: 2
+    .productsCatalog__image
+      @media($mobile)
+        order: 1
   &__image
-    flex: 1 1 50%
+    flex: 1 1 54%
     font-size: 0
     background: linear-gradient(45deg, #3D6AC3, #203370)
+    @media($mobile)
+      flex: 1 1 100%
+      margin-left: -15px
+      margin-right: -15px
+      margin-bottom: 20px
     &--noBg
       background: white
     img
@@ -20,6 +37,8 @@
   &__content
     flex: 1 1 50%
     margin-left: 4%
+    @media($mobile)
+      margin-left: 20px
   .heading__name
     font-size: 22px
   &__title
@@ -32,13 +51,20 @@
     @media($wide)
       font-size: 45px
       line-height: 55px
+    @media($mobile)
+      font-size: 41px
+      line-height: 45px
   &__description
     font-family: 'CoreSansA25'
     font-size: 20px
     line-height: 27px
     letter-spacing: -.75px
     margin-bottom: 30px
+    @media($mobile)
+      font-size: 18px
 
+
+// SUBCATEGORIES
 
 .productMini
   flex: 1 1 24%
@@ -53,6 +79,8 @@
   @media($mobile)
     flex: 1 1 100%
     margin-right: 0
+    margin-top: 20px
+    margin-bottom: 10px
   &:nth-child(4n+4)
     margin-right: 0
   &__image
@@ -177,3 +205,15 @@
     background: $colorYellow
   &--no
     background: $colorRed
+
+
+// MOBILE FIXES
+.subcatPage
+  @media($mobile)
+    .videoMainpage
+      margin-left: -15px
+      margin-right: -15px
+      img
+        width: 100%
+        max-width: 100%
+        margin-left: 0%

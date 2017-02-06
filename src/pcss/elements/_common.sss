@@ -14,6 +14,9 @@ h1
     .heading__name
       display: block
       flex: 1 1 100%
+    &.mt50
+      @media($mobile)
+        margin-top: 20px
   &--fluid
     margin-left: 16%
     @media($mobile)
@@ -67,6 +70,8 @@ h1
 
 
   &__pagination
+    @media($mobile)
+      display: none
     a
       display: inline-block
       font-size: 15px
@@ -92,6 +97,8 @@ h1
   font-size: 12px
   position: relative
   z-index: 3
+  @media($mobile)
+    display: none
   a
     text-decoration: underline
     color: $fontColor
@@ -105,8 +112,10 @@ h1
   justify-content: center
   align-items: center
   text-align: center
+  max-height: 520px
   .btn
     margin: 15vw 0
+
 
 
 span.bigger

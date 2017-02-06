@@ -38,4 +38,4 @@ __Production__
 
 ### Push command (gh-pages fix)
 
-gulp build && git add . && git commit -m "mobile mainpage - removed critical" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "responsive works and socials icons" && git push origin master && git subtree push --prefix dist origin gh-pages

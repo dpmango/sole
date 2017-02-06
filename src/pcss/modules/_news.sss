@@ -4,15 +4,19 @@
     padding-top: 60px
     padding-bottom: 50px
     border-bottom: 1px dashed #C7CBCC
+    @media($mobile)
+      padding-bottom: 35px
+      padding-top: 35px
     &__image
-      height: 370px
       border-radius: 12px
       overflow: hidden
       display: flex
       align-items: center
       text-align: center
       justify-content: center
-      background: #F1F4FA
+      background-color: #F1F4FA
+      @media($mobile)
+        border-radius: 0
       .news__card__parallaxImg
         width: 100%
         height: 100%
@@ -20,9 +24,18 @@
         background-repeat: no-repeat
         background-position: center
         max-width: 100%
+      img
+        max-width: 100%
+    &__bgFixed
+      height: 370px
+      @media($mobile)
+        height: 230px
+
 
     &__content
       margin-top: 40px
+      @media($mobile)
+        margin-top: 20px
       p
         margin-top: 5px
         font-size: 16px
@@ -62,6 +75,50 @@
         display: inline-block
         padding-left: 50px
 
+.shareArticle
+  display: inline-block
+  vertical-align: middle
+  margin-left: 10px
+  font-size: 0
+  margin-top: -5px
+  @media($mobile)
+    display: block
+    margin-top: 10px
+    margin-left: 0
+  &.active
+    a
+      opacity: 1
+      width: auto
+      height: auto
+      animation-name: 'show-sharing-btn'
+      animation-timing-function: cubic-bezier(.05,1.31,.37,1.35)
+      animation-duration: .25s
+      &:nth-child(1)
+        animation-delay: .1s
+      &:nth-child(2)
+        animation-delay: .2s
+      &:nth-child(3)
+        animation-delay: .3s
+      &:nth-child(4)
+        animation-delay: .4s
+      &:nth-child(5)
+        animation-delay: .5s
+      &:nth-child(6)
+        animation-delay: .6s
+      &:nth-child(7)
+        animation-delay: .7s
+  a
+    display: inline-block
+    height: 0.1px
+    width: 0.1px
+    opacity: 0
+    overflow: hidden
+
+@keyframes show-sharing-btn
+  0%
+    transform: scale(0) translate3d(-40px, 0, 0)
+  100%
+    transform: scale(1) translate3d(0px, 0, 0)
 
 // Single news
 .newsContent
@@ -89,6 +146,10 @@
 .faqList
   margin-bottom: 200px
   margin-top: 40px
+  @media($tablet)
+    margin-bottom: 100px
+  @media($mobile)
+    margin-bottom: 40px
   &__group
     position: relative
     .ico-faq-toggle
@@ -105,6 +166,7 @@
         height: 2px
         top: 10px
       .faqList__content
+        display: block
         opacity: 1
         transition: opacity .3s ease
         height: auto
@@ -124,6 +186,7 @@
     &:hover
       color: color($fontColor a(75%))
   &__content
+    display: none
     opacity: 0
     height: 0.1px
     width: 0.1px
@@ -138,6 +201,10 @@
   justify-content: space-between
   align-items: center
   padding-top: 10px
+  @media(width <= 850px)
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: flex-start
   &__left
     flex: 1 0 auto
     font-family: 'CoreSansA45'
@@ -148,14 +215,32 @@
     padding-top: 7px
     margin-left: 10px
     margin-right: 10px
+    @media(width <= 850px)
+      display: none
   &__right
     flex: 1 0 auto
     text-align: right
     font-family: 'CoreSansA55'
     font-size: 12px
+    @media(width <= 850px)
+      text-align: left
+      margin-top: 5px
+      margin-bottom: 10px
     span
       margin-right: 10px
     a
       text-decoration: underline
       &:hover
         color: $colorRed
+
+.newsInnerPage
+  position: relative
+  .col35
+    @media($mobile)
+      display: none
+
+.faqPage
+  position: relative
+  .col35
+    @media($mobile)
+      display: none
