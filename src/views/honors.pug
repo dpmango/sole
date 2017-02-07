@@ -2,7 +2,7 @@ doctype html
 html
   include shared/head.pug
 
-  body
+  body.honorsPage
     include shared/header.pug
 
     // PRODUCTS::START
@@ -49,11 +49,10 @@ html
       // row
       .productsCatalog.productsCatalog--right
         .productsCatalog__content
-          .productsCatalog__content
-            .heading
-              .heading__name Сайклинг
-            .productsCatalog__title Идеальное место, чтобы умножать скорость на время.
-            .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности.
+          .heading
+            .heading__name Сайклинг
+          .productsCatalog__title Идеальное место, чтобы умножать скорость на время.
+          .productsCatalog__description Тренажеры компании отвечают высоким стандартам качества и функциональности.
         .productsCatalog__image.productsCatalog__image--noBg
           img(src="images/awwards.png")
 

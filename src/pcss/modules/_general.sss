@@ -98,6 +98,9 @@
   background: $fontColor
   transform: translate3d(-375px, 0, 0)
   transition: transform .3s ease-out
+  @media(width <= 440px)
+    width: 100%
+    transform: translate3d(-100%, 0, 0)
   &.is-active
     transform: translate3d(0, 0, 0)
   #menuDropClose
@@ -215,6 +218,8 @@
     font-size: 15px
     margin-left: 50px
     flex: 0 1 auto
+    @media($mobile)
+      margin-left: 0
     ul
       display: flex
       height: 25px
@@ -296,6 +301,10 @@
   &__cart
     position: relative
     vertical-align: bottom
+    &.active
+      .header__cart__counter
+        background: white
+        color: $colorRed
     &__counter
       position: absolute
       top: -7px
@@ -340,16 +349,24 @@
   background: $fontColor
   padding: 75px 9.5% 100px 9.5%
   color: white
+  @media($tablet)
+    padding-left: 20px
+    padding-right: 20px
   @media($mobile)
     padding: 40px 20px 30px 20px
     text-align: center
   .row
+    @media(width <= 700px)
+      flex-wrap: wrap
     @media($mobile)
       flex-direction: column
   &__col
     flex: 1 1 15%
     padding-left: 10px
     padding-right: 10px
+    &:nth-child(1)
+      @media(width <= 700px)
+        flex-basis: 30%
     @media($mobile)
       padding-left: 0
       padding-right: 0

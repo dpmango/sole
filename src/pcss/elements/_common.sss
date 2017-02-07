@@ -34,6 +34,10 @@ h1
     font-family: 'CoreSansA45'
     font-size: 25px
     letter-spacing: -0.95px
+    position: relative
+    padding-left: 28px
+    @media($mobile)
+      padding-left: 20px
     h2
       font-size: 20px
     h3
@@ -47,6 +51,9 @@ h1
       background: $fontColor
       margin-right: 28px
       vertical-align: middle
+      position: absolute
+      top: -3px
+      left: 0
       @media($mobile)
         margin-right: 20px
     &--small
@@ -102,6 +109,8 @@ h1
   a
     text-decoration: underline
     color: $fontColor
+    &:hover
+      text-decoration: none
   span
     color: #A3A4A5
 

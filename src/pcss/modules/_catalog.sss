@@ -10,6 +10,10 @@
       margin-left: -15px
   &:last-child
     margin-bottom: 140px
+    @media($tablet)
+      margin-bottom: 80px
+    @media($mobile)
+      margin-bottom: 50px
   &--right
     .productsCatalog__content
       margin-right: 4%
@@ -33,7 +37,8 @@
     &--noBg
       background: white
     img
-      max-width: 100%
+      font-size: 0
+      width: 100%
   &__content
     flex: 1 1 50%
     margin-left: 4%
@@ -217,3 +222,12 @@
         width: 100%
         max-width: 100%
         margin-left: 0%
+
+.honorsPage .productsCatalog
+  @media($mobile)
+    .productsCatalog__content
+      order: 1
+    .productsCatalog__image
+      order: 2
+      margin-left: 20px
+      margin-right: 20px

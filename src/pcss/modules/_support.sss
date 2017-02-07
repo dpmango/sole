@@ -3,11 +3,21 @@
   display: flex
   margin-top: 80px
   margin-bottom: 170px
+  @media($desktop)
+    margin-bottom: 120px
+  @media($tablet)
+    margin-top: 50px
+    margin-bottom: 75px
+  @media($mobile)
+    margin-top: 0
+    flex-wrap: wrap
   h1
     letter-spacing: -1px
     font-family: 'CoreSansA45'
     font-size: 24px
     line-height: 43px
+    @media($mobile)
+      font-size: 22px
 
   &__col
     &:first-child
@@ -16,8 +26,22 @@
       border: 1px solid #EDF0F6
       padding: 35px 30px
       margin-right: 50px
+      @media($tablet)
+        padding: 20px
+        flex-basis: 240px
+        margin-right: 30px
+      @media($mobile)
+        flex: 1 1 auto
+        margin-right: -15px
+        margin-left: -15px
+        padding: 20px 35px
+        margin-bottom: 30px
     &:last-child
       flex: 0 1 310px
+      @media($mobile)
+        flex: 1 1 auto
+        padding-left: 20px
+        padding-right: 20px
 
 
   &__pages

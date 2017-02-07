@@ -27,7 +27,7 @@
 
 .menuDrop
   .menuDrop__top
-    a(href="#")
+    a(href="/")
       i.ico.ico-logo.ico-logo--white
     a(href="#")#menuDropClose
       i.ico.ico-close
@@ -43,11 +43,11 @@
       li
         a(href='#') О нас
       li
-        a(href="#") Продукция
+        a(href="products.html") Продукция
       li
-        a(href="#") Поддержка
+        a(href="support.html") Поддержка
       li
-        a(href="#") Контакты
+        a(href="contact.html") Контакты
 
   .menuDrop__socials
     a(href="#")
@@ -77,14 +77,14 @@
 header.header.header--black
   .row
     .header__logo
-      a(href="#").icoWrap
+      a(href="/").icoWrap
         i.ico.ico-logo--white
     .header__navi
       ul
         li
           a(href='#') О нас
         li.have-drop
-          a(href="#") Продукция
+          a(href="products.html") Продукция
           .header__navi__drop
             a(href="#")
               span Эллиптические тренажеры
@@ -99,14 +99,17 @@ header.header.header--black
             a(href="#")
               span Аксессуары
         li
-          a(href="#") Поддержка
+          a(href="support.html") Поддержка
         li
-          a(href="#") Контакты
+          a(href="contact.html") Контакты
         li
           a(href="#")
             .header__cart
               .header__cart__counter 0
               i.ico.ico-cart.ico-cart--white
+            // .header__cart.active
+              .header__cart__counter 0
+              i.ico.ico-cart.ico-cart--red
     a(href="tel:").header__phone
       .icoWrap
         i.ico.ico-phone

@@ -85,7 +85,7 @@ var processors = [
 ];
 
 gulp.task('postcss', function() {
-  return gulp.src('./src/pcss/style.sss')
+  return gulp.src('./src/pcss/*.sss')
       .pipe( sourcemaps.init() )
       .pipe( postcss(processors, { parser: sugarss }) )
       .pipe( sourcemaps.write('.') )
@@ -131,7 +131,7 @@ gulp.task('useref', function(){
 });
 
 gulp.task('cssnano', function () {
-  return gulp.src('./dist/css/styles.css')
+  return gulp.src('./dist/css/*.css')
     .pipe( postcss([cssnano({
       autoprefixer: false,
       reduceIdents: {
