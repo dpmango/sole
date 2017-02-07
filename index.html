@@ -114,6 +114,7 @@
     ul li a span{
       opacity: .5;
       margin-left: .5em;
+      float: right;
     }
     ul li a:hover{
       border-left: 4px solid #F53B49;
@@ -138,6 +139,9 @@
       h1{
         font-size: 1.75em;
       }
+      .container{
+        display: block;
+      }
       .flexWrap{
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
@@ -154,41 +158,45 @@
   </head>
 <body>
   <div class="container">
-    <div class="flex flexCenter">
+    <div class="fix">
+      <div class="flex flexCenter">
       <h1>Sole fitness - html/css Layout </h1>
       <i class="ico ico-logo--white"></i>
+    </div>
     </div>
     <div class="content">
       <div class="flex flexWrap">
         <div class="links">
           <h2>Shop</h2>
           <ul class="">
-            <li><a href="mainpage.html" target="_blank">Mainpage <span>(Главная)</span></a></li>
-            <li><a href="products.html" target="_blank">Products <span>(Продукция)</span></a></li>
+            <li><a href="mainpage.html" target="_blank">Mainpage <span>(Главная) +</span></a></li>
+            <li><a href="products.html" target="_blank">Products <span>(Продукция) +</span></a></li>
             <li><a href="shop.html" target="_blank">Shop Item <span>(Товар)</span></a></li>
-            <li><a href="subcategory.html" target="_blank">Subcategory <span>(Подкатегория)</span></a></li>
-            <li><a href="cart.html" target="_blank">Cart <span>(Корзина)</span></a></li>
+            <li><a href="subcategory.html" target="_blank">Subcategory <span>(Подкатегория) +</span></a></li>
+            <li><a href="cart.html" target="_blank">Cart <span>(Корзина) +</span></a></li>
             <li><a href="compare.html" target="_blank">Compare <span>(Сравнение)</span></a></li>
           </ul>
         </div>
         <div class="links">
           <h2>Static pages</h2>
           <ul class="">
-            <li><a href="allnews.html" target="_blank">All news <span>(Все новости)</span></a></li>
-            <li><a href="news.html" target="_blank">News item <span>(Одна новость)</span></a></li>
-            <li><a href="faq.html" target="_blank">FAQ <span>(Вопрос-ответ)</span></a></li>
-            <li><a href="contact.html" target="_blank">Contacts <span>(Контакты)</span></a></li>
-            <li><a href="honors.html" target="_blank">Honors <span>(Награды)</span></a></li>
-            <li><a href="instructions.html" target="_blank">Instructions <span>(Инструкции)</span></a></li>
-            <li><a href="support.html" target="_blank">Support <span>(Поддрежка)</span></a></li>
+            <li><a href="allnews.html" target="_blank">All news <span>(Все новости) +</span></a></li>
+            <li><a href="news.html" target="_blank">News item <span>(Одна новость) +</span></a></li>
+            <li><a href="faq.html" target="_blank">FAQ <span>(Вопрос-ответ) +</span></a></li>
+            <li><a href="contact.html" target="_blank">Contacts <span>(Контакты) +</span></a></li>
+            <li><a href="honors.html" target="_blank">Honors <span>(Награды) +</span></a></li>
+            <li><a href="instructions.html" target="_blank">Instructions <span>(Инструкции) +</span></a></li>
+            <li><a href="support.html" target="_blank">Support <span>(Поддрежка) +</span></a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="flex flexEnd">
+    <div class="fix">
+      <div class="flex flexEnd">
       <div class="footer">
         Brought to you by <a href="http://f-end.ru/">@Sergey Khmelevskoy</a>
       </div>
+    </div>
     </div>
 
   </div>
