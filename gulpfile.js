@@ -57,7 +57,7 @@ gulp.task('build', function (callback) {
     'clean:dist',
     'pug',
     'postcss',
-    ['useref', 'images', 'fonts', 'video'],
+    ['useref', 'fonts', 'video'],
     'cssnano',
     callback
   )
