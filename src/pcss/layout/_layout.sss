@@ -4,8 +4,8 @@ $mobile: width <= 568px
 $mobile-from: width >= 568px
 $tablet: width <= 768px
 $tablet-from: width >= 768px
-$desktop: width <= 1000px
-$desktop-from: width >= 1000px
+$desktop: width <= 992px
+$desktop-from: width >= 992px
 $wide: width <= 1200px
 $wide-from: width >= 1200px
 $hd: width <= 1680px
@@ -53,6 +53,9 @@ body, html
   min-width: 290px
   &.lightBg
     background: radial-gradient(#F8FAFD, #F0F3F9)
+  &.locked
+    max-height: 100vh
+    overflow-y: hidden
 .row
   display: flex
   align-items: stretch

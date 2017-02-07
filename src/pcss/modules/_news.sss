@@ -4,7 +4,7 @@
     padding-top: 60px
     padding-bottom: 50px
     border-bottom: 1px dashed #C7CBCC
-    @media($mobile)
+    @media($tablet)
       padding-bottom: 35px
       padding-top: 35px
     &__image
@@ -26,11 +26,13 @@
         max-width: 100%
         @media($tablet)
           background-attachment: local
-          background-size: 100%
-      img
+          background-size: 100% auto
+          background-size: cover
         max-width: 100%
     &__bgFixed
       height: 370px
+      @media($tablet)
+        height: 250px
       @media($mobile)
         height: 230px
 
@@ -90,12 +92,12 @@
     margin-left: 0
   &.active
     a
-      opacity: 1
       width: auto
       height: auto
       animation-name: 'show-sharing-btn'
       animation-timing-function: cubic-bezier(.05,1.31,.37,1.35)
       animation-duration: .25s
+      animation-fill-mode: forwards
       &:nth-child(1)
         animation-delay: .1s
       &:nth-child(2)
@@ -114,13 +116,15 @@
     display: inline-block
     height: 0.1px
     width: 0.1px
-    opacity: 0
     overflow: hidden
+    transform: scale(0)
 
 @keyframes show-sharing-btn
-  0%
+  from
+    opacity: 0
     transform: scale(0) translate3d(-40px, 0, 0)
-  100%
+  to
+    opacity: 1
     transform: scale(1) translate3d(0px, 0, 0)
 
 // Single news
@@ -145,117 +149,18 @@
       line-height: 18px
   a
     text-decoration: underline
+    transition: color .3s ease
     &:hover
       text-decoration: none
       color: $colorBlue
+      .ico
+        background-image:  svg-load('../../images/svg/ico-next-blue.svg', fill=$colorBlue)
     .ico
       margin-left: 12px
+      transition: all .3s ease
+
   @media($desktop)
     .news__card__title
       font-size: 18px
     .news__card__datetime
       font-size: 12px
-
-
-// FAQ
-.faqList
-  margin-bottom: 200px
-  margin-top: 40px
-  @media($tablet)
-    margin-bottom: 100px
-  @media($mobile)
-    margin-bottom: 40px
-  &__group
-    position: relative
-    .ico-faq-toggle
-      position: absolute
-      top: 6px
-      left: 0
-      background-image: svg-load('../../images/svg/faq-plus.svg')
-      width: 10px
-      height: 10px
-      cursor: pointer
-    &.is-active
-      .ico-faq-toggle
-        background-image: svg-load('../../images/svg/faq-minus.svg')
-        height: 2px
-        top: 10px
-      .faqList__content
-        display: block
-        opacity: 1
-        transition: opacity .3s ease
-        height: auto
-        width: auto
-        margin-top: 10px
-        padding-bottom: 10px
-
-  &__title
-    font-family: 'CoreSansA45'
-    letter-spacing: -.6px
-    font-size: 16px
-    line-height: 22px
-    padding-left: 30px
-    margin-top: 25px
-    cursor: pointer
-    transition: color .3s ease-in-out
-    &:hover
-      color: color($fontColor a(75%))
-  &__content
-    display: none
-    opacity: 0
-    height: 0.1px
-    width: 0.1px
-    font-family: 'Helvetica Neue'
-    font-size: 14px
-    line-height: 23px
-    font-weight: 300
-    padding-left: 30px
-
-.tableRow
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding-top: 10px
-  @media(width <= 850px)
-    flex-wrap: wrap
-    flex-direction: column
-    align-items: flex-start
-  &__left
-    flex: 1 0 auto
-    font-family: 'CoreSansA45'
-  &__middle
-    flex: 1 1 auto
-    border-bottom: 1px dotted #A3A4A5
-    width: 100%
-    padding-top: 7px
-    margin-left: 10px
-    margin-right: 10px
-    @media(width <= 850px)
-      display: none
-  &__right
-    flex: 1 0 auto
-    text-align: right
-    font-family: 'CoreSansA55'
-    font-size: 12px
-    @media(width <= 850px)
-      text-align: left
-      margin-top: 5px
-      margin-bottom: 10px
-    span
-      margin-right: 10px
-    a
-      text-decoration: underline
-      &:hover
-        color: $colorRed
-
-.newsInnerPage
-  position: relative
-  .col35
-    @media($mobile)
-      display: none
-
-.faqPage
-  position: relative
-  .col35
-    @media($mobile)
-      display: none

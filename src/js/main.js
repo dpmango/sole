@@ -3,9 +3,11 @@ $(document).ready(function(){
   // menuFixed
   $('#menuDropOpen').on('click', function(){
     $('.menuDrop').addClass('is-active');
+    $('body').addClass('locked');
   });
   $('#menuDropClose').on('click', function(){
     $('.menuDrop').removeClass('is-active');
+    $('body').removeClass('locked');
   });
 
   $('#showCompare').on('click', function(){

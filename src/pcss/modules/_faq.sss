@@ -1,0 +1,111 @@
+
+// FAQ
+.faqList
+  margin-bottom: 200px
+  margin-top: 40px
+  @media($tablet)
+    margin-bottom: 100px
+  @media($mobile)
+    margin-bottom: 40px
+  &__group
+    position: relative
+    .ico-faq-toggle
+      position: absolute
+      top: 6px
+      left: 0
+      background-image: svg-load('../../images/svg/faq-plus.svg')
+      width: 10px
+      height: 10px
+      cursor: pointer
+      transition: all .3s ease
+    &.is-active
+      .ico-faq-toggle
+        background-image: svg-load('../../images/svg/faq-minus.svg')
+        height: 2px
+        top: 10px
+      .faqList__content
+        display: block
+        opacity: 1
+        transition: opacity .3s ease
+        height: auto
+        width: auto
+        margin-top: 10px
+        padding-bottom: 10px
+
+  &__title
+    font-family: 'CoreSansA45'
+    letter-spacing: -.6px
+    font-size: 16px
+    line-height: 22px
+    padding-left: 30px
+    margin-top: 25px
+    cursor: pointer
+    transition: color .3s ease-in-out
+    &:hover
+      color: $colorBlue
+  &__content
+    display: none
+    opacity: 0
+    height: 0.1px
+    width: 0.1px
+    font-family: 'Helvetica Neue'
+    font-size: 14px
+    line-height: 23px
+    font-weight: 300
+    padding-left: 30px
+
+.tableRow
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 10px
+  @media(width <= 850px)
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: flex-start
+  &__left
+    flex: 1 0 auto
+    font-family: 'CoreSansA45'
+  &__middle
+    flex: 1 1 auto
+    border-bottom: 1px dotted #A3A4A5
+    width: 100%
+    padding-top: 7px
+    margin-left: 10px
+    margin-right: 10px
+    @media(width <= 850px)
+      display: none
+  &__right
+    flex: 1 0 auto
+    text-align: right
+    font-family: 'CoreSansA55'
+    font-size: 12px
+    @media(width <= 850px)
+      text-align: left
+      margin-top: 5px
+      margin-bottom: 10px
+    span
+      margin-right: 10px
+    a
+      text-decoration: underline
+      transition: all .3s ease-in-out
+      .ico
+        transition: all .3s ease-in-out
+      &:hover
+        color: $colorRed
+        .ico
+          background-color: $colorRed
+          background-image: svg-load('../../images/svg/ico-download.svg', fill=#FFF)
+
+
+.newsInnerPage
+  position: relative
+  .col35
+    @media($mobile)
+      display: none
+
+.faqPage
+  position: relative
+  .col35
+    @media($mobile)
+      display: none

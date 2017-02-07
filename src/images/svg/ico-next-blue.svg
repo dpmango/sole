@@ -8,7 +8,7 @@
         <g id="News-open" transform="translate(-1047.000000, -581.000000)">
             <g id="Group-3" transform="translate(930.000000, 386.000000)">
                 <g id="arrow" transform="translate(117.000000, 195.000000)">
-                    <path d="M7.13554164,3.27937065 L0.5,3.27937065" id="Line" stroke="#181B1E" stroke-linecap="square"></path>
+                    <path d="M7.13554164,3.27937065 L0.5,3.27937065" id="Line" stroke="#0071D0" stroke-linecap="square"></path>
                     <polygon id="Path-2" transform="translate(9.506303, 3.400786) rotate(-180.000000) translate(-9.506303, -3.400786) " points="7 3.23098108 12.0126059 8.8817842e-16 12.0126059 6.80157283"></polygon>
                 </g>
             </g>

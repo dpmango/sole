@@ -3,10 +3,14 @@
     position: absolute
     top: 50%
     transform: translateY(-50%)
-    background: svg-load('../../images/svg/owl-nav.svg') no-repeat center
+    background: svg-load('../../images/svg/owl-nav.svg', fill=#000) no-repeat center
     width: 11px
     height: 20px
     font-size: 0
+    transition: background .4s ease
+    &:hover
+      background: svg-load('../../images/svg/owl-nav.svg', fill=$colorRed) no-repeat center
+
     @media($mobile)
       display: none
   .owl-next
@@ -19,7 +23,7 @@
     position: absolute
     bottom: -40px
     left: 12%
-    @media($mobile)
+    @media($tablet)
       left: 50%
       transform: translateX(-50%)
     .owl-dot
@@ -28,7 +32,8 @@
       width: 20px
       margin-right: 10px
       background: #CBCDD0
-      &.active
+      transition: all .4s ease
+      &.active, &:hover
         background: $colorRed
 
   &.centrify-dots

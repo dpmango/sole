@@ -52,7 +52,12 @@
   background-image: svg-load('../../images/svg/ico-phone.svg')
 
 .ico-play
-  background-image: svg-load('../../images/svg/ico-play.svg')
+  background-image: svg-load('../../images/svg/ico-play.svg', fill="#FFF")
+  transition: all .4s ease-in-out
+  cursor: pointer
+  &:hover
+    background-image: svg-load('../../images/svg/ico-play.svg', fill=$colorRed)
+    transform: translate3d(0, -10px, 0)
 
 .ico-social-vk
   background-image: svg-load('../../images/svg/ico-social-vk.svg')
@@ -60,8 +65,8 @@
   height: 11px
 .ico-social-fb
   background-image: svg-load('../../images/svg/ico-social-fb.svg')
-  height: 13px
-  width: 13px
+  height: 14px
+  width: 14px
 .ico-social-insta
   background-image: url('../images/svg/ico-insta.png')
   width: 14px
@@ -122,7 +127,7 @@
   height: 63px
 
 .ico-next
-  background-image:  svg-load('../../images/svg/ico-next.svg')
+  background-image:  svg-load('../../images/svg/ico-next.svg', fill=#181B1E)
   width: 12px
   height: 7px
 
@@ -132,7 +137,7 @@
   height: 13px
 
 .ico-download
-  background-image: svg-load('../../images/svg/ico-download.svg')
+  background-image: svg-load('../../images/svg/ico-download.svg', fill=#000)
   background-size: 8px 10px
   size: 25px
   border: 1px solid $colorRed
@@ -286,3 +291,17 @@
   &:hover
     background-color: #EB8137
     background-image: svg-load('../../images/svg/ico-share-ok.svg', fill=#FFF)
+
+// CSS ICONS
+
+.ico-stock
+  width: 7px
+  height: 7px
+  margin-right: 10px
+  border-radius: 50%
+  &--yes
+    background: $colorGreen
+  &--pending
+    background: $colorYellow
+  &--no
+    background: $colorRed

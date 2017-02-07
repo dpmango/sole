@@ -32,8 +32,13 @@
   border-radius: 50px
   color: white
   background: $colorRed
+  border: 1px solid transparent
   &:hover
-    background: color($colorRed a(70%))
+    background: transparent
+    border: 1px solid $colorRed
+    color: $colorRed
+    transform: translate3d(0, -5px, 0)
+    box-shadow: 0 0 0 2px $colorRed
   &.btn--outline
     background: transparent
     border-color: $colorRed
@@ -53,10 +58,17 @@
 .btn-black
   background: $black
   color: white
+  &:hover
+    background: transparent
+    color: $black
+    transform: translate3d(0, -5px, 0)
+    box-shadow: 0 0 0 2px $colorRed
 
 .btn-gray
   background: #EDF0F6
   color: $fontColor
+  &:hover
+    background: #CACBD9
   &.btn--outline
     background: transparent
     border-color: #CACBD9
@@ -72,8 +84,3 @@
 
 .btn--noBr
   border-radius: 0
-
-.btn--abosulte-ico
-  .ico
-    position: absolute 50% 50%
-    transform: translate(-50%, -50%)
