@@ -7,7 +7,7 @@
   border-radius: 5px
   border: 1px solid color(#DCDCE4 a(55%))
   box-shadow: 0 12px 12px color(#CBD3E3 a(40%))
-  @media($mobile)
+  @media($tablet)
     box-shadow: none
     border: none
     border-radius: 0
@@ -42,31 +42,32 @@
     position: absolute
     top: 0
     right: 0
+    z-index: 9
     &.productMini__sticker--hot
       top: 2px
       left: auto
       right: 10px
-      @media($mobile)
+      @media($tablet)
         top: 100px
         left: 10px
         right: auto
   &__pictures
     display: flex
     margin-top: 25px
-    @media($mobile)
+    @media($tablet)
       margin-top: 10px
       flex-direction: column
     &__mini
       margin-top: 15px
       flex: 0 0 55px
-      @media($mobile)
+      @media($tablet)
         order: 2
         margin-right: 20px
 
     &__miniWrap
       display: flex
       flex-direction: column
-      @media($mobile)
+      @media($tablet)
         flex-direction: row
         flex-wrap: wrap
         justify-content: space-around
@@ -77,6 +78,8 @@
         border: 3px solid transparent
         border-radius: 2px
         cursor: pointer
+        min-width: 55px
+        vertical-align: middle
         transition: border-color .3s ease-in-out
         &.active
           border-color: $colorRed
@@ -87,14 +90,20 @@
         padding-bottom: 10px
         text-align: center
         font-family: 'CoreSansA55'
+      .hidden
+        display: none
+
       .ico-video-play
-        @media($mobile)
+        @media($tablet)
           display: block
           margin-left: auto
           margin-right: auto
       &__fold
         text-align: center
-        @media($mobile)
+        cursor: pointer
+        &:hover
+          opacity: .7
+        @media($tablet)
           transform: rotate(270deg)
           margin-left: 40px
           margin-top: -10px
@@ -103,10 +112,13 @@
       flex: 1 1 auto
       margin-left: 5%
       margin-right: 10%
-      @media($mobile)
+      @media($desktop)
+        margin-right: 20px
+      @media($tablet)
         order: 1
         margin-left: 0
         margin-right: 0
+        text-align: center
       img
         max-width: 100%
 
@@ -114,7 +126,7 @@
     position: absolute
     bottom: 12px
     right: 30px
-    @media($mobile)
+    @media($tablet)
       bottom: 100px
 
 a.shopCta
@@ -130,19 +142,21 @@ a.shopCta
   border-radius: 5px
   border: 1px solid color(#DCDCE4 a(55%))
   margin-bottom: 12px
-  @media($mobile)
+  @media($dekstop)
+    padding-left: 15px
+    padding-right: 15px
+  @media($tablet)
+    padding-left: 20px
+    padding-right: 20px
     margin-left: -15px
     margin-right: -15px
     border: none
     border-radius: 0
-  &:nth-child(1)
-    @media($mobile)
+    &:nth-child(1)
       order: 2
-  &:nth-child(2)
-    @media($mobile)
+    &:nth-child(2)
       order: 1
-  &:nth-child(3)
-    @media($mobile)
+    &:nth-child(3)
       display: none
   &__wrap
     display: flex
@@ -174,6 +188,7 @@ a.shopCta
       .ico-info-tooltip
         margin-left: 4px
         vertical-align: top
+        cursor: pointer
 
   &__helpTitle
     font-family: 'BebasNeueBold'
@@ -187,8 +202,14 @@ a.shopCta
   .btn
     margin-top: 10px
     margin-bottom: 20px
+    padding-left: 5px
+    padding-right: 5px
+    &:hover
+      .ico-cart--white
+        background-image: svg-load('../../images/svg/ico-cart.svg', fill=#F53B49)
     .ico
       margin-right: 15px
+      transition: all .4s ease-out
 
   &__row
     display: flex
@@ -201,6 +222,14 @@ a.shopCta
       border-bottom: 1px dotted #CACBD9
     &Left
       flex: 1
+      @media($desktop)
+        flex-grow: 0
+      @media($tablet)
+        flex-grow: 1
+      .ico-info-tooltip
+        vertical-align: top
+        margin-left: 5px
+        cursor: pointer
     &Right
       flex: 1
       text-align: right
@@ -209,6 +238,10 @@ a.shopCta
   &__mainPrice
     font-size: 35px
     letter-spacing: -2.5px
+    @media($desktop)
+      font-size: 28px
+    @media($tablet)
+      font-size: 35px
   &__oldPrice
     position: relative
     color: $colorRed
@@ -259,7 +292,7 @@ a.shopCta
       justify-content: flex-start
       align-items: flex-start
       text-align: left
-    a
+    > a
       display: inline-block
       padding: 20px 0px 20px 20px
       font-family: 'BebasNeueBold'
@@ -337,8 +370,21 @@ a.shopCta
       padding-right: 0
     @media($mobile)
       display: none
+    &--mobile
+      display: none
+      @media($mobile)
+        background: none
+        display: none
+        margin-left: -15px
+        margin-right: -15px
+        padding-top: 0
+        padding-bottom: 10px
+        &.visible
+          display: block
     .row ul
       flex: 1 1 50%
+      @media($mobile)
+        flex-basis: 100%
     ul
       margin-top: 30px
       margin-bottom: 20px
@@ -402,10 +448,14 @@ a.shopCta
   margin-bottom: 40px
   @media($mobile)
     display: none
+    margin-top: 10px
+    margin-bottom: 20px
   h3
     font-size: 18px
     letter-spacing: -.65px
     margin-bottom: 25px
+    @media($mobile)
+      display: none
     &::before
       display: inline-block
       content: ' '
@@ -440,11 +490,15 @@ a.shopCta
       font-size: 18px
       letter-spacing: -.7px
       margin-right: 10px
+      @media($mobile)
+        font-size: 16px
     &__datetime
       display: inline-block
       font-family: 'CoreSansA45'
       font-size: 12px
       color: $colorMute
+      @media($mobile)
+        display: block
     &__rating
       margin-top: 12px
       span
@@ -461,6 +515,9 @@ a.shopCta
       font-weight: 300
       line-height: 23px
       margin-top: 8px
+      @media($mobile)
+        font-size: 13px
+        line-height: 17px
     &__more
       display: inline-block
       font-family: 'CoreSansA45'
@@ -480,7 +537,7 @@ a.shopCta
   background: white
   padding-top: 70px
   padding-bottom: 70px
-  @media($mobile)
+  @media($tablet)
     display: none
   .textSection__content
     padding-left: 0
@@ -492,7 +549,7 @@ a.shopCta
   background: white
   padding-bottom: 100px
   padding-top: 50px
-  @media($mobile)
+  @media($tablet)
     display: none
   &__title
     font-family: 'CoreSansA45'
@@ -514,24 +571,36 @@ a.shopCta
     margin-bottom: 25px
 
 // mobile
+.shopPage
+  .row.mt30.mr6
+    @media($tablet)
+      flex-wrap: wrap
+      .col70
+        flex-basis: 100%
+      .col30
+        flex-basis: 100%
+        margin-left: 0
 .shopPage .row .productMini
-  @media($mobile)
-    display: none
-    margin-left: -15px
-    margin-right: -15px
+  @media($tablet)
+    margin-left: -0px
+    margin-right: -0px
     margin-top: 30px
     border: none
-    &:first-child
-      display: block
 
 .mobileGoods
-  @media($mobile)
+  .heading
+    padding-top: 50px
+  @media($tablet)
     background: white
-    padding-bottom: 20px
+    padding-bottom: 40px
     margin-right: 0
     margin-left: 0
     padding-left: 15px
     padding-right: 15px
+    .owl-carousel.centrify-dots .owl-dots
+      bottom: -20px
     .heading
-      margin: 0
-      padding-top: 30px
+      margin-bottom: 20px
+      padding-top: 20px
+      &:first-child
+        padding-top: 30px

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI" transform="translate(-737.000000, -425.000000)" fill="#000000">
+            <g id="Group-30" transform="translate(383.000000, 414.000000)">
+                <g id="Group" transform="translate(353.000000, 11.000000)">
+                    <rect id="Rectangle-8" transform="translate(6.144000, 5.500000) rotate(-45.000000) translate(-6.144000, -5.500000) " x="-0.8" y="4.75714286" width="13.8880005" height="1.48571429" rx="0.742857143"></rect>
+                    <rect id="Rectangle-8" transform="translate(6.144000, 5.500000) rotate(-315.000000) translate(-6.144000, -5.500000) " x="-0.8" y="4.75714286" width="13.8880005" height="1.48571429" rx="0.742857143"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -35,17 +35,21 @@ html
             .shopIntro__pictures
               .shopIntro__pictures__mini
                 .shopIntro__pictures__miniWrap
-                  img(src="images/shopMiniPic-1.png" data-src="").active
-                  img(src="images/shopMiniPic-2.png" data-src="")
-                  img(src="images/shopMiniPic-3.png" data-src="")
-                  img(src="images/shopMiniPic-4.png" data-src="")
-                  span(data-src='')
+                  img(src="images/shopMiniPic-1.png" data-src="images/mainpageProduct-2.png").active
+                  img(src="images/shopMiniPic-2.png" data-src="images/mainpageProduct-1.png")
+                  img(src="images/shopMiniPic-3.png" data-src="images/mainpageProduct-2.png")
+                  img(src="images/shopMiniPic-4.png" data-src="images/mainpageProduct-5.png")
+                  span(data-src='video/sole_07.m4v' data-type="video")
                     i.ico.ico-video-play
                     span ВИДЕО
                   .shopIntro__pictures__miniWrap__fold
                     i.ico.ico-down-arrow
+
+                  img(src="images/shopMiniPic-3.png" data-src="images/mainpageProduct-2.png").hidden
+                  img(src="images/shopMiniPic-4.png" data-src="images/mainpageProduct-5.png").hidden
+
               .shopIntro__pictures__main
-                img(src="images/shopMainPic.png")
+                img(src="images/mainpageProduct-2.png")
             .shopIntro__labels
               i.ico.ico-treadmill
 
@@ -57,7 +61,7 @@ html
               .shopCta__wrapLeft
                 i.ico.ico-timer
               .shopCta__wrapRight
-                a(href="#") Купить в кредит
+                a(href="#modalCredit").modal__trigger Купить в кредит
                 .shopCta__wrapRight__price
                   span от
                   span 9 650
@@ -109,9 +113,42 @@ html
       .shopTabs.mt50
         .shopTabs__navi
           a(href="#").active информация
+          .shopTabs__content.shopTabs__content--mobile.visible
+            .container
+              .row
+                ul
+                  li 15.6” Digital TFT LCD
+                  li дисплей показывает: время, дистанцию, калории
+                  li программы: 6 предустановленных, 3 целевые
+                  li развлечения: ТВ, интернет, iOs & Android
+                  li предварительная обработка полотна
+                  li вентилятор, аудио выход, USB
+              h3 О продукте
+              p Беговая дорожка ТТ8 предназначена как для использования в домашних условиях, так и в условиях небольших спортзалов. Воплощает в себе оптимальные характеристики моделей профессионального уровня. TT8 сконструирована на усиленной раме из прочного материала, что позволяет тренироваться пользователям с массой тела до 182 кг.
+              p Модель оснащена мощным двигателем 4 л.с. с повышенным крутящим моментом, одной из самых эффективных систем амортизации Cushion Flex Whisper Deck и широким беговым полотном, создающим дополнительную безопасность и комфорт.
+
           a(href="#") Хараткеристики
           a(href="#") преимущества
           a(href="#") отзывы <span>23</span>
+          .shopTestimonials.shopTabs__content--mobile
+            .container
+              h3 Отзывы
+              .shopTestimonials__card
+                .shopTestimonials__cardLeft
+                  .shopTestimonials__card__avatar E
+                .shopTestimonials__cardRight
+                  .shopTestimonials__card__author Евгений Ротенберг
+                  .shopTestimonials__card__datetime 13:51, 21 января 2016
+                  .shopTestimonials__card__rating
+                    span 5
+                    i.ico.ico-star
+                    i.ico.ico-star
+                    i.ico.ico-star
+                    i.ico.ico-star
+                    i.ico.ico-star
+                  .shopTestimonials__card__name Отзыв
+                  .shopTestimonials__card__review Отличная кардионагрузка и укрепление сердечно-сосудистой системы — используя данный тренажер вы стабилизируете кровяное давление, уменьшите риск заболеваний сердца и сосудов, снизите уровень холестерина. Укрепление мышц нижней части тела – ягодиц, ног, бедер. Регулярные тренировки помогут достичь высокого тонуса в мышцах и их подтянутого внешнего вида.
+                  a.shopTestimonials__card__more(href="#") Показать все
           a(href="#") инструкции
 
     // TABS CONTENT
@@ -204,126 +241,7 @@ html
           span С этим товаром покупают
 
       .row.wrap
-        // card
-        .productMini
-          a(href="#").productMini__image
-            .productMini__sticker.productMini__sticker--promo
-              span Акция
-            img(src="images/productMini-1.png")
-          .productMini__details
-            .productMini__title SOLE TT8
-            .productMini__category Беговая дорожка
-            .productMini__rating
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star.ico-star--blank
-            .productMini__availability
-              i.ico.ico-stock.ico-stock--yes
-              span В наличии
-          .productMini__prices
-            .productMini__priceOld
-              span 45 999
-              i.ico.ico-rub
-            .productMini__priceNew
-              span 31 999
-              i.ico.ico-rub
-            a(href="#").btn.btn-block.btn-black В корзину
-            a(href="#").productMini__compare.productMini__compare--selected В сравнении
-        // card
-        .productMini
-          a(href="#").productMini__image
-            .productMini__sticker.productMini__sticker--hot
-            img(src="images/productMini-2.png")
-          .productMini__details
-            .productMini__title SOLE TT8
-            .productMini__category Беговая дорожка
-            .productMini__rating
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star.ico-star--blank
-            .productMini__availability
-              i.ico.ico-stock.ico-stock--pending
-              span Товар ожидается 20 февраля
-          .productMini__prices
-            .productMini__priceOld
-              span 45 999
-              i.ico.ico-rub
-            .productMini__priceNew
-              span 31 999
-              i.ico.ico-rub
-            a(href="#").btn.btn-block.btn-gray Предзаказ
-            a(href="#").productMini__compare
-              i.ico.ico-compare
-              span Сравнить
-        // card
-        .productMini
-          a(href="#").productMini__image
-            img(src="images/productMini-3.png")
-          .productMini__details
-            .productMini__title SOLE TT8
-            .productMini__category Беговая дорожка
-            .productMini__rating
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star.ico-star--blank
-            .productMini__availability
-              i.ico.ico-stock.ico-stock--no
-              span Нет в наличии
-          .productMini__prices
-            .productMini__priceOld
-              span 45 999
-              i.ico.ico-rub
-            .productMini__priceNew
-              span 31 999
-              i.ico.ico-rub
-            a(href="#").btn.btn-block.btn-gray Предзаказ
-            a(href="#").productMini__compare
-              i.ico.ico-compare
-              span Сравнить
-        // card
-        .productMini
-          a(href="#").productMini__image
-            .productMini__sticker.productMini__sticker--promo
-              span Акция
-            img(src="images/productMini-4.png")
-          .productMini__details
-            .productMini__title SOLE TT8
-            .productMini__category Беговая дорожка
-            .productMini__rating
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star
-              i.ico.ico-star.ico-star--blank
-            .productMini__availability
-              i.ico.ico-stock.ico-stock--yes
-              span В наличии
-          .productMini__prices
-            .productMini__priceOld
-              span 45 999
-              i.ico.ico-rub
-            .productMini__priceNew
-              span 31 999
-              i.ico.ico-rub
-            a(href="#").btn.btn-block.btn-red.btn--noBr В корзину
-            a(href="#").productMini__compare
-              i.ico.ico-compare
-              span Сравнить
-
-    // SIMILAR GOODS
-    .whiteBg
-      .container.mobileGoods
-        .heading.mt50
-          .heading__name
-            span Аналогичные товары
-
-        .row.wrap
+        .owl-carousel.centrify-dots#owlGoodFeatured
           // card
           .productMini
             a(href="#").productMini__image
@@ -436,6 +354,127 @@ html
                 i.ico.ico-compare
                 span Сравнить
 
+    // SIMILAR GOODS
+    .whiteBg
+      .container.mobileGoods
+        .heading
+          .heading__name
+            span Аналогичные товары
+
+        .row.wrap
+          .owl-carousel.centrify-dots#owlGoodSimilar
+            // card
+            .productMini
+              a(href="#").productMini__image
+                .productMini__sticker.productMini__sticker--promo
+                  span Акция
+                img(src="images/productMini-1.png")
+              .productMini__details
+                .productMini__title SOLE TT8
+                .productMini__category Беговая дорожка
+                .productMini__rating
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star.ico-star--blank
+                .productMini__availability
+                  i.ico.ico-stock.ico-stock--yes
+                  span В наличии
+              .productMini__prices
+                .productMini__priceOld
+                  span 45 999
+                  i.ico.ico-rub
+                .productMini__priceNew
+                  span 31 999
+                  i.ico.ico-rub
+                a(href="#").btn.btn-block.btn-black В корзину
+                a(href="#").productMini__compare.productMini__compare--selected В сравнении
+            // card
+            .productMini
+              a(href="#").productMini__image
+                .productMini__sticker.productMini__sticker--hot
+                img(src="images/productMini-2.png")
+              .productMini__details
+                .productMini__title SOLE TT8
+                .productMini__category Беговая дорожка
+                .productMini__rating
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star.ico-star--blank
+                .productMini__availability
+                  i.ico.ico-stock.ico-stock--pending
+                  span Товар ожидается 20 февраля
+              .productMini__prices
+                .productMini__priceOld
+                  span 45 999
+                  i.ico.ico-rub
+                .productMini__priceNew
+                  span 31 999
+                  i.ico.ico-rub
+                a(href="#").btn.btn-block.btn-gray Предзаказ
+                a(href="#").productMini__compare
+                  i.ico.ico-compare
+                  span Сравнить
+            // card
+            .productMini
+              a(href="#").productMini__image
+                img(src="images/productMini-3.png")
+              .productMini__details
+                .productMini__title SOLE TT8
+                .productMini__category Беговая дорожка
+                .productMini__rating
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star.ico-star--blank
+                .productMini__availability
+                  i.ico.ico-stock.ico-stock--no
+                  span Нет в наличии
+              .productMini__prices
+                .productMini__priceOld
+                  span 45 999
+                  i.ico.ico-rub
+                .productMini__priceNew
+                  span 31 999
+                  i.ico.ico-rub
+                a(href="#").btn.btn-block.btn-gray Предзаказ
+                a(href="#").productMini__compare
+                  i.ico.ico-compare
+                  span Сравнить
+            // card
+            .productMini
+              a(href="#").productMini__image
+                .productMini__sticker.productMini__sticker--promo
+                  span Акция
+                img(src="images/productMini-4.png")
+              .productMini__details
+                .productMini__title SOLE TT8
+                .productMini__category Беговая дорожка
+                .productMini__rating
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star
+                  i.ico.ico-star.ico-star--blank
+                .productMini__availability
+                  i.ico.ico-stock.ico-stock--yes
+                  span В наличии
+              .productMini__prices
+                .productMini__priceOld
+                  span 45 999
+                  i.ico.ico-rub
+                .productMini__priceNew
+                  span 31 999
+                  i.ico.ico-rub
+                a(href="#").btn.btn-block.btn-red.btn--noBr В корзину
+                a(href="#").productMini__compare
+                  i.ico.ico-compare
+                  span Сравнить
+
     .shopAwards
       .container.text-center
         .shopAwards__title Наши награды
@@ -446,3 +485,23 @@ html
           a(href="#") Показать все
 
     include shared/footer.pug
+
+    // MODAL
+    .modal#modalCredit
+      .modal__wrapper
+        .modal__content
+          .modal__close
+            i.ico.ico-close
+          .cart__uiGroup
+            .cart__uiGroup__caption Купить в 1 клик
+            .ui-input.ui-input--error
+              input(type="text" placeholder="Ваше имя и фамилия")
+              .ui-input__validation Заполните поле
+            .ui-input
+              input(type="email" placeholder="Email")
+              .ui-input__validation Заполните поле
+            .ui-input
+              input(type="tel" placeholder="Номер телефона")
+              .ui-input__validation Заполните поле
+
+            a(href="#").btn.btn-block.btn-red.btn--noBr Купить в 1 клик

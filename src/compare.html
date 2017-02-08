@@ -74,17 +74,23 @@
       <div class="compare">
         <!-- top row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <div class="compare__nameBig">Сравнение</div>
             <div class="compare__category">В списке сравнения: <span> беговые дорожки </span></div>
-            <div class="text-center"><span class="btn btn-white"><i class="ico ico-compare"></i><span>Товаров: 5</span></span></div>
+            <div class="text-center"><span class="btn btn-white"><i class="ico ico-compare"></i><span>Товаров: 5</span></span>
+              <div class="compare__clear compare__clear--mobile"><i class="ico ico-clear"></i><span>Очистить список</span></div>
+            </div>
             <div class="compare__print"><i class="ico ico-print"></i><span>Версия для печати</span></div>
           </div>
-          <div class="compare__col"><i class="ico ico-delete"></i><img class="compare__image" src="images/compareImg-1.png">
+          <div class="compare__col visible"><i class="ico ico-delete"></i><img class="compare__image" src="images/compareImg-1.png">
             <div class="compare__itemPrice"><span>45 999</span><i class="ico ico-rub"></i></div>
             <div class="compare__itemName">SOLE F80</div>
           </div>
-          <div class="compare__col"><i class="ico ico-delete"></i><img class="compare__image" src="images/compareImg-2.png">
+          <div class="compare__col visible"><i class="ico ico-delete"></i><img class="compare__image" src="images/compareImg-2.png">
+            <div class="compare__itemPrice"><span>45 999</span><i class="ico ico-rub"></i></div>
+            <div class="compare__itemName">SOLE F80</div>
+          </div>
+          <div class="compare__col visible"><i class="ico ico-delete"></i><img class="compare__image" src="images/compareImg-3.png">
             <div class="compare__itemPrice"><span>45 999</span><i class="ico ico-rub"></i></div>
             <div class="compare__itemName">SOLE F80</div>
           </div>
@@ -95,13 +101,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <div class="compare__nameBig">Характеристики</div>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <div class="text-center"><a class="btn btn-red" href="#">В коризну</a></div>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <div class="text-center"><a class="btn btn-red" href="#">В коризну</a></div>
+          </div>
+          <div class="compare__col visible">
             <div class="text-center"><a class="btn btn-red" href="#">В коризну</a></div>
           </div>
           <div class="compare__col">
@@ -110,7 +119,7 @@
         </div>
         <!-- next row-->
         <div class="compare__row compare__row--controls">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <div class="ui-toggler">
               <input type="radio" name="compare" id="compare_1" checked>
               <label for="compare_1"><span>Все</span></label>
@@ -118,25 +127,32 @@
               <label for="compare_2"><span>Различающиеся</span></label>
             </div>
           </div>
+          <div class="compare__col visible"></div>
+          <div class="compare__col visible"></div>
+          <div class="compare__col visible controllable"><span>Показать еще</span><i class="ico ico-nav-prev"></i><i class="ico ico-nav-next active"></i></div>
           <div class="compare__col"></div>
-          <div class="compare__col"></div>
-          <div class="compare__col"><span>Показать еще</span><i class="ico ico-nav-prev"></i><i class="ico ico-nav-next active"></i></div>
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Тип дорожки</p>
             <p>Скорость</p>
             <p>Мощность двигателя</p>
             <p>Беговое полотно</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>полукоммерческая эксплуатация</p>
             <p>0.8-20 км/ч</p>
             <p>4.0 л.с.</p>
             <p>4-х слойное, усиленное</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>полукоммерческая эксплуатация</p>
+            <p>0.8-20 км/ч</p>
+            <p>4.0 л.с.</p>
+            <p>4-х слойное, усиленное</p>
+          </div>
+          <div class="compare__col visible">
             <p>полукоммерческая эксплуатация</p>
             <p>0.8-20 км/ч</p>
             <p>4.0 л.с.</p>
@@ -151,13 +167,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Размер бегового полотна (ДхШ)</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>152 х 56 см</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>152 х 56 см</p>
+          </div>
+          <div class="compare__col visible">
             <p>152 х 56 см</p>
           </div>
           <div class="compare__col">
@@ -166,7 +185,7 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Регулировка угла наклона</p>
             <p>Наклон бегового полотна</p>
             <p>Дека</p>
@@ -174,7 +193,7 @@
             <p>Измерение пульса</p>
             <p>Консоль</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>автоматическая</p>
             <p>-6%-15%</p>
             <p>18 мм с системой шумопоглащения</p>
@@ -182,7 +201,15 @@
             <p>сенсорные датчики, кардиопояс(опция)</p>
             <p>10.1” TFT дисплей</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>автоматическая</p>
+            <p>-6%-15%</p>
+            <p>18 мм с системой шумопоглащения</p>
+            <p>Cushion Flex Shock Absorption</p>
+            <p>сенсорные датчики, кардиопояс(опция)</p>
+            <p>10.1” TFT дисплей</p>
+          </div>
+          <div class="compare__col visible">
             <p>автоматическая</p>
             <p>-6%-15%</p>
             <p>18 мм с системой шумопоглащения</p>
@@ -201,13 +228,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Показания консоли</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>время тренировки, пройденная дистанция, пульс, калории, скорость, уровень подъема, профиль программы</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>время тренировки, пройденная дистанция, пульс, калории, скорость, уровень подъема, профиль программы</p>
+          </div>
+          <div class="compare__col visible">
             <p>время тренировки, пройденная дистанция, пульс, калории, скорость, уровень подъема, профиль программы</p>
           </div>
           <div class="compare__col">
@@ -216,13 +246,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Кол-во программ</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>10 (в.ч. 2 пульсозависимые)</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>10 (в.ч. 2 пульсозависимые)</p>
+          </div>
+          <div class="compare__col visible">
             <p>10 (в.ч. 2 пульсозависимые)</p>
           </div>
           <div class="compare__col">
@@ -231,13 +264,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Спецификации программ</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>6 установленных программ; 2 программы, создаваемые пользователем; 2 кардиопрограммы</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>6 установленных программ; 2 программы, создаваемые пользователем; 2 кардиопрограммы</p>
+          </div>
+          <div class="compare__col visible">
             <p>6 установленных программ; 2 программы, создаваемые пользователем; 2 кардиопрограммы</p>
           </div>
           <div class="compare__col">
@@ -246,15 +282,19 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Многоязычный интерфейс</p>
             <p>Интеграция и Мультимедиа</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>английский</p>
             <p>динамики, Bluetooth / Мобильное приложение</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>английский</p>
+            <p>динамики, Bluetooth / Мобильное приложение</p>
+          </div>
+          <div class="compare__col visible">
             <p>английский</p>
             <p>динамики, Bluetooth / Мобильное приложение</p>
           </div>
@@ -265,21 +305,28 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Питание</p>
             <p>Складывание</p>
             <p>Габариты (ДхШхВ)</p>
             <p>Вес</p>
             <p>Максимальный вес пользователя</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>220 В</p>
             <p>нет</p>
             <p>210 х 92 х 147 см</p>
             <p>145 кг</p>
             <p>182 кг</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>220 В</p>
+            <p>нет</p>
+            <p>210 х 92 х 147 см</p>
+            <p>145 кг</p>
+            <p>182 кг</p>
+          </div>
+          <div class="compare__col visible">
             <p>220 В</p>
             <p>нет</p>
             <p>210 х 92 х 147 см</p>
@@ -296,13 +343,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Дополнительные характеристики</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>транспортировочные ролики, подстаканники, вентилятор</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>транспортировочные ролики, подстаканники, вентилятор</p>
+          </div>
+          <div class="compare__col visible">
             <p>транспортировочные ролики, подстаканники, вентилятор</p>
           </div>
           <div class="compare__col">
@@ -311,13 +361,16 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Гарантия</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>домашняя эксплуатация - 2 года, полукоммерческая - 1 год</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>домашняя эксплуатация - 2 года, полукоммерческая - 1 год</p>
+          </div>
+          <div class="compare__col visible">
             <p>домашняя эксплуатация - 2 года, полукоммерческая - 1 год</p>
           </div>
           <div class="compare__col">
@@ -326,17 +379,22 @@
         </div>
         <!-- next row-->
         <div class="compare__row">
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Производитель</p>
             <p>Страна изготовления</p>
             <p>Доп. опции</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
             <p>Sole</p>
             <p>Тайвань</p>
             <p>Да</p>
           </div>
-          <div class="compare__col">
+          <div class="compare__col visible">
+            <p>Sole</p>
+            <p>Тайвань</p>
+            <p>Да</p>
+          </div>
+          <div class="compare__col visible">
             <p>Sole</p>
             <p>Тайвань</p>
             <p>Да</p>
@@ -395,13 +453,11 @@
       </div>
     </footer>
     <!--build:css css/secondary.css-->
-    <link rel="stylesheet" href="components/magnific-popup/dist/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="components/owl.carousel/dist/assets/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="css/secondary.css" type="text/css">
     <!--endbuild-->
     <!--build:js js/scripts.min.js-->
     <script src="components/jquery/dist/jquery.min.js"></script>
-    <script src="components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="components/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/libs/jquery.maskedinput.min.js"></script>
     <script src="components/air-datepicker/dist/js/datepicker.min.js"></script>

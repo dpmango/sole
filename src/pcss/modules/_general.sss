@@ -451,3 +451,53 @@
         transition: all .4s ease
         &:hover
           opacity: .75
+
+
+// MODAL
+.modal
+  display: none
+  position: fixed 0 0 0 0
+  background: color(black a(30%))
+  &.active
+    display: block
+  &__wrapper
+    position: relative
+    width: 100%
+    height: 100%
+  &__content
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin: 30px auto
+    background: white
+    padding: 30px
+    width: 375px
+    max-width: 375px
+    .cart__uiGroup
+      margin-bottom: 0
+    .ui-input__validation
+      position: relative
+      top: auto
+      left: auto
+      right: auto
+      padding-top: 5px
+      width: auto
+      transform: none
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    padding: 10px
+    cursor: pointer
+    transition: background .3s ease
+    &:hover
+      background: $colorRed
+      .ico-close
+        background-image: svg-load('../../images/svg/ico-close.svg')
+    .ico-close
+      background-image: svg-load('../../images/svg/ico-close-modal.svg')
+      width: 10px
+      height: 10px
+      cursor: pointer
+      transition: all .3s ease
