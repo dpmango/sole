@@ -530,9 +530,12 @@ body.lightBg, html.lightBg {
     background: -webkit-radial-gradient(#F8FAFD, #F0F3F9);
     background: radial-gradient(#F8FAFD, #F0F3F9);
 }
-body.locked, html.locked {
-    overflow-y: hidden;
-    max-height: 100vh;
+body.locked, html.locked {}
+@media(max-width: 768px) {
+    body.locked, html.locked {
+        overflow-y: hidden;
+        max-height: 100vh;
+    }
 }
 .row {
     display: -webkit-box;
@@ -597,6 +600,7 @@ body.locked, html.locked {
     }
 }
 .container {
+    margin-top: 120px;
     margin-right: auto;
     margin-left: auto;
     max-width: 1050px;
@@ -1452,10 +1456,13 @@ span.bigger {
 }
 .btn--outline:hover {}
 .btn-red {
+    margin-bottom: 2px;
     border: 1px solid transparent;
     border-radius: 50px;
     background: #F53B49;
     color: white;
+    letter-spacing: 2.5px;
+    font-size: 14px;
 }
 .btn-red:hover {
     border: 1px solid #F53B49;
@@ -1463,8 +1470,6 @@ span.bigger {
     -webkit-box-shadow: 0 0 0 2px #F53B49;
             box-shadow: 0 0 0 2px #F53B49;
     color: #F53B49;
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
 }
 .btn-red.btn--outline {
     border-color: #F53B49;
@@ -1592,7 +1597,7 @@ span.bigger {
 /* 3. Modules */
 /* HEADER */
 .menuFixed {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -1630,6 +1635,12 @@ span.bigger {
 }
 .menuFixed #showCompareBtn:hover {
     background: #F53B49;
+}
+.menuFixed--floating {}
+@media(max-width: 1550px) {
+    .menuFixed--floating .menuFixed__logo {
+        display: none;
+    }
 }
 .menuFixed__hamb {
     width: 75px;
@@ -1750,7 +1761,7 @@ span.bigger {
     padding: 23px 12px;
 }
 .menuDrop {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 11;
@@ -1935,27 +1946,44 @@ span.bigger {
 }
 /*HEADER */
 .header {
-    position: relative;
+    position: absolute;
     z-index: 9;
     margin-left: 75px;
     padding-top: 32px;
     padding-right: 4.5%;
+    width: -webkit-calc(100% - 75px);
+    width: calc(100% - 75px);
+    height: 82px;
 }
 @media(max-width: 568px) {
     .header {
+        position: fixed;
         margin-left: 0;
         padding-right: 15px;
+        width: 100%;
         height: 82px;
-        background: #000;
+        background: #000 !important;
         color: white;
     }
 }
 .header--black {
+    position: fixed;
     padding-top: 30px;
     padding-bottom: 28px;
+    width: -webkit-calc(100% - 75px);
+    width: calc(100% - 75px);
     height: 82px;
-    background: #000;
+    background: #000 !important;
     color: white;
+}
+@media(max-width: 568px) {
+    .header--black {
+        width: 100%;
+    }
+}
+.header--floating {
+    position: fixed;
+    background: white;
 }
 .header__logo {
     -webkit-flex: 0 0 123px;
@@ -2408,6 +2436,7 @@ span.bigger {
 }
 /* Video */
 .video {
+    margin-top: 82px;
     margin-bottom: 20px;
 }
 @media(max-width: 860px) {
@@ -5070,7 +5099,7 @@ a.shopCta:hover {
     position: absolute;
     top: 36px;
     left: 45%;
-    z-index: 99;
+    z-index: 8;
     display: none;
     width: 0;
     height: 0;
