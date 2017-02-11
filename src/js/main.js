@@ -23,6 +23,19 @@ $(document).ready(function(){
     $('body').removeClass('locked');
   });
 
+  $(document).mouseup(function (e) {
+    var container = new Array();
+    container.push($('.menuDrop'));
+
+    $.each(container, function(key, value) {
+        if (!$(value).is(e.target) && $(value).has(e.target).length === 0) {
+          $('.menuDrop').removeClass('is-active');
+          $('body').removeClass('locked');
+        }
+    });
+  });
+
+
   $('#showCompare').on('click', function(){
     $('.menuFixed__compareDrop').toggleClass('is-active');
     $('#showCompareBtn').toggleClass('is-active');
@@ -211,7 +224,7 @@ $(document).ready(function(){
       $('.compare__row .compare__col:nth-child(2)').addClass('visible');
       $('.compare__row .compare__col:nth-child(3)').addClass('visible');
       $('.compare__row--controls .compare__col:nth-child(3)').append(getNav).addClass('controllable');
-    } 
+    }
 
   }
 
