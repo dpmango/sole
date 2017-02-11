@@ -887,7 +887,14 @@ h1 {
     }
 }
 .heading--fluid {
-    margin-left: 16%;
+    margin-left: 12%;
+}
+@media(min-width: 1200px) {
+    .heading--fluid {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1110px;
+    }
 }
 @media(max-width: 768px) {
     .heading--fluid {
@@ -2138,7 +2145,7 @@ span.bigger {
     right: 5px;
     padding-top: 1px;
     padding-right: 1px;
-    padding-left: 2px;
+    padding-left: 1px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -2190,6 +2197,11 @@ span.bigger {
     padding: 75px 9.5% 100px 9.5%;
     background: #181B1E;
     color: white;
+}
+.footer .row {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1560px;
 }
 .footer .row {}
 @media(max-width: 768px) {
@@ -2680,6 +2692,13 @@ span.bigger {
 .textSection .heading {
     margin-bottom: 30px;
 }
+@media(min-width: 1200px) {
+    .textSection {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1100px;
+    }
+}
 @media(max-width: 768px) {
     .textSection {
         margin-right: 20px;
@@ -2733,6 +2752,11 @@ span.bigger {
     padding-left: 12%;
     -webkit-box-flex: 1;
 }
+@media(min-width: 1200px) {
+    .textSection__content {
+        padding-left: 0;
+    }
+}
 @media(max-width: 768px) {
     .textSection__content {
         -webkit-flex: 1 1 100%;
@@ -2754,6 +2778,11 @@ span.bigger {
 .textSection__image img {
     display: inline-block;
     max-width: 100%;
+}
+@media(min-width: 1200px) {
+    .textSection__image {
+        padding-right: 0;
+    }
 }
 @media(max-width: 768px) {
     .textSection__image {
@@ -2860,9 +2889,28 @@ span.bigger {
     content: ' ';
     vertical-align: middle;
 }
+@media(min-width: 1200px) {
+    .textSection .owl-prev {
+        left: -60px;
+    }
+    .textSection .owl-next {
+        right: -30px;
+    }
+}
+@media(min-width: 1550px) {
+    .textSection .owl-prev {
+        left: -152px;
+    }
+    .textSection .owl-next {
+        right: -70px;
+    }
+}
 /* promo */
 .promoMainpage {
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
     background: -webkit-linear-gradient(45deg, #3D6AC3, #203370);
     background: linear-gradient(45deg, #3D6AC3, #203370);
 }
