@@ -1,6 +1,6 @@
 // HEADER
 .menuFixed
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   z-index: 10
@@ -8,6 +8,10 @@
   flex-direction: column
   justify-content: space-between
   background: $fontColor
+  &--floating
+    @media(width <= 1550px)
+      .menuFixed__logo
+        display: none
   &__hamb
     width: 75px
     height: 82px
@@ -96,7 +100,7 @@
       background: $colorRed
 
 .menuDrop
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   z-index: 11
@@ -216,21 +220,31 @@
   padding-top: 32px
   margin-left: 75px
   padding-right: 4.5%
-  position: relative
+  position: absolute
+  width: calc(100% - 75px)
+  height: 82px
   z-index: 9
   @media($mobile)
-    background: $black
+    position: fixed
+    width: 100%
+    background: $black !important
     color: white
     height: 82px
     padding-right: 15px
     margin-left: 0
-
   &--black
-    background: $black
+    position: fixed
+    width: calc(100% - 75px)
+    background: $black !important
     padding-top: 30px
     padding-bottom: 28px
     color: white
     height: 82px
+    @media($mobile)
+      width: 100%
+  &--floating
+    position: fixed
+    background: white
   &__logo
     width: 123px
     height: 24px

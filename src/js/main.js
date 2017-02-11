@@ -35,6 +35,23 @@ $(document).ready(function(){
     });
   });
 
+  // floating header
+  $(window).scroll(function () {
+		headerFloat();
+	});
+  headerFloat();
+
+  function headerFloat() {
+	  var winPos = $(window).scrollTop();
+		if (winPos > 700) {
+			$('.header').addClass('header--floating');
+      $('.menuFixed').addClass('menuFixed--floating');
+		} else {
+			$('.header').removeClass('header--floating');
+      $('.menuFixed').removeClass('menuFixed--floating');
+		}
+	}
+
 
   $('#showCompare').on('click', function(){
     $('.menuFixed__compareDrop').toggleClass('is-active');

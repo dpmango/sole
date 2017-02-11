@@ -54,8 +54,9 @@ body, html
   &.lightBg
     background: radial-gradient(#F8FAFD, #F0F3F9)
   &.locked
-    max-height: 100vh
-    overflow-y: hidden
+    @media($tablet)
+      max-height: 100vh
+      overflow-y: hidden
 .row
   display: flex
   align-items: stretch
@@ -84,6 +85,7 @@ body, html
   max-width: 1050px
   margin-left: auto
   margin-right: auto
+  margin-top: 120px
   @media(width <= 1250px)
     max-width: 100%
     margin-left: 100px

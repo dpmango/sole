@@ -180,7 +180,22 @@
 
     height: 14px;
 
-    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='14px' height='14px' viewBox='0 0 14 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23181B1E'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Ecompare_icon%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill-rule='evenodd'%3E %3Cg id='Sole_dskt_main' transform='translate(-273.000000, -4465.000000)'%3E %3Cg id='online-store' transform='translate(25.000000, 3844.000000)'%3E %3Cg id='1-item' transform='translate(0.000000, 140.000000)'%3E %3Cg id='compare_icon' transform='translate(248.000000, 481.000000)'%3E %3Cpolygon id='Shape' points='5.35228054 7 0 10.5010545 5.35228054 14 5.35228054 11.2392287 9.88235294 11.2392287 9.88235294 9.76288039 5.35228054 9.76288039'/%3E %3Cpolygon id='Shape' points='8.6499845 2.76204819 4.11764706 2.76204819 4.11764706 4.23795181 8.6499845 4.23795181 8.6499845 7 14 3.5 8.6499845 0'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='14px' height='14px' viewBox='0 0 14 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23181B1E'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Ecompare_icon%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill-rule='evenodd'%3E %3Cg id='Sole_dskt_main' transform='translate(-273.000000, -4465.000000)'%3E %3Cg id='online-store' transform='translate(25.000000, 3844.000000)'%3E %3Cg id='1-item' transform='translate(0.000000, 140.000000)'%3E %3Cg id='compare_icon' transform='translate(248.000000, 481.000000)'%3E %3Cpolygon id='Shape' points='5.35228054 7 0 10.5010545 5.35228054 14 5.35228054 11.2392287 9.88235294 11.2392287 9.88235294 9.76288039 5.35228054 9.76288039'/%3E %3Cpolygon id='Shape' points='8.6499845 2.76204819 4.11764706 2.76204819 4.11764706 4.23795181 8.6499845 4.23795181 8.6499845 7 14 3.5 8.6499845 0'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+
+    opacity: .8;
+
+    -webkit-transition: opacity .4s ease-in-out;
+
+    transition: opacity .4s ease-in-out
+}
+
+.ico-compare:hover {
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+    opacity: 1
 }
 
 .ico-rub {
