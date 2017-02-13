@@ -75,7 +75,7 @@
         display: block
         max-width: 100%
         margin-bottom: 20px
-        border: 3px solid transparent
+        border: 2px solid transparent
         border-radius: 2px
         cursor: pointer
         min-width: 55px
@@ -87,9 +87,12 @@
           border-color: color($colorRed a(50%))
       span
         padding-top: 10px
-        padding-bottom: 10px
+        padding-bottom: 5px
         text-align: center
+        font-size: 10px
         font-family: 'CoreSansA55'
+        span
+          display: block
       .hidden
         display: none
 
@@ -162,6 +165,9 @@ a.shopCta
     display: flex
     align-items: center
     justify-content: center
+    &--noCenter
+      justify-content: flex-start
+      padding-left: 15px
   &__wrapLeft
     flex: 0 0 auto
     margin-right: 17px
@@ -238,6 +244,7 @@ a.shopCta
   &__mainPrice
     font-size: 35px
     letter-spacing: -2.5px
+    color: #000
     @media($desktop)
       font-size: 28px
     @media($tablet)
@@ -259,8 +266,8 @@ a.shopCta
       width: 100%
     .ico-rub
       color: $colorRed
-      width: 6px
-      height: 8px
+      width: 8px
+      height: 10px
       background-image: svg-load('../../images/svg/ico-rub.svg', fill=$colorRed)
   &__compare
     margin-top: 15px
@@ -365,7 +372,7 @@ a.shopCta
     padding-top: 50px
     padding-bottom: 70px
     font-family: 'CoreSansA45'
-    padding-right: 6%
+    padding-right: 0
     @media($desktop)
       padding-right: 0
     @media($mobile)
@@ -557,9 +564,15 @@ a.shopCta
     letter-spacing: -.9px
     margin-bottom: 30px
   &__text
-
+    margin-top: 20px
+    @media($tablet)
+      margin-top: 0
   img
-    max-width: 100%
+    margin-top: 35px
+    width: 100%
+    max-width: 400px
+    @media($tablet)
+      margin-top: 0
   p
     display: inline-block
     font-family: 'CoreSansA25'
@@ -589,7 +602,15 @@ a.shopCta
 
 .mobileGoods
   .heading
+    &.mt50
+      margin-top: 0
+
     padding-top: 50px
+    &__name
+      font-size: 18px
+      &::before
+        height: 20px
+
   @media($tablet)
     background: white
     padding-bottom: 40px

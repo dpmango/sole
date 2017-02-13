@@ -6,7 +6,7 @@ html
     include shared/header.pug
 
     // PRODUCT::START
-    .container.container--mdWide
+    .container.container--mdWide.container--pad
       .breadcrumbs
         a(href="#") Продукция
         i.ico.ico-crumb-separator
@@ -57,7 +57,7 @@ html
         .col30.flex--mobile
           // credit block
           .shopCta
-            .shopCta__wrap
+            .shopCta__wrap.shopCta__wrap--noCenter
               .shopCta__wrapLeft
                 i.ico.ico-timer
               .shopCta__wrapRight
@@ -485,6 +485,8 @@ html
           a(href="#") Показать все
 
     include shared/footer.pug
+
+    .up.visible
 
     // MODAL
     .modal#modalCredit

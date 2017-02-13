@@ -128,13 +128,17 @@
           left: 20px
           text-align: left
     &--red
-      background: $colorRed url('../images/mainpageProduct-redBg.png') no-repeat bottom center
+      background: $colorRed url('../images/svg/mainpageProduct-redBg.svg') no-repeat bottom center
       @media($mobile)
         height: 235px
       .btn
         position: absolute
         top: 50%
         left: 50%
+        letter-spacing: 3px
+        width: 190px
+        padding: 16px 20px 12px 20px
+        text-align: center
         transform: translate(-50%, -50%)
     &__name
       font-size: 16px
@@ -254,7 +258,7 @@
       display: inline-block
       color: $colorBlue
       font-family: 'CoreSansA45'
-      font-size: 16px
+      font-size: 15px
       margin-top: 20px
       transition: all .4s ease-in-out
       @media($mobile)
@@ -263,11 +267,11 @@
       a
         color: $colorRed
       &::after
-        background-image: svg-load('../../images/svg/ico-more-link--blue.svg', fill=$colorRed, stroke=$colorRed)
+        background-image: svg-load('../../images/svg/ico-more-link--red.svg')
     &::after
       display: inline-block
       content: ' '
-      background-image: svg-load('../../images/svg/ico-more-link--blue.svg', fill=#0071D0, stroke=#0071D0)
+      background-image: svg-load('../../images/svg/ico-more-link--blue.svg')
       background-repeat: no-repeat
       background-position: center
       background-size: cover
@@ -408,3 +412,15 @@
       position: absolute
       top: 10px
       right: -30px
+      .ico
+        opacity: .7
+        transition: opacity .4s ease-in-out, background .4s ease
+        &:hover
+          opacity: 1
+          background-image: svg-load('../../images/svg/ico-compare.svg', fill=$colorRed)
+
+  .heading__name
+    font-size: 23px
+    .ico-cart
+      width: 18px
+      height: 17px

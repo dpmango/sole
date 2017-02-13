@@ -50,6 +50,11 @@ $(document).ready(function(){
 			$('.header').removeClass('header--floating');
       $('.menuFixed').removeClass('menuFixed--floating');
 		}
+    if (winPos > 100 && winPos < 700) {
+      $('.header--mainpage').addClass('move-up');
+    } else if (winPos < 100 || winPos > 700){
+      $('.header--mainpage').removeClass('move-up');
+    }
 	}
 
 
@@ -388,5 +393,11 @@ $(document).ready(function(){
   //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
   //   }
   // });
+
+  $('.up').click(function(){
+    $('body, html').animate({
+        scrollTop: 0}, 1000);
+    return false;
+  });
 
 });

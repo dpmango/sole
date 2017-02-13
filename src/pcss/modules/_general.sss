@@ -3,7 +3,7 @@
   position: fixed
   top: 0
   left: 0
-  z-index: 10
+  z-index: 90
   display: flex
   flex-direction: column
   justify-content: space-between
@@ -223,7 +223,8 @@
   position: absolute
   width: calc(100% - 75px)
   height: 82px
-  z-index: 9
+  z-index: 90
+  transition: transform .4s ease-out
   @media($mobile)
     position: fixed
     width: 100%
@@ -242,7 +243,11 @@
     height: 82px
     @media($mobile)
       width: 100%
+  &--mainpage
+    &.move-up
+      transform: translate3d(0, -82px, 0)
   &--floating
+    transform: translate3d(0, 0px, 0)
     position: fixed
     background: white
   &__logo
@@ -436,7 +441,7 @@
     @media($mobile)
       display: inline-block
   &__about
-    color: $colorWhiteMute
+    color: color(#838B90 a(50%))
     margin-top: 20px
     font-size: 12px
     letter-spacing: -.65px
@@ -452,10 +457,11 @@
     @media($mobile)
       display: none
     &__head
-      font-size: 15px
-      font-family: 'BebasNeueBold'
+      font-size: 14px
+      font-family: 'CoreSansA45'
+      text-transform: uppercase
       margin-bottom: 25px
-      letter-spacing: 3px
+      letter-spacing: -.3px
     &__links
       font-size: 14px
       font-family: 'CoreSansA45'
@@ -525,3 +531,9 @@
       height: 10px
       cursor: pointer
       transition: all .3s ease
+
+.up
+  position: fixed
+  opacity: 0
+  &.visible
+    opacity: 1
