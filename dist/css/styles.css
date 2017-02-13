@@ -1576,6 +1576,11 @@ span.bigger {
         display: none;
     }
 }
+@media(max-width: 1200px) {
+    .owl-carousel .owl-dots {
+        left: 0;
+    }
+}
 @media(max-width: 768px) {
     .owl-carousel .owl-dots {
         left: 50%;
@@ -2730,7 +2735,7 @@ span.bigger {
     }
 }
 .productsMainpage__card--red {
-    background: #F53B49 url('../images/svg/mainpageProduct-redBg.svg') no-repeat bottom center;
+    background: #F53B49 svg-load('../images/svg/mainpageProduct-redBg.svg') no-repeat bottom center;
 }
 .productsMainpage__card--red .btn {
     position: absolute;
