@@ -531,3 +531,22 @@
       height: 10px
       cursor: pointer
       transition: all .3s ease
+
+.up
+  opacity: 0
+  size: 55px
+  background: svg-load('../../images/svg/up.svg') no-repeat center
+  border-radius: 50%
+  position: fixed
+  bottom: 20px
+  right: 20px
+  transition: opacity .4s ease-out, transform .4s ease-out
+  cursor: pointer
+  pointer-events: none
+  transform: scale(0)
+  &.visible
+    transform: scale(1)
+    opacity: 1
+    pointer-events: all
+  &:hover
+    opacity: .6

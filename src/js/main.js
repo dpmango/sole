@@ -55,6 +55,12 @@ $(document).ready(function(){
     } else if (winPos < 100 || winPos > 700){
       $('.header--mainpage').removeClass('move-up');
     }
+    if(winPos + $(window).height() > $(document).height() - 700) {
+       $('.up').addClass('visible');
+     } else{
+       $('.up').removeClass('visible');
+     }
+
 	}
 
 
