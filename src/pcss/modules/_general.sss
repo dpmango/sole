@@ -3,7 +3,7 @@
   position: fixed
   top: 0
   left: 0
-  z-index: 90
+  z-index: 10
   display: flex
   flex-direction: column
   justify-content: space-between
@@ -223,7 +223,7 @@
   position: absolute
   width: calc(100% - 75px)
   height: 82px
-  z-index: 90
+  z-index: 9
   transition: transform .4s ease-out
   @media($mobile)
     position: fixed
@@ -531,9 +531,3 @@
       height: 10px
       cursor: pointer
       transition: all .3s ease
-
-.up
-  position: fixed
-  opacity: 0
-  &.visible
-    opacity: 1

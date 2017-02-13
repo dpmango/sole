@@ -42,7 +42,7 @@
     position: absolute
     top: 0
     right: 0
-    z-index: 9
+    z-index: 5
     &.productMini__sticker--hot
       top: 2px
       left: auto
@@ -168,6 +168,8 @@ a.shopCta
     &--noCenter
       justify-content: flex-start
       padding-left: 15px
+      @media($desktop)
+        padding-left: 0
   &__wrapLeft
     flex: 0 0 auto
     margin-right: 17px
