@@ -519,11 +519,11 @@
 
 .ico-video-play {
 
-    width: 13px;
+    width: 14px;
 
     height: 16px;
 
-    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='14px' height='16px' viewBox='0 0 14 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EShape%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Item' transform='translate(-310.000000, -584.000000)' fill='%232D2D2D'%3E %3Cpath d='M310,600 L323.182611,592 L310,584 L310,600 L310,600 Z M311.998601,587.701077 L319.502996,591.999804 L311.998601,596.298531 L311.998601,587.701077 Z' id='Shape'/%3E %3C/g%3E %3C/g%3E %3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14px' height='16px' viewBox='310 584 14 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch --%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cpath d='M310,600 L323.182611,592 L310,584 L310,600 L310,600 Z M311.998601,587.701077 L319.502996,591.999804 L311.998601,596.298531 L311.998601,587.701077 Z' id='Shape' stroke='none' fill='%232D2D2D' fill-rule='evenodd'/%3E %3C/svg%3E")
 }
 
 .ico-down-arrow {
@@ -594,7 +594,7 @@
 
     height: 10px;
 
-    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='9px' height='8px' viewBox='0 0 9 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Comparison' transform='translate(-716.000000, -237.000000)' fill='%23000000'%3E %3Cg id='Group' transform='translate(716.000000, 236.000000)'%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-45.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-315.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='9px' height='8px' viewBox='0 0 9 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23000'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill-rule='evenodd'%3E %3Cg id='Comparison' transform='translate(-716.000000, -237.000000)'%3E %3Cg id='Group' transform='translate(716.000000, 236.000000)'%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-45.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-315.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E")
 }
 
 .ico-clear {

@@ -519,7 +519,7 @@ h1 {
     height: 20px;
 }
 .heading__datetime {
-    margin-left: 38px;
+    margin-left: 30px;
     padding-top: 0px;
     padding-bottom: 5px;
     color: #566269;
@@ -528,10 +528,10 @@ h1 {
 }
 .heading__pagination a {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 7px;
     font-size: 15px;
     font-family: 'BebasNeueBold';
-    line-height: 1;
+    line-height: 1em;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
@@ -539,16 +539,18 @@ h1 {
     vertical-align: middle;
 }
 .heading__pagination a.active {
-    padding: 3px;
+    margin-top: -2px;
+    padding: 2px 2px 0px 2px;
     border: 1px solid #F53B49;
     color: #F53B49;
+    font-size: 13px;
 }
 .heading__pagination a:hover {
     color: #F53B49;
 }
 .heading__pagination span {
     margin-right: 7px;
-    margin-left: 7px;
+    margin-left: 2px;
 }
 @media(max-width: 568px) {
     .heading__pagination {
@@ -3006,6 +3008,9 @@ span.bigger {
     padding: 15px;
     text-align: center;
 }
+.productMini__prices .btn {
+    font-size: 14px;
+}
 .productMini__priceOld {
     position: relative;
     display: inline-block;
@@ -3044,6 +3049,7 @@ span.bigger {
 .productMini__compare {
     color: #8D8E9A;
     text-decoration: underline;
+    font-size: 12px;
     -webkit-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
 }
@@ -3286,11 +3292,12 @@ span.bigger {
     padding-top: 10px;
     padding-bottom: 5px;
     text-align: center;
-    font-size: 10px;
-    font-family: 'CoreSansA55';
+    letter-spacing: 1.5px;
+    font-size: 12px;
 }
 .shopIntro__pictures__miniWrap span span {
     display: block;
+    font-family: 'BebasNeueBold';
 }
 .shopIntro__pictures__miniWrap .hidden {
     display: none;
@@ -4157,9 +4164,8 @@ a.shopCta:hover {
     max-width: 100%;
     width: 100%;
     height: 100%;
-    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;/* background-attachment: fixed */
 }
 @media(max-width: 568px) {
     .news__card__image {
@@ -4195,6 +4201,26 @@ a.shopCta:hover {
     font-size: 16px;
     font-family: 'Helvetica Neue';
     line-height: 27px;
+}
+.news__card__content .btn {
+    font-size: 14px;
+    line-height: 1;
+}
+.news__card__content .shareTrigger {
+    position: relative;
+    display: inline-block;
+    margin-top: -1px;
+    width: 39px;
+    height: 39px;
+    vertical-align: middle;
+}
+.news__card__content .shareTrigger .ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 @media(max-width: 568px) {
     .news__card__content {
@@ -4379,6 +4405,12 @@ a.shopCta:hover {
         font-size: 12px;
     }
 }
+.newsInnerPage .heading__name {}
+@media(min-width: 1200px) {
+    .newsInnerPage .heading__name {
+        margin-left: 0;
+    }
+}
 /* FAQ */
 .faqList {
     margin-top: 40px;
@@ -4443,7 +4475,7 @@ a.shopCta:hover {
     padding-left: 30px;
     width: 0.1px;
     height: 0.1px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     font-family: 'Helvetica Neue';
     line-height: 23px;
@@ -4552,9 +4584,21 @@ a.shopCta:hover {
     position: relative;
 }
 .faqPage .col35 {}
+.faqPage .heading__name {}
 @media(max-width: 568px) {
     .faqPage .col35 {
         display: none;
+    }
+}
+@media(min-width: 1200px) {
+    .faqPage .heading__name {
+        margin-left: 0;
+    }
+}
+.lightBg .heading__name {}
+@media(min-width: 1200px) {
+    .lightBg .heading__name {
+        margin-left: 0;
     }
 }
 /* CONTACT */
@@ -4831,6 +4875,13 @@ a.shopCta:hover {
     border-bottom: 1px dotted #D2D5D6;
     content: ' ';
 }
+@media(min-width: 1200px) {
+    .cartSteps:after {
+        top: 24px;
+        border-bottom: none;
+        background: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='856px' height='1px' viewBox='0 0 856 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup 8%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-dasharray='1'%3E %3Cg id='Cart' transform='translate(-346.000000, -320.000000)' stroke='%23D2D5D6'%3E %3Cg id='Group-7' transform='translate(289.000000, 292.000000)'%3E %3Cg id='Group-8' transform='translate(57.000000, 27.000000)'%3E %3Cpath d='M594.5,1.5 L855.5,1.5' id='Line'/%3E %3Cpath d='M286.5,1.5 L557.5,1.5' id='Line'/%3E %3Cpath d='M0.5,1.5 L252.5,1.5' id='Line'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E") no-repeat center;
+    }
+}
 .cartSteps__step {
     position: relative;
     color: #B9BEC3;
@@ -4855,6 +4906,15 @@ a.shopCta:hover {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+}
+@media(min-width: 1200px) {
+    .cartSteps__step {}
+    .cartSteps__step:nth-child(3) span {
+        margin-left: -5px;
+    }
+    .cartSteps__step:nth-child(3) span:after {
+        left: 46%;
+    }
 }
 @media(max-width: 568px) {
     .cartSteps__step {
@@ -5111,9 +5171,17 @@ a.shopCta:hover {
 .cartActions .btn {
     margin-left: 12px;
 }
+.cartActions .btn:last-child {
+    margin-right: 30px;
+}
 @media(max-width: 700px) {
     .cartActions {
         text-align: center;
+    }
+}
+@media(max-width: 768px) {
+    .cartActions .btn:last-child {
+        margin-right: 0;
     }
 }
 /*Acessories */
@@ -5312,8 +5380,7 @@ a.shopCta:hover {
     border-bottom: none;
 }
 .compare__row:first-child .compare__col:first-child {
-    border: 1px solid #EDF0F6;
-    border-right: none;
+    border-right: none;/*border: 1px solid #EDF0F6 */
 }
 .compare__row:nth-child(2) .compare__col {
     border-bottom: none;
@@ -5331,11 +5398,15 @@ a.shopCta:hover {
 .compare__row--controls .compare__col:not(.controllable) {}
 .compare__row--controls .compare__col:not(.controllable):after {
     position: absolute;
-    top: 10px;
-    width: 100%;
+    top: 11px;
+    width: 130%;
     height: 1px;
     background: #EDF0F6;
     content: ' ';
+}
+.compare__row--controls .compare__col:first-child {}
+.compare__row--controls .compare__col:first-child:after {
+    background: transparent;
 }
 .compare__row--controls .compare__col.controllable {
     border-bottom: none;
@@ -5343,12 +5414,18 @@ a.shopCta:hover {
     text-align: right;
     font-size: 11px;
 }
+.compare__row--controls .compare__col.controllable span {
+    background: white;
+}
 .compare__row--controls .compare__col.controllable .ico {
     margin-right: 15px;
     margin-left: 15px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     opacity: .3;
     cursor: pointer;
+}
+.compare__row--controls .compare__col.controllable .ico:hover {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='11px' height='20px' viewBox='0 0 11 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Eleft_arrow_tech%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='%23F53B49' fill-rule='evenodd'%3E %3Cg id='Sole_dskt_main' transform='translate(-76.000000, -2287.000000)'%3E %3Cg id='technology' transform='translate(76.000000, 2097.000000)'%3E %3Cpath d='M9.82704811,190.190212 C10.0906558,189.936596 10.5340888,189.936596 10.7976965,190.190212 C10.9264351,190.315039 10.9979565,190.483456 10.9979565,190.661779 C10.9979565,190.838122 10.9264351,191.006539 10.7976965,191.133347 L1.65521085,199.998019 L10.7976965,208.862691 C10.9264351,208.987517 11,209.155934 11,209.336239 C11,209.512582 10.9284785,209.679017 10.8017834,209.803844 C10.6730448,209.930652 10.4993498,210 10.313394,210 C10.1294817,210 9.95783021,209.930652 9.82909158,209.805825 L0.202303548,200.469586 C0.0735649266,200.344759 0,200.176342 0,199.998019 C0,199.819695 0.0715214564,199.651278 0.202303548,199.528433 L9.82704811,190.190212 Z' id='left_arrow_tech'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
 }
 .compare__row--controls .compare__col.controllable .ico.active {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -5387,6 +5464,9 @@ a.shopCta:hover {
     z-index: 2;
     cursor: pointer;
 }
+.compare__col .ico-delete:hover {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='9px' height='8px' viewBox='0 0 9 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23F53B49'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3EGroup%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill-rule='evenodd'%3E %3Cg id='Comparison' transform='translate(-716.000000, -237.000000)'%3E %3Cg id='Group' transform='translate(716.000000, 236.000000)'%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-45.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3Crect id='Rectangle-8' transform='translate(4.608000, 5.000000) rotate(-315.000000) translate(-4.608000, -5.000000) ' x='-0.6' y='4.42857143' width='10.4160004' height='1.14285714' rx='0.571428571'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
 .compare__col.visible {
     display: block;
 }
@@ -5413,6 +5493,7 @@ a.shopCta:hover {
     }
 }
 .compare__nameBig {
+    text-align: center;
     letter-spacing: -.85px;
     font-size: 22px;
     font-family: 'CoreSansA45';
@@ -5430,8 +5511,8 @@ a.shopCta:hover {
     margin-top: 40px;
     margin-bottom: 35px;
     text-align: center;
-    letter-spacing: -.5px;
-    font-size: 13px;
+    letter-spacing: .75px;
+    font-size: 15px;
     font-family: 'CoreSansA45';
     line-height: 22px;
 }

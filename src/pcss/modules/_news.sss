@@ -20,7 +20,7 @@
       .news__card__parallaxImg
         width: 100%
         height: 100%
-        background-attachment: fixed
+        // background-attachment: fixed
         background-repeat: no-repeat
         background-position: center
         max-width: 100%
@@ -47,6 +47,23 @@
         font-family: 'Helvetica Neue'
         font-weight: 300
         line-height: 27px
+      .btn
+        line-height: 1
+        font-size: 14px
+      .shareTrigger
+        margin-top: -1px
+        display: inline-block
+        position: relative
+        height: 39px
+        width: 39px
+        vertical-align: middle
+        .ico
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+
+
     &__title
       font-family: 'CoreSansA45'
       letter-spacing: -.85px
@@ -164,3 +181,8 @@
       font-size: 18px
     .news__card__datetime
       font-size: 12px
+
+.newsInnerPage
+  .heading__name
+    @media(width >= 1200px)
+      margin-left: 0

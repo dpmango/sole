@@ -20,12 +20,22 @@
     content: ' '
     height: 1px
     border-bottom: 1px dotted #D2D5D6
+    @media(width >=1200px)
+      top: 24px
+      border-bottom: none
+      background: svg-load('../../images/svg/cart-line.svg') no-repeat center
   &__step
     font-family: 'BebasNeueBold'
     font-size: 12px
     color: #B9BEC3
     letter-spacing: 3px
     position: relative
+    @media(width >=1200px)
+      &:nth-child(3)
+        span
+          margin-left: -5px
+        span::after
+          left: 46%
     @media($mobile)
       font-size: 0
     &.active
@@ -194,6 +204,10 @@
     text-align: center
   .btn
     margin-left: 12px
+    &:last-child
+      margin-right: 30px
+      @media($tablet)
+        margin-right: 0
 
 //Acessories
 .shopAcessories
