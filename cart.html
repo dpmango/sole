@@ -129,12 +129,11 @@
           <div class="cart__itemCol cart__itemCol--center"><i class="ico ico-action-delete"></i></div>
         </div>
         <div class="cart__itemActions">
-          <div class="cart__itemActions__total"><span>итого (руб):</span>
-            <div class="cart__itemActions__totalPrice"><span>20 499,00</span><i class="ico ico-rub"></i></div>
-          </div><a class="btn btn--outline btn-gray btn-muted" href="#">Пересчитать</a>
+          <div class="cart__itemActions__total"><span>итого (руб):</span></div>
+          <div class="cart__itemActions__totalPrice"><span>20 499,00</span><i class="ico ico-rub"></i></div><a class="btn btn--outline btn-gray btn-muted" href="#">Пересчитать</a>
         </div>
       </div>
-      <div class="cartActions"><a class="btn btn-red btn--noBr" href="#">Купить в 1 клик</a><a class="btn btn-red btn--noBr btn--outline" href="#" id="cartStepOneTrigger"><span>Далее</span><i class="ico ico-right-arrow"></i></a></div>
+      <div class="cartActions"><a class="modal__trigger btn btn-red btn--noBr" href="#modalCredit">Купить в 1 клик</a><a class="btn btn-red btn--noBr btn--outline" href="#" id="cartStepOneTrigger"><span>Далее</span><i class="ico ico-right-arrow"></i></a></div>
       <!-- STEP 2-->
       <div class="cart" id="cartStepTwo">
         <div class="cart__uiGroup pt50">
@@ -326,5 +325,28 @@
     </footer>
     <link rel="stylesheet" href="css/secondary.css">
     <script src="js/scripts.min.js"></script>
+    <!-- MODAL-->
+    <div class="modal" id="modalCredit">
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <div class="modal__close"><i class="ico ico-close"></i></div>
+          <div class="cart__uiGroup">
+            <div class="cart__uiGroup__caption">Купить в 1 клик</div>
+            <div class="ui-input ui-input--error">
+              <input type="text" placeholder="Ваше имя и фамилия">
+              <div class="ui-input__validation">Заполните поле</div>
+            </div>
+            <div class="ui-input">
+              <input type="email" placeholder="Email">
+              <div class="ui-input__validation">Заполните поле</div>
+            </div>
+            <div class="ui-input">
+              <input type="tel" placeholder="Номер телефона">
+              <div class="ui-input__validation">Заполните поле</div>
+            </div><a class="btn btn-block btn-red btn--noBr" href="#">Купить в 1 клик</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
