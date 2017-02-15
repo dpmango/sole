@@ -3570,7 +3570,7 @@ span.bigger {
     left: 0;
     width: 80px;
     height: 80px;
-    background-image: url('../../images/ico-sticker-hot.png');
+    background-image: url('../images/ico-sticker-hot.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

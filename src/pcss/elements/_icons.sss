@@ -153,6 +153,7 @@
   background-color: $colorRed
   background-image: svg-load('../../images/svg/ico-timer.svg')
   background-size: 18px 21px
+  background-position: center 45%
   size: 34px
   border-radius: 50%
   vertical-align: middle
@@ -168,7 +169,34 @@
 
 .ico-info-tooltip
   background-image: svg-load('../../images/svg/ico-info-tooltip.svg')
-  size: 10px
+  size: 12px
+  position: relative
+  &:hover
+    span
+      opacity: 1
+      transform: translate3d(0, 0, 0)
+  span
+    z-index: 10
+    font-family: 'CoreSansA35'
+    transform: translate3d(200%, 0, 0)
+    overflow: hidden
+    transition: all .3s ease
+    opacity: 0
+    min-width: 300px
+    pointer-events: none
+    position: absolute
+    right: 0
+    top: 20px
+    color: white
+    background: color(black a(80%))
+    color: white
+    font-size: 13px
+    line-height: 1.25em
+    padding: 10px
+    border-radius: 5px
+    &:hover
+      opacity: 1
+
 
 .ico-video-play
   background-image: svg-load('../../images/svg/ico-video-play.svg')
