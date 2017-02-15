@@ -182,7 +182,10 @@ body.locked, html.locked {}
     }
 }
 .container--pad {
-    padding-top: 85px;
+    padding-top: 82px;
+}
+.container--pad .heading__name {
+    margin-left: 0;
 }
 .whiteBg {
     background: white;
@@ -1097,7 +1100,7 @@ span.bigger {
 .owl-carousel .owl-dots {
     position: absolute;
     bottom: -40px;
-    left: 12%;
+    left: 0%;
 }
 .owl-carousel .owl-dots .owl-dot {
     display: inline-block;
@@ -1118,7 +1121,7 @@ span.bigger {
 }
 @media(max-width: 1200px) {
     .owl-carousel .owl-dots {
-        left: 0;
+        left: 12%;
     }
 }
 @media(max-width: 768px) {
@@ -1935,6 +1938,7 @@ span.bigger {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 9;
     display: none;
     background: #000000;
     background: rgba(0, 0, 0, 0.3);
@@ -2001,6 +2005,7 @@ span.bigger {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 90;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -2016,6 +2021,11 @@ span.bigger {
         -ms-transform: scale(0);
             transform: scale(0);
     pointer-events: none;
+}
+@media(max-width: 768px) {
+    .up {
+        display: none !important;
+    }
 }
 .up.visible {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -2275,7 +2285,7 @@ span.bigger {
     }
 }
 .productsMainpage__card--red {
-    background: #F53B49 svg-load('../images/svg/mainpageProduct-redBg.svg') no-repeat bottom center;
+    background: #F53B49 url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='520px' height='162px' viewBox='0 0 520 162' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Earts_downl_cat%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' opacity='0.200000003'%3E %3Cg id='Sole_dskt_main' transform='translate(-1040.000000, -1823.000000)' stroke='%23FFFFFF'%3E %3Cg id='products' transform='translate(0.000000, 845.000000)'%3E %3Cg id='donwload_catalog' transform='translate(1040.000000, 620.000000)'%3E %3Cg id='arts_downl_cat' transform='translate(-3.000000, 356.000000)'%3E %3Cpath d='M0.49609375,0.8671875 L112.935815,81.6271077 L168.773526,150.170255 L210.066195,187.960876 L207.1225,103.656687 C207.103169,103.103052 207.430262,102.94795 207.848935,103.306703 L292.159422,175.550707 L320.40486,177.265046 L316.8315,121.769861 C316.795773,121.215014 316.386539,121.000662 315.908139,121.296859 L227.104007,176.279032 L367.327291,175.68134 L375.229715,135.89006 L433.171875,75.3334428 L545.419935,87.9458256 L453.285834,184.183246 L479.951145,180.740251 L505.377247,130.521879 L515.162633,170.75427' id='Path-3'/%3E %3Cpath d='M542.5,151.132812 L434.143479,75.8576659 C433.692821,75.5445943 433.425393,75.7293202 433.544826,76.2642801 L455.286493,173.64847 L354.569959,175.871027 L316.909225,121.609885 C316.594365,121.156238 316.775528,120.899727 317.303835,121.034394 L374.726866,135.671741' id='Path-4'/%3E %3Cpath d='M433.35314,75.519914 L364.167037,187.703189 L166.232438,176.543878 L169.109951,150.164886 L207.090161,103.516965 C207.438101,103.089618 207.276511,102.641661 206.751248,102.52146 L112.942973,81.0544683 L5.15792182,89.8570096 L7.46279541,92.9671574' id='Path-5'/%3E %3Cpolyline id='Path-6' points='9.02159592 92.7970611 169.501019 150.216974 72.4431366 180.805152 0.145421231 90.8517603 35.1292687 183.030608'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E") no-repeat bottom center;
 }
 .productsMainpage__card--red .btn {
     position: absolute;
@@ -2766,6 +2776,7 @@ span.bigger {
         -ms-flex-align: center;
 }
 .productsCatalog .heading__name {
+    margin-left: 0;
     font-size: 22px;
 }
 @media(max-width: 568px) {
@@ -3171,6 +3182,7 @@ span.bigger {
     .shopIntro {
         margin-right: -15px;
         margin-left: -15px;
+        padding-top: 25px;
         padding-right: 20px;
         padding-left: 20px;
         border: none;
@@ -3220,9 +3232,12 @@ span.bigger {
 }
 @media(max-width: 768px) {
     .shopIntro__sticker.productMini__sticker--hot {
-        top: 100px;
+        top: 120px;
         right: auto;
-        left: 10px;
+        left: 15px;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
     }
 }
 .shopIntro__pictures {
@@ -3319,6 +3334,12 @@ span.bigger {
     }
 }
 @media(max-width: 768px) {
+    .shopIntro__pictures__miniWrap img, .shopIntro__pictures__miniWrap > span {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
+@media(max-width: 768px) {
     .shopIntro__pictures__miniWrap .ico-video-play {
         display: block;
         margin-right: auto;
@@ -3367,6 +3388,12 @@ span.bigger {
         text-align: center;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
+    }
+}
+@media(max-width: 568px) {
+    .shopIntro__pictures__main img {
+        margin-left: -5%;
+        max-width: 110%;
     }
 }
 .shopIntro__labels {
@@ -3431,10 +3458,7 @@ a.shopCta:hover {
         border-radius: 0;
     }
     .shopCta:nth-child(1) {
-        -webkit-order: 2;
-                order: 2;
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
+        display: none;
     }
     .shopCta:nth-child(2) {
         -webkit-order: 1;
@@ -3518,6 +3542,13 @@ a.shopCta:hover {
     color: #566269;
     font-size: 11px;
 }
+@media(max-width: 768px) {
+    .shopCta .btn {
+        padding-top: 18px;
+        padding-bottom: 16px;
+        border-radius: 3px;
+    }
+}
 .shopCta__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3535,8 +3566,43 @@ a.shopCta:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
 }
+@media(max-width: 768px) {
+    .shopCta__row {
+        font-size: 14px;
+    }
+}
 .shopCta__row--border {
     border-bottom: 1px dotted #CACBD9;
+}
+.shopCta__row--mobile {
+    display: none;
+}
+@media(max-width: 768px) {
+    .shopCta__row--mobile {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .shopCta__row--mobile .ico-timer {
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+    .shopCta__row--mobile .ico-info-tooltip {
+        margin-left: -5px;
+        margin-left: 7px;
+    }
+    .shopCta__row--mobile span {
+        display: inline-block;
+        margin-left: 12px;
+        color: #0071D0;
+        text-decoration: underline;
+        font-size: 15px;
+        font-family: 'CoreSansA55';
+    }
 }
 .shopCta__rowLeft {
     -webkit-flex: 1;
@@ -3585,7 +3651,7 @@ a.shopCta:hover {
 }
 @media(max-width: 768px) {
     .shopCta__mainPrice {
-        font-size: 35px;
+        font-size: 40px;
     }
 }
 .shopCta__oldPrice {
@@ -3600,6 +3666,11 @@ a.shopCta:hover {
     height: 10px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E %3Csvg width='10px' height='12px' viewBox='0 0 10 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23F53B49'%3E %3C!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Eruble icon%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Desktop' stroke='none' stroke-width='1' fill-rule='evenodd'%3E %3Cg id='Sole_dskt_main' transform='translate(-227.000000, -4369.000000)'%3E %3Cg id='online-store' transform='translate(25.000000, 3844.000000)'%3E %3Cg id='1-item' transform='translate(0.000000, 140.000000)'%3E %3Cg id='price' transform='translate(114.750000, 371.000000)'%3E %3Cpath d='M92.8159652,21.9035044 C95.1231198,21.9035044 97,20.1306847 97,17.9518406 C97,15.7729966 95.1231198,14 92.8159652,14 L89.8188362,14 C89.422452,14 89.1013377,14.3034572 89.1013377,14.6776504 C89.1013377,14.735477 89.1097635,14.7913584 89.1241808,14.8449409 C89.1097635,14.8985234 89.1013377,14.9544048 89.1013377,15.0122314 L89.1013377,20.5480268 L88.7174985,20.5480268 C88.3211143,20.5480268 88,20.851484 88,21.2256771 C88,21.6000472 88.3213015,21.9033275 88.7174985,21.9033275 L89.1013377,21.9033275 L89.1013377,22.7816912 L88.7174985,22.7816912 C88.3211143,22.7816912 88,23.0851484 88,23.4593416 C88,23.8335347 88.3213015,24.136992 88.7174985,24.136992 L89.1013377,24.136992 L89.1013377,25.3223496 C89.1013377,25.6967196 89.4226392,26 89.8188362,26 C90.2152204,26 90.5363347,25.6965428 90.5363347,25.3223496 L90.5363347,24.136992 L92.6534421,24.136992 C93.0498263,24.136992 93.3709406,23.8335347 93.3709406,23.4593416 C93.3709406,23.0851484 93.049639,22.7816912 92.6534421,22.7816912 L90.5363347,22.7816912 L90.5363347,21.9033275 L92.8159652,21.9035044 L92.8159652,21.9035044 Z M90.5363347,15.3554776 L92.8159652,15.3554776 C94.3318493,15.3554776 95.565003,16.520145 95.565003,17.9516638 C95.565003,19.3833594 94.3318493,20.5480268 92.8159652,20.5480268 L90.5363347,20.5480268 L90.5363347,15.3554776 Z' id='ruble-icon'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
     color: #F53B49;
+}
+@media(max-width: 768px) {
+    .shopCta__oldPrice {
+        font-size: 16px;
+    }
 }
 .shopCta__oldPrice:after {
     position: absolute;
@@ -3696,7 +3767,7 @@ a.shopCta:hover {
 }
 .shopTabs__navi > a.active:after {}
 .shopTabs__navi > a:hover {
-    color: #181B1E;
+    color: #F53B49;
 }
 .shopTabs__navi > a:hover span {
     background: #181B1E;
@@ -3727,6 +3798,7 @@ a.shopCta:hover {
                 flex: 1 1 100%;
         padding: 20px 0px;
         width: 100%;
+        font-size: 18px;
         -webkit-box-flex: 1;
     }
 }
@@ -3813,6 +3885,11 @@ a.shopCta:hover {
     margin-top: 5px;
     font-size: 12px;
     font-family: 'CoreSansA45';
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.shopTabs__content a:hover {
+    color: #F53B49;
 }
 .shopTabs__content a:after {
     display: inline-block;
@@ -4241,6 +4318,8 @@ a.shopCta:hover {
 }
 .news__card__quote {
     position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 300;
     font-style: italic;
     font-size: 16px;
@@ -4253,10 +4332,14 @@ a.shopCta:hover {
 }
 .news__card__quote:before {
     position: absolute;
-    top: 20px;
+    top: -7px;
     left: 0;
+    width: 30px;
+    height: 40px;
+    background: url('../images/quote.png') no-repeat center;
+    background-size: contain;
     color: #D2D5D6;
-    content: '“';
+    content: '';
     font-size: 90px;
     font-family: 'Helvetica Neue';
     line-height: 40px;
@@ -5023,7 +5106,9 @@ a.shopCta:hover {
     font-size: 0;
 }
 .cart__item__image img {
-    max-width: 100%;
+    margin: -1.4%;
+    max-width: 102%;
+    border-radius: 1px;
 }
 @media(max-width: 870px) {
     .cart__item__image {
@@ -5038,6 +5123,7 @@ a.shopCta:hover {
     }
 }
 .cart__item__name {
+    padding-top: 15px;
     letter-spacing: -1px;
     font-size: 18px;
     font-family: 'CoreSansA45';
@@ -5125,8 +5211,25 @@ a.shopCta:hover {
     text-align: center;
 }
 .cart__itemActions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
     margin-top: 20px;
+    margin-left: auto;
+    width: auto;
     text-align: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+}
+.cart__itemActions .btn {
+    font-size: 12px;
 }
 @media(max-width: 700px) {
     .cart__itemActions {
@@ -5135,7 +5238,8 @@ a.shopCta:hover {
 }
 .cart__itemActions__total {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 15px;
+    padding-top: 3px;
     letter-spacing: 2.5px;
     font-size: 12px;
     font-family: 'BebasNeueBold';
@@ -5149,7 +5253,7 @@ a.shopCta:hover {
 }
 .cart__itemActions__totalPrice {
     display: inline-block;
-    margin-left: 15px;
+    margin-right: 30px;
     letter-spacing: -1.6px;
     font-size: 24px;
     font-family: 'CoreSansA55';
@@ -5512,7 +5616,7 @@ a.shopCta:hover {
     margin-bottom: 35px;
     text-align: center;
     letter-spacing: .75px;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'CoreSansA45';
     line-height: 22px;
 }

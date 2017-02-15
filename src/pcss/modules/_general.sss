@@ -487,6 +487,7 @@
 .modal
   display: none
   position: fixed 0 0 0 0
+  z-index: 9
   background: color(black a(30%))
   &.active
     display: block
@@ -540,10 +541,13 @@
   position: fixed
   bottom: 20px
   right: 20px
+  z-index: 90
   transition: opacity .4s ease-out, transform .4s ease-out
   cursor: pointer
   pointer-events: none
   transform: scale(0)
+  @media($tablet)
+    display: none !important
   &.visible
     transform: scale(1)
     opacity: 1

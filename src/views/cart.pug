@@ -81,13 +81,13 @@ html
         .cart__itemActions
           .cart__itemActions__total
             span итого (руб):
-            .cart__itemActions__totalPrice
-              span 20 499,00
-              i.ico.ico-rub
+          .cart__itemActions__totalPrice
+            span 20 499,00
+            i.ico.ico-rub
           a(href="#").btn.btn--outline.btn-gray.btn-muted Пересчитать
 
       .cartActions
-        a(href="#").btn.btn-red.btn--noBr Купить в 1 клик
+        a(href="#modalCredit").modal__trigger.btn.btn-red.btn--noBr Купить в 1 клик
         a(href="#").btn.btn-red.btn--noBr.btn--outline#cartStepOneTrigger
           span Далее
           i.ico.ico-right-arrow
@@ -239,3 +239,22 @@ html
           a(href="#").btn.btn-red В корзину
 
     include shared/footer.pug
+    // MODAL
+    .modal#modalCredit
+      .modal__wrapper
+        .modal__content
+          .modal__close
+            i.ico.ico-close
+          .cart__uiGroup
+            .cart__uiGroup__caption Купить в 1 клик
+            .ui-input.ui-input--error
+              input(type="text" placeholder="Ваше имя и фамилия")
+              .ui-input__validation Заполните поле
+            .ui-input
+              input(type="email" placeholder="Email")
+              .ui-input__validation Заполните поле
+            .ui-input
+              input(type="tel" placeholder="Номер телефона")
+              .ui-input__validation Заполните поле
+
+            a(href="#").btn.btn-block.btn-red.btn--noBr Купить в 1 клик
