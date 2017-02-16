@@ -50,6 +50,9 @@ h1
     h3
       display: inline-block
       font-size: 13px
+    h1
+      @media($mobile)
+        margin-top: 0
     &::before
       display: inline-block
       content: ' '
@@ -65,7 +68,7 @@ h1
       @media($mobile)
         margin-right: 20px
         transform: translateY(0)
-        top: 22px
+        top: 2px
     &--small
       &::before
         height: 20px

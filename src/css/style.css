@@ -478,6 +478,7 @@ h1 {
     display: inline-block;
     font-size: 13px;
 }
+.heading__name h1 {}
 .heading__name span {
     display: inline-block;
     vertical-align: middle;
@@ -490,6 +491,11 @@ h1 {
 @media(max-width: 568px) {
     .heading__name {
         padding-left: 20px;
+    }
+}
+@media(max-width: 568px) {
+    .heading__name h1 {
+        margin-top: 0;
     }
 }
 .heading__name:before {
@@ -509,7 +515,7 @@ h1 {
 }
 @media(max-width: 568px) {
     .heading__name:before {
-        top: 22px;
+        top: 2px;
         margin-right: 20px;
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
@@ -732,6 +738,7 @@ span.bigger {
         position: relative;
         top: auto;
         right: 0;
+        display: none;
         padding-top: 5px;
         -webkit-transform: none;
             -ms-transform: none;
@@ -1055,16 +1062,14 @@ span.bigger {
     background: #DDDDDD;
 }
 .btn-black {
-    background: #000;
+    border: 1px solid transparent;
+    background: #F53B49;
     color: white;
 }
 .btn-black:hover {
+    border-color: #F53B49;
     background: transparent;
-    -webkit-box-shadow: 0 0 0 2px #F53B49;
-            box-shadow: 0 0 0 2px #F53B49;
     color: #000;
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
 }
 .btn-gray {
     background: #EDF0F6;
@@ -2003,6 +2008,7 @@ span.bigger {
     top: auto;
     right: auto;
     left: auto;
+    display: none;
     padding-top: 5px;
     width: auto;
     -webkit-transform: none;
@@ -3091,6 +3097,9 @@ span.bigger {
                 flex: 1 0 100%;
         -webkit-order: 4;
                 order: 4;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        font-size: 18px;
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
         -webkit-box-flex: 1;
@@ -5804,6 +5813,23 @@ a.shopCta:hover {
     .compare__row--controls .compare__col:first-child .ui-toggler {
         margin-right: 30px;
         margin-left: 30px;
+    }
+}
+.compare__row--desktop {}
+@media(max-width: 568px) {
+    .compare__row--desktop {
+        display: none;
+    }
+}
+.compare__row--mobile {
+    display: none;
+}
+@media(max-width: 568px) {
+    .compare__row--mobile {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
     }
 }
 .compare__col {
