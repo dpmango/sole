@@ -86,6 +86,10 @@
         @media($tablet)
           max-width: 60px
           max-height: 60px
+        @media(width <= 414px)
+          min-width: 50px
+          max-width: 50px
+          max-height: 50px
 
         &.active
           border-color: $colorRed
@@ -111,6 +115,8 @@
       &__fold
         text-align: center
         cursor: pointer
+        @media($tablet)
+          flex: 0 1 auto
         &:hover
           opacity: .7
         @media($tablet)
@@ -413,6 +419,11 @@ a.shopCta
     padding-bottom: 70px
     font-family: 'CoreSansA45'
     padding-right: 0
+    display: none
+    &.active
+      display: block
+      @media($mobile)
+        display: none
     @media($desktop)
       padding-right: 0
     @media($mobile)
@@ -669,3 +680,30 @@ a.shopCta
       padding-top: 20px
       &:first-child
         padding-top: 30px
+
+
+.table__char
+  display: flex
+  justify-content: space-around
+  font-family: 'CoreSansA25'
+  font-size: 15px
+  color: #566269
+  line-height: 33px
+  &__left
+    margin-right: auto
+    text-align: left
+    span
+      display: block
+      background: white
+      padding-right: 10px
+  &__mid
+    background: url('../images/svg/table_border.svg') repeat-x center
+    flex: 1 1 auto
+    margin-top: 7px
+  &__right
+    text-align: right
+    margin-left: auto
+    span
+      display: block
+      background: white
+      padding-left: 10px

@@ -213,6 +213,12 @@ $(document).ready(function(){
       .addClass('active').siblings().removeClass('active');
     $('.shopTabs__content--mobile').removeClass('visible');
     $(this).next().addClass('visible');
+    var curTab = $(this).data('tab');
+    $('.shopTabs__content').each(function(key, val){
+      if (curTab == $(this).data('tab')){
+        $(this).addClass('active').siblings().removeClass('active');
+      }
+    });
   });
 
   // Custom modal
@@ -289,7 +295,7 @@ $(document).ready(function(){
 
   $('#owlGoodsMobile').owlCarousel({
     loop: false,
-    nav: false,
+    nav: true,
     dots: true,
     responsiveRefreshRate: 10,
     margin: 0,
@@ -302,6 +308,7 @@ $(document).ready(function(){
       },
       768:{
         items: 3,
+        nav: false
       },
       992:{
         items: 4,

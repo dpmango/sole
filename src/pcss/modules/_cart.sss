@@ -56,6 +56,7 @@
         background: $colorRed
         box-shadow: inset 0px 0px 0 6px white, 0 0 0 2px color(#9B9B9B a(30%))
         z-index: 2
+        cursor: pointer
 
 
 .cart
@@ -94,8 +95,7 @@
     align-items: center
     border-bottom: 1px dotted #CACBD9
     @media(width <= 700px)
-      padding-top: 15px
-
+      padding-top: 25px
       position: relative
       flex-direction: column
       text-align: center
@@ -120,11 +120,16 @@
       font-size: 18px
       letter-spacing: -1px
       padding-top: 15px
+      @media($mobile)
+        font-size: 20px
       span
         display: block
         margin-top: 10px
         font-size: 13px
         color: $colorMute
+        @media($mobile)
+          font-size: 15px
+          letter-spacing: 1px
     &__priceOne
       font-family: 'BebasNeueBold'
       letter-spacing: 3px
@@ -132,6 +137,7 @@
       @media(width <= 700px)
         margin-top: 15px
         margin-bottom: 20px
+        font-size: 14px
     &__priceTotal
       font-size: 29px
       letter-spacing: -2px
@@ -158,8 +164,8 @@
     .ico-action-delete
       @media(width <= 700px)
         position: absolute
-        top: 15px
-        right: 30px
+        top: 13px
+        right: 23%
 
   &__itemCol
     flex: 1 1 20%
@@ -178,10 +184,12 @@
     justify-content: flex-end
     width: auto
     margin-left: auto
-
     text-align: right
     margin-top: 20px
     @media(width <= 700px)
+      text-align: center
+    @media(width <= 700px)
+      display: block
       text-align: center
     &__total
       display: inline-block
@@ -192,7 +200,7 @@
       padding-top: 3px
       @media(width <= 700px)
         display: block
-        margin-bottom: 15px
+        margin-bottom: 5px
         margin-right: 0
     &__totalPrice
       display: inline-block
@@ -202,13 +210,17 @@
       margin-right: 30px
       @media(width <= 700px)
         display: block
-        margin-top: 10px
+        margin-top: 0px
+        margin-right: 0
+        margin-bottom: 10px
       .ico
         width: 9px
         height: 12px
         margin-left: 3px
     .btn
       font-size: 12px
+      @media($mobile)
+        font-size: 14px
 
 .cartActions
   text-align: right

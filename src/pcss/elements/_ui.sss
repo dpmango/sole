@@ -34,6 +34,8 @@
       display: inline-block
       flex: 1 1 60%
   input, textarea
+    -webkit-appearance: none
+    border-radius: 0
     display: block
     width: 100%
     border: 1px solid #DFE0E8
@@ -42,6 +44,7 @@
     font-family: 'CoreSansA45'
     font-size: 13px
     transition: all .3s ease
+    box-shadow: none !important
     &:focus
       border-color: $colorMute
     &::-webkit-input-placeholder

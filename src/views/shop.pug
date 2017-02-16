@@ -94,7 +94,7 @@ html
               .shopCta__rowLeft
                 span Доставка
                 i.ico.ico-info-tooltip
-                  span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                  span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               .shopCta__rowRight <u>Бесплатно</u>
             .shopCta__row
               .shopCta__rowLeft Сборка
@@ -120,7 +120,7 @@ html
       // TABS
       .shopTabs.mt50
         .shopTabs__navi
-          a(href="#").active информация
+          a(href="#" data-tab="1").active информация
           .shopTabs__content.shopTabs__content--mobile.visible
             .container
               .row
@@ -135,9 +135,9 @@ html
               p Беговая дорожка ТТ8 предназначена как для использования в домашних условиях, так и в условиях небольших спортзалов. Воплощает в себе оптимальные характеристики моделей профессионального уровня. TT8 сконструирована на усиленной раме из прочного материала, что позволяет тренироваться пользователям с массой тела до 182 кг.
               p Модель оснащена мощным двигателем 4 л.с. с повышенным крутящим моментом, одной из самых эффективных систем амортизации Cushion Flex Whisper Deck и широким беговым полотном, создающим дополнительную безопасность и комфорт.
 
-          a(href="#") Хараткеристики
-          a(href="#") преимущества
-          a(href="#") отзывы <span>23</span>
+          a(href="#" data-tab="2") Хараткеристики
+          a(href="#" data-tab="3") преимущества
+          a(href="#" data-tab="4") отзывы <span>23</span>
           .shopTestimonials.shopTabs__content--mobile
             .container
               h3 Отзывы
@@ -157,10 +157,10 @@ html
                   .shopTestimonials__card__name Отзыв
                   .shopTestimonials__card__review Отличная кардионагрузка и укрепление сердечно-сосудистой системы — используя данный тренажер вы стабилизируете кровяное давление, уменьшите риск заболеваний сердца и сосудов, снизите уровень холестерина. Укрепление мышц нижней части тела – ягодиц, ног, бедер. Регулярные тренировки помогут достичь высокого тонуса в мышцах и их подтянутого внешнего вида.
                   a.shopTestimonials__card__more(href="#") Показать все
-          a(href="#") инструкции
+          a(href="#" data-tab="5") инструкции
 
     // TABS CONTENT
-    section.shopTabs__content
+    section.shopTabs__content.active(data-tab="1")
       .container
         b КРАТКИЕ ХАРАКТЕРИСТИКИ
         .row
@@ -183,6 +183,71 @@ html
         h3 О продукте
         p Беговая дорожка ТТ8 предназначена как для использования в домашних условиях, так и в условиях небольших спортзалов. Воплощает в себе оптимальные характеристики моделей профессионального уровня. TT8 сконструирована на усиленной раме из прочного материала, что позволяет тренироваться пользователям с массой тела до 182 кг.
         p Модель оснащена мощным двигателем 4 л.с. с повышенным крутящим моментом, одной из самых эффективных систем амортизации Cushion Flex Whisper Deck и широким беговым полотном, создающим дополнительную безопасность и комфорт.
+
+    section.shopTabs__content(data-tab="2")
+      .container
+        b ВСЕ ХАРАКТЕРИСТИКИ
+        .table__char.mt20
+          .table__char__left
+            span Тип дорожки
+          .table__char__mid
+          .table__char__right
+            span Скорость
+        .table__char
+          .table__char__left
+            span Мощность двигателя
+          .table__char__mid
+          .table__char__right
+            span полукоммерческая эксплуатация
+        .table__char
+          .table__char__left
+            span Беговое полотно
+          .table__char__mid
+          .table__char__right
+            span 0.8-20 км/ч
+        .table__char
+          .table__char__left
+            span Размер бегового полотна (ДхШ)
+          .table__char__mid
+          .table__char__right
+            span 4.0 л.с.
+        .table__char
+          .table__char__left
+            span Регулировка угла наклона
+          .table__char__mid
+          .table__char__right
+            span 4-х слойное, усиленное
+        .table__char
+          .table__char__left
+            span Наклон бегового полотна
+          .table__char__mid
+          .table__char__right
+            span 152 х 56 см
+        .table__char
+          .table__char__left
+            span Дека
+          .table__char__mid
+          .table__char__right
+            span автоматическая
+        .table__char
+          .table__char__left
+            span Система амортизации
+          .table__char__mid
+          .table__char__right
+            span -6%-15%
+        .table__char
+          .table__char__left
+            span Измерение пульса
+          .table__char__mid
+          .table__char__right
+            span 18 мм с системой шумопоглащения
+        .table__char
+          .table__char__left
+            span Консоль
+          .table__char__mid
+          .table__char__right
+            span Cushion Flex Shock Absorption
+
 
     section.shopTestimonials
       .container

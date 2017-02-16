@@ -14,17 +14,62 @@
         &:first-child
           border-right: none
           //border: 1px solid #EDF0F6
+        &:nth-child(2)
+          @media($mobile)
+            border-left: 1px solid #F3F3F5
+            border-right: 1px solid #F3F3F5
+            border-top: 1px solid #F3F3F5
+            &::before
+              background: svg-load('../../images/svg/mobile-compare-nav.svg') no-repeat center
+              width: 40px
+              height: 43px
+              display: block
+              position: absolute
+              top: 40%
+              left: -15px
+              content: ' '
+              cursor: pointer
+              transition: opacity .4s ease-out
+              &:hover
+                opacity: .7
+        &:nth-child(3)
+          @media($mobile)
+            &::after
+              background: svg-load('../../images/svg/mobile-compare-nav.svg') no-repeat center
+              width: 40px
+              height: 43px
+              display: block
+              position: absolute
+              top: 40%
+              right: -15px
+              content: ' '
+              cursor: pointer
+              transform: rotate(180deg)
+              transition: opacity .4s ease-out
+              &:hover
+                opacity: .7
+
     &:nth-child(2)
       .compare__col
         border-bottom: none
 
     &--controls
       align-items: center
-      @media($mobile)
-        display: none
       .compare__col
         border-bottom: none
         position: relative
+        @media($mobile)
+          display: none !important
+          &:first-child
+            display: block !important
+            text-align: center
+            background: white !important
+            margin-bottom: 20px
+            margin-top: 10px
+            .ui-toggler
+              margin-left: 30px
+              margin-right: 30px
+
         &:not(.controllable)
           &::after
             content: ' '
@@ -99,6 +144,8 @@
     font-size: 22px
     letter-spacing: -.85px
     text-align: center
+    @media($mobile)
+      text-align: left
     &::before
       display: inline-block
       content: ' '

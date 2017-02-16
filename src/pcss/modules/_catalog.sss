@@ -129,6 +129,8 @@
     color: $colorMute
     font-size: 13px
     line-height: 30px
+    @media($mobile)
+      display: inline-block
   &__rating
     float: right
     position: absolute
@@ -139,16 +141,29 @@
     color: #8D8E9A
     font-size: 11px
     margin-top: 5px
+    @media($mobile)
+      float: right
+      margin-top: 10px
   &__prices
     text-align: center
     padding: 15px
+    @media($mobile)
+      display: flex
+      flex-wrap: wrap
+      align-items: center
     .btn
       font-size: 14px
+      @media($mobile)
+        order: 4
+        flex: 1 0 100%
   &__priceOld
     display: inline-block
     color: $colorRed
     font-family: 'CoreSansA45'
     position: relative
+    @media($mobile)
+      flex: 0 1 auto
+      order: 1
     &::after
       position: absolute
       top: 50%
@@ -168,6 +183,12 @@
     font-size: 24px
     letter-spacing: -1.65px
     margin-top: 5px
+    @media($mobile)
+      margin-top: 0
+      margin-left: auto
+      margin-right: auto
+      flex: 1 1 auto
+      order: 2
     .ico-rub
       width: 9px
       height: 12px
@@ -182,6 +203,10 @@
     color: #8D8E9A
     transition: color .3s ease-in-out
     font-size: 12px
+    @media($mobile)
+      flex: 0 1 auto
+      text-align: right
+      order: 3
     .ico-compare
       margin-left: 0
       margin-right: 5px
